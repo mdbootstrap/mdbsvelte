@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/examples/Example.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/examples/PrismCode.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Col.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/mdbcontainer/Container.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/mdbcontainer/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/mdbcontainer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/examples/mdbcontainer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/examples/Example.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/examples/Example.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/examples/mdbcontainer.svelte" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes" />
+      <recent name="$PROJECT_DIR$/src/routes/examples/MDBContainer" />
       <recent name="$PROJECT_DIR$/src/routes/examples" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -64,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588744822457</updated>
-      <workItem from="1588744839808" duration="10380000" />
+      <workItem from="1588744839808" duration="16591000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,8 @@
   export let description;
   export let source;
   export let title;
+
+  console.log($$props.$$slots)
 </script>
 
 <div class="py-3">
