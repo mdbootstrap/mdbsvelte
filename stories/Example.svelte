@@ -15,18 +15,13 @@
   {/if}
   <slot name="info"/>
   <div class="border p-3">
-    <Row>
       {#if source}
-        <Col xs={stacked ? 12 : undefined}>
           <PrismCode class="language-html h-100">{source}</PrismCode>
-        </Col>
       {/if}
       {#if output}
-        <Col><h2>Output:</h2></Col>
-        <Col>
+        <div class="output" md="12">
           <slot/>
-        </Col>
+        </div>
       {/if}
-    </Row>
   </div>
 </div>

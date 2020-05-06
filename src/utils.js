@@ -1,8 +1,8 @@
 export function clean($$props, extra_keys) {
-const { children, $$scope, $$slots } = $$props;
+  let keys = ["children", "$$scope", "$$slots"].concat(extra_keys)
   const rest = {};
   for (const key of Object.keys($$props)) {
-    if (key !== "children" && key !== "$$scope" && key !== "$$slots" && !(extra_keys.includes(key))) {
+    if (!(keys.includes(key))) {
       rest[key] = $$props[key];
     }
   }

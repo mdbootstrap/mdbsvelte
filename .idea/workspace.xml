@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stories/MDBContainer/ContainerFluid.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/MDBContainer/size.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.storybook/preview-head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MDBRow.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Grid/AutoLayout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Grid/Basic.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Grid/Broken.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Grid/HorizonatlAlign.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Grid/Index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Col.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBCol.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stories/Example.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Example.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/MDBContainer/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/MDBContainer/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/MDBContainer/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/MDBContainer/Index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stories/index.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/stories/index.stories.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Svelte Component" />
       </list>
     </option>
@@ -37,19 +45,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories/Grid" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/routes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/stories" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/routes/examples/MDBContainer" />
       <recent name="$PROJECT_DIR$/src/routes/examples" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stories/Grid" />
+      <recent name="$PROJECT_DIR$/src/routes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,7 +85,7 @@
       <updated>1588744822457</updated>
       <workItem from="1588744839808" duration="20375000" />
       <workItem from="1588786174230" duration="5569000" />
-      <workItem from="1588791926026" duration="565000" />
+      <workItem from="1588791926026" duration="8846000" />
     </task>
     <servers />
   </component>
