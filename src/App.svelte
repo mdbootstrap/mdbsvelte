@@ -1,13 +1,13 @@
 <script>
 	export let name;
-	import Container from './components/Container.svelte';
+	import MDBContainer from './components/MDBContainer.svelte';
 	const handleClick = () => alert('I warned you!');
 
 </script>
 
 <main>
-	<Container class="bg-primary" size="xl">
+	<MDBContainer class="bg-primary" size="xl">
 		<!-- Content here -->
 		asdfasddfasd
-	</Container>
+	</MDBContainer>
 </main>
