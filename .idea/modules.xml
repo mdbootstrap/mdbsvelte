@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mdbsvlete.iml" filepath="$PROJECT_DIR$/.idea/mdbsvlete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mdbsvelte/.idea/mdbsvelte.iml" filepath="$PROJECT_DIR$/../mdbsvelte/.idea/mdbsvelte.iml" />
     </modules>
   </component>
 </project>

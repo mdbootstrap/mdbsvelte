@@ -3,3 +3,4 @@ node_modules
 public/bundle.*
 package-lock.json
 yarn.lock
+mdbsvelte-1.0.0.tgz
