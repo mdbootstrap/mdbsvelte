@@ -1,0 +1,35 @@
+{
+  "name": "mdbsvelte",
+  "version": "1.0.0",
+  "main": "dist/mdbsvelte.js",
+  "module": "dist/mdbsvelte.es.js",
+  "jsnext:main": "dist/mdbsvelte.es.js",
+  "svelte": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SauravKanchan/mdbsvelte.git"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "serve": "^11.0.0",
+    "style-loader": "^0.23.1",
+    "svelte": "^3.0.0",
+    "svelte-loader": "2.13.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server --content-base public"
+  },
+  "dependencies": {
+    "clsx": "^1.1.0"
+  }
+}
