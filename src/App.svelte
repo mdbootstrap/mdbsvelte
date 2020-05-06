@@ -6,7 +6,7 @@
 </script>
 
 <main>
-	<Container class="bg-primary" fluid>
+	<Container class="bg-primary" size="xl">
 		<!-- Content here -->
 		asdfasddfasd
 	</Container>

@@ -5,8 +5,11 @@
   export { className as class };
   export let fluid = false;
   export let id = '';
-  const props = clean($$props);
-  $: classes = clsx(className, fluid ? 'container-fluid' : 'container');
+  export let size;
+  const props = clean($$props, ["size"]);
+  $: classes = clsx(className, size ? `container-${size}`:fluid ? 'container-fluid' : 'container');
+
+  console.log(props)
 </script>
 
 <div {...props} {id} class={classes}>
