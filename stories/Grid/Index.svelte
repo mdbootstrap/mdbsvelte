@@ -8,11 +8,13 @@
   import BrokenSource from "!!raw-loader!./Broken.svelte";
   import HorizonatlAlign from "./HorizonatlAlign.svelte";
   import HorizonatlAlignSource from "!!raw-loader!./HorizonatlAlign.svelte";
+  import ColumnWrapping from "./ColumnWrapping.svelte";
+  import ColumnWrappingSource from "!!raw-loader!./ColumnWrapping.svelte";
 
 
 </script>
 <style>
-  :global(.output .col) :global(.output .col-4)  {
+  :global(.output [class^="col"]){
     padding: 1rem;
     background-color: #33b5e5;
     border: 2px solid #fff;
@@ -20,6 +22,14 @@
     text-align: center;
   }
 
+  .secondary-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #444343;
+    overflow: hidden;
+    padding-bottom: .3rem;
+    margin-bottom: .7rem;
+  }
 
 </style>
 
@@ -237,5 +247,30 @@
   Horizontal alignment
 </h3>
 <Example source={HorizonatlAlignSource}>
-  <HorizonatlAlign />
+  <HorizonatlAlign/>
+</Example>
+
+<h3 id="no-gutters" class="secondary-heading">
+  No gutters
+</h3>
+<p>The gutters between columns in our predefined grid classes can be removed with
+  <code>&lt;MDBRow noGutters &gt; .</code> This removes the negative
+  <code>margin</code>s from
+  <code>&lt;MDBRow&gt;</code> and the horizontal
+  <code>padding</code> from all immediate children <code>&lt;MDBCol&gt;</code>.</p>
+<p>
+  Need an edge-to-edge design? Remove the parent
+  <code>&lt;MDBContainer&gt;</code> or
+  <code>&lt;MDBContainer fluid&gt;</code> component.</p>
+
+<h4 id="column-wrapping" class="mt-5">
+  <strong>Column wrapping</strong>
+</h4>
+
+<p class="description">If more than 12 columns are placed within a single row, each group of extra columns will, as
+  one unit, wrap onto a new
+  line.
+</p>
+<Example source={ColumnWrappingSource}>
+  <ColumnWrapping />
 </Example>

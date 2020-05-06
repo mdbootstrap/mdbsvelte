@@ -26,6 +26,10 @@
     rowClasses.push('row')
   }
 
+  if(noGutters){
+    rowClasses.push('no-gutters')
+  }
+
 </script>
 
 <div {...props}  class={rowClasses.join(' ')}>
