@@ -1,3 +1,3 @@
-<MDBContainer>
+<MDBContainer fluid>
   <!-- Content here -->
 </MDBContainer>

@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.storybook/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/Example.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/MDBContainer/Basic.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/MDBContainer/Index.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/PrismCode.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/index.stories.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mdbsvlete.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mdbsvelte.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/MDBContainer/ContainerFluid.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/MDBContainer/size.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Example.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Example.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/MDBContainer/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/MDBContainer/Basic.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/MDBContainer/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/MDBContainer/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/index.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/stories/index.stories.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588744822457</updated>
       <workItem from="1588744839808" duration="20375000" />
-      <workItem from="1588786174230" duration="3688000" />
+      <workItem from="1588786174230" duration="5569000" />
+      <workItem from="1588791926026" duration="565000" />
     </task>
     <servers />
   </component>

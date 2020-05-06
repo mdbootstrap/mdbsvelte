@@ -7,4 +7,4 @@ const story = Component => () => ({
 });
 
 storiesOf('Layout', module)
-  .add('Get Started', story(MDBContainer))
+  .add('Containers', story(MDBContainer))
