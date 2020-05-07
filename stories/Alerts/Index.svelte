@@ -10,7 +10,7 @@
 
 </script>
 <style>
-  :global(.primary-heading) {
+  .primary-heading {
     font-size: 2.7rem;
     font-weight: 500;
   }

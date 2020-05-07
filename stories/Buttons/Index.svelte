@@ -13,8 +13,23 @@
   import OutlineSource from "!!raw-loader!./Outline.svelte";
   import ButtonIcon from "./ButtonIcon.svelte";
   import ButtonIconSource from "!!raw-loader!./ButtonIcon.svelte";
+  import LinkButton from "./LinkButton.svelte";
+  import LinkButtonSource from "!!raw-loader!./LinkButton.svelte";
+  import SizeButton from "./SizeButton.svelte";
+  import SizeButtonSource from "!!raw-loader!./SizeButton.svelte";
+  import ActiveState from "./ActiveState.svelte";
+  import ActiveStateSource from "!!raw-loader!./ActiveState.svelte";
+  import DisabledButton from "./DisabledButton.svelte";
+  import DisabledButtonSource from "!!raw-loader!./DisabledButton.svelte";
+
 
 </script>
+<style>
+  .primary-heading {
+    font-size: 2.7rem;
+    font-weight: 500;
+  }
+</style>
 <h2 class="primary-heading">React Bootstrap Buttons</h2>
 <h1 class="secondary-heading mb-4">React Buttons - Bootstrap 4 &amp; Material Design</h1>
 <p>React Bootstrap buttons are components which are triggering a desirable user interaction. Easy to customize in
@@ -52,9 +67,35 @@
   background images and colors on any button.
 </p>
 <Example source={OutlineSource}>
-  <Outline />
+  <Outline/>
 </Example>
 <h2 class="secondary-heading">Buttons with icons</h2>
 <Example source={ButtonIconSource}>
-  <ButtonIcon />
+  <ButtonIcon/>
+</Example>
+<h2 class="secondary-heading">Buttons as link</h2>
+<p>
+  In order to use links styled as button just use MDBButton component with <code>href</code> property.
+</p>
+<Example source={LinkButtonSource}>
+  <LinkButton/>
+</Example>
+<h2 class="secondary-heading">Sizes</h2>
+<p class="description">Fancy larger or smaller buttons? Add <code>size</code> property for
+  additional sizes.</p>
+
+<Example source={SizeButtonSource}>
+  <SizeButton/>
+</Example>
+<h2 class="secondary-heading">Active state</h2>
+<p class="description">Buttons will appear pressed (with a darker background, darker border, and inset shadow) when
+  active. You can force the same active appearance with <code>active</code> prop.</p>
+<Example source={ActiveStateSource}>
+  <ActiveState/>
+</Example>
+<h2 class="secondary-heading">Disabled state</h2>
+<p class="description">Make buttons look inactive by adding the <code>disabled</code> boolean prop to any <code>&lt;MDBBtn&gt;</code>
+  component.</p>
+<Example source={DisabledButtonSource}>
+  <DisabledButton />
 </Example>
