@@ -1,5 +1,4 @@
 <script>
-  import {Col, Row} from 'sveltestrap';
   import PrismCode from './PrismCode.svelte';
 
   export let stacked = false;
@@ -15,13 +14,13 @@
   {/if}
   <slot name="info"/>
   <div class="border p-3">
-      {#if source}
-          <PrismCode class="language-html h-100">{source}</PrismCode>
-      {/if}
-      {#if output}
-        <div class="output" md="12">
-          <slot/>
-        </div>
-      {/if}
+    {#if output}
+      <div class="output mb-5" >
+        <slot/>
+      </div>
+    {/if}
+    {#if source}
+      <PrismCode class="language-html h-100">{source}</PrismCode>
+    {/if}
   </div>
 </div>

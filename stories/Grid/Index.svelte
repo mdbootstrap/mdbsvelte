@@ -10,11 +10,22 @@
   import HorizonatlAlignSource from "!!raw-loader!./HorizonatlAlign.svelte";
   import ColumnWrapping from "./ColumnWrapping.svelte";
   import ColumnWrappingSource from "!!raw-loader!./ColumnWrapping.svelte";
-
+  import ColumnBreaks from "./ColumnBreaks.svelte";
+  import ColumnBreaksSource from "!!raw-loader!./ColumnBreaks.svelte";
+  import Ordering from "./Ordering.svelte";
+  import OrderingSource from "!!raw-loader!./Ordering.svelte";
+  import Offsetting from "./Offsetting.svelte";
+  import OffsettingSource from "!!raw-loader!./Offsetting.svelte";
+  import ResponsiveBreakpoints from "./ResponsiveBreakpoints.svelte";
+  import ResponsiveBreakpointsSource from "!!raw-loader!./ResponsiveBreakpoints.svelte";
+  import Margin from "./Margin.svelte";
+  import MarginSource from "!!raw-loader!./Margin.svelte";
+  import Nesting from "./Nesting.svelte";
+  import NestingSource from "!!raw-loader!./Nesting.svelte";
 
 </script>
 <style>
-  :global(.output [class^="col"]){
+  :global(.output [class^="col"]) {
     padding: 1rem;
     background-color: #33b5e5;
     border: 2px solid #fff;
@@ -22,7 +33,7 @@
     text-align: center;
   }
 
-  .secondary-heading {
+  :global(.secondary-heading) {
     font-size: 1.5rem;
     font-weight: 500;
     color: #444343;
@@ -31,12 +42,18 @@
     margin-bottom: .7rem;
   }
 
+  :global(.section-heading) {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+  }
+
 </style>
 
 <h2 id="how-it-works" class="title mb-3">
   How it works
 </h2>
-<p>MDBReact grid system uses a series of components: Rows, Containers and Columns to layout and align content. It’s
+<p>MDBSvelte grid system uses a series of components: Rows, Containers and Columns to layout and align content. It’s
   built with
   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes"
      rel="nofollow" target="_blank">flexbox</a> and is fully responsive. Below is an example and an in-depth look at how
@@ -72,7 +89,7 @@
   <li>Thanks to flexbox, Columns without a specified <code>width</code> will automatically layout as equal width
     Columns. For example, four instances of
     <code></code> will each automatically be 25% wide from the small breakpoint and up. See the
-    <a href="https://mdbootstrap.com/docs/react/layout/overview/#auto-latout-columns">auto-layout columns</a> section
+    <a href="#">auto-layout columns</a> section
     for more examples.
   </li>
   <li>Column props indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want
@@ -93,7 +110,7 @@
     <code>MDBRow</code>.
   </li>
   <li>To make the grid responsive, there are five grid breakpoints, one for each
-    <a href="https://mdbootstrap.com/docs/react/layout/overview/#responsive-breakpoints">responsive breakpoint</a>:
+    <a href="#">responsive breakpoint</a>:
     all breakpoints (extra small), small, medium, large, and extra large.
   </li>
   <li>Grid breakpoints are based on minimum width media queries, meaning
@@ -272,5 +289,87 @@
   line.
 </p>
 <Example source={ColumnWrappingSource}>
-  <ColumnWrapping />
+  <ColumnWrapping/>
+</Example>
+<h4 id="column-breaks" class="mt-5">
+  <strong>Column breaks</strong>
+</h4>
+<p class="description">Breaking columns to a new line in flexbox requires a small hack: add an element with
+  <code>width: 100%</code> wherever you want to wrap your columns to a new line. Normally this is accomplished with
+  multiple
+  <code>&lt;MDBRow&gt;</code>s, but not every implementation method can account for this.</p>
+<Example source={ColumnBreaksSource}>
+  <ColumnBreaks/>
+</Example>
+
+<h2 class="section-heading mb-4">
+  Reordering
+</h2>
+<h3 id="order-classes" class="secondary-heading mb-3">
+  Order classes
+</h3>
+<p class="description">Use
+  <code>.order-</code> classes for controlling the
+  <strong>visual order</strong> of your content. These classes are responsive, so you can set the
+  <code>order</code> by breakpoint (e.g.,
+  <code>.order-1.order-md-2</code>). Includes support for
+  <code>1</code> through
+  <code>12</code> across all five grid tiers.</p>
+<Example source={OrderingSource}>
+  <Ordering/>
+</Example>
+
+<h4 id="offsetting-columns" class="mt-5">
+  <strong>Offsetting columns</strong>
+</h4>
+
+<p class="description">You can offset <code>&lt;MDBCol&gt;</code> in two ways: our responsive
+  <code>.offset-</code> grid classes and our
+  <a href="https://mdbootstrap.com/docs/jquery/utilities/spacing/">margin utilities</a>. Grid classes are sized to
+  match columns while margins are more useful for quick layouts where the
+  width of the offset is variable.</p>
+
+<h4 id="offset-classes" class="mt-5">
+  <strong>Offset classes</strong>
+</h4>
+
+<p class="description">Move columns to the right using
+  <code>.offset-md-*</code> classes. These classes increase the left margin of a column by
+  <code>*</code> columns. For example,
+  <code>.offset-md-4</code> moves
+  <code>.col-md-4</code> over four columns.</p>
+
+<Example source={OffsettingSource}>
+  <Offsetting/>
+</Example>
+
+<p class="description">In addition to column clearing at responsive breakpoints, you may need to reset offsets. See
+  this in action: </p>
+
+<Example source={ResponsiveBreakpointsSource}>
+  <ResponsiveBreakpoints/>
+</Example>
+
+<h4 id="margin-utilities" class="mt-5">
+  <strong>Margin utilities</strong>
+</h4>
+
+<p class="description">You can use margin utilities like
+  <code>.mr-auto</code> to force sibling <code>&lt;MDBCol&gt;</code> away from one another.</p>
+
+<Example source={MarginSource}>
+  <Margin/>
+</Example>
+
+<h2 class="section-heading mb-4">
+  Nesting
+</h2>
+<p class="description">To nest your content with the default grid, add a new
+  <code>&lt;MDBRow&gt;</code> and set of
+  <code>&lt;MDBCol&gt;</code> columns within an existing
+  <code>&lt;MDBCol&gt;</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is
+  not required that
+  you use all 12 available columns).</p>
+<Example source={NestingSource}>
+  <Nesting/>
 </Example>
