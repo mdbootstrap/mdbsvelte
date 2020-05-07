@@ -6,6 +6,7 @@ import Buttons from './Buttons/Index.svelte'
 import Icon from './Icons/Index.svelte'
 import Cards from './Cards/Index.svelte'
 import Dropdowns from './Dropdowns/Index.svelte'
+import BtnGroups from './ButtonsGroup/Index.svelte'
 
 const story = Component => () => ({
   Component
@@ -18,6 +19,7 @@ storiesOf('Layout', module)
 storiesOf('Components', module)
   .add('Alerts', story(Alerts))
   .add('Buttons', story(Buttons))
+  .add('Buttons Groups', story(BtnGroups))
   .add('Cards', story(Cards))
   .add('Dropdowns', story(Dropdowns));
 

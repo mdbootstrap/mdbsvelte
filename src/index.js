@@ -21,6 +21,7 @@ import MDBDropdown from './MDBDropdown/MDBDropdown.svelte'
 import MDBDropdownItem from './MDBDropdown/MDBDropdownItem.svelte'
 import MDBDropdownMenu from './MDBDropdown/MDBDropdownMenu.svelte'
 import MDBDropdownToggle from './MDBDropdown/MDBDropdownToggle.svelte'
+import  MDBBtnGroup from './MDBBtnGroup.svelte';
 
 export {
   MDBContainer,
@@ -46,4 +47,5 @@ export {
   MDBDropdownItem,
   MDBDropdownMenu,
   MDBDropdownToggle,
+  MDBBtnGroup
 }

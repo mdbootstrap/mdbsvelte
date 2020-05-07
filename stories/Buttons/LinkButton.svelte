@@ -1,7 +1,7 @@
 <script>
   import {MDBBtn, MDBContainer} from "../../src/index";
 </script>
-<MDBContainer class="d-flex justify-content-center">
+<MDBContainer>
   <MDBBtn href="#" color="primary">
     Primary href
   </MDBBtn>

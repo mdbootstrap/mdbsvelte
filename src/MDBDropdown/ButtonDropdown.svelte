@@ -1,5 +1,5 @@
 <script>
-  import Dropdown from './MDBDropdown.svelte';
+  import MDBDropdown from './MDBDropdown.svelte';
   import { clean } from '../utils';
 
   let className = '';

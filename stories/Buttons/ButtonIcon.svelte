@@ -1,7 +1,7 @@
 <script>
   import {MDBBtn, MDBContainer, MDBIcon} from "../../src/index";
 </script>
-<MDBContainer class="d-flex justify-content-center">
+<MDBContainer >
   <MDBBtn color="primary">
     <MDBIcon icon="magic" className="mr-1" /> Left
   </MDBBtn>

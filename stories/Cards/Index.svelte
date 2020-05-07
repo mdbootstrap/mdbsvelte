@@ -17,13 +17,21 @@
   cascading or waves effects. Apart from that, it enriches it with additional optional animations, social icons,
   avatars and various other effects not available in a native Bootstrap.</p>
 <hr class="my-5">
-<Example source={BasicSource}>
+<Example source={BasicSource} textCenter={false}>
   <Basic/>
 </Example>
 
 <h2 id="modalCouponSec" class="section-heading mb-4">
   Card groups
 </h2>
-<Example source={CardGroupSource}>
+<Example source={CardGroupSource} textCenter={false}>
   <CardGroup />
 </Example>
+<h2 class="section-heading mb-4">
+  Nesting
+</h2>
+<p>Place a <code>&lt;MDBBtnGroup&gt;</code> within another <code>&lt;MDBBtnGroup&gt;</code> when you want dropdown
+  menus mixed with
+  a
+  series of buttons.
+</p>

@@ -1,15 +1,15 @@
 <script>
-  import { setContext } from 'svelte';
+  import {setContext} from 'svelte';
   import clsx from 'clsx';
-  import { clean } from '../utils';
+  import {clean} from '../utils';
 
-  import { createContext } from './DropdownContext';
+  import {createContext} from './DropdownContext';
 
   let context = createContext();
   setContext('dropdownContext', context);
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let direction = 'down';
   export let group = false;
   export let isOpen = false;
@@ -84,24 +84,23 @@
   function handleDocumentClick(e) {
     if (e && (e.which === 3 || (e.type === 'keyup' && e.which !== 9))) return;
 
-    if (
-      component.contains(e.target) &&
-      component !== e.target &&
-      (e.type !== 'keyup' || e.which === 9)
-    ) {
-      return;
+      if (
+        component.contains(e.target) &&
+        component !== e.target &&
+        (e.type !== 'keyup' || e.which === 9)
+      ) {
+        return;
     }
 
     toggle(e);
   }
 </script>
-
 {#if nav}
   <li class={classes} bind:this={component} {...props}>
-    <slot />
+    <slot/>
   </li>
 {:else}
   <div class={classes} bind:this={component} {...props}>
-    <slot />
+    <slot/>
   </div>
 {/if}

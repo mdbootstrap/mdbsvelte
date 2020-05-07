@@ -2,6 +2,8 @@
   import Basic from "./Basic.svelte";
   import BasicSource from "!!raw-loader!./Basic.svelte";
   import Example from "../Example.svelte";
+  import SplitDropdown from "./SplitDropdown.svelte";
+  import SplitDropdownSource from "!!raw-loader!./SplitDropdown.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Dropdowns</h2>
@@ -19,6 +21,10 @@
   decreases User Experience of users of mobile devices. </p>
 <p>Google Material Design guidelines recommend the same approach.</p>
 <hr class="my-5" />
-<Example source={BasicSource}>
+<Example source={BasicSource} textCenter={false}>
   <Basic />
+</Example>
+<h2 class="secondary-heading">Split button</h2>
+<Example source={SplitDropdownSource}>
+  <SplitDropdown />
 </Example>

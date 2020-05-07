@@ -4,6 +4,7 @@
   export let source;
   export let title;
   export let output = true;
+  export let textCenter=true;
 </script>
 
 <div class="py-3">
@@ -13,7 +14,7 @@
   <slot name="info"/>
   <div class="border p-3">
     {#if output}
-      <div class="output mb-5" >
+      <div class="output mb-5 {textCenter?'text-center':''}" >
         <slot/>
       </div>
     {/if}
