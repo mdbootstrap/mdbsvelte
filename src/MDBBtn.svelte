@@ -8,7 +8,7 @@
   export let block = false;
   export let children = undefined;
   export let close = false;
-  export let color = 'default';
+  export let color;
   export let disabled = false;
   export let href = '';
   export let outline = false;
@@ -16,6 +16,10 @@
   export let style = '';
   export let value = '';
   export let gradient;
+
+  if(!color){
+    href ? color = "primary" :  color = 'default';
+  }
 
   const props = clean($$props, ["color", "gradient", "value", "style", "size"]);
 
@@ -26,7 +30,7 @@
     className,
     {close},
     close || 'btn waves-effect waves-light',
-    gradient?`${gradient}-gradient`:close || `btn${outline ? '-outline' : ''}-${color}`,
+    gradient ? `${gradient}-gradient` : close || `btn${outline ? '-outline' : ''}-${color}`,
     size ? `btn-${size}` : false,
     block ? 'btn-block' : false,
     {active}
