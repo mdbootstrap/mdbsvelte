@@ -4,6 +4,10 @@
   import Example from "../Example.svelte";
   import SplitDropdown from "./SplitDropdown.svelte";
   import SplitDropdownSource from "!!raw-loader!./SplitDropdown.svelte";
+  import SizeDropdown from "./SizeDropdown.svelte";
+  import SizeDropdownSource from "!!raw-loader!./SizeDropdown.svelte";
+  import DropUp from "./DropUp.svelte";
+  import DropUpSource from "!!raw-loader!./DropUp.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Dropdowns</h2>
@@ -27,4 +31,15 @@
 <h2 class="secondary-heading">Split button</h2>
 <Example source={SplitDropdownSource}>
   <SplitDropdown />
+</Example>
+
+<h2 class="secondary-heading">Sizing</h2>
+<p class="description">Button dropdowns work with buttons of all sizes</p>
+<Example source={SizeDropdownSource} textCenter={false}>
+  <SizeDropdown />
+</Example>
+<h2 class="secondary-heading">Dropup variation</h2>
+<p class="description">Trigger dropdown menus above elements by adding <code>dropup</code> prop to the parent.</p>
+<Example source={DropUpSource} textCenter={false}>
+  <DropUp />
 </Example>

@@ -22,6 +22,10 @@
   export let setActiveFromChild = false;
   export let dropup = false;
 
+  if(dropup){
+    direction="up";
+  }
+
   const props = clean($$props);
 
   const validDirections = ['up', 'down', 'left', 'right'];
