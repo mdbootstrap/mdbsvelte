@@ -7,6 +7,7 @@ import Icon from './Icons/Index.svelte'
 import Cards from './Cards/Index.svelte'
 import Dropdowns from './Dropdowns/Index.svelte'
 import BtnGroups from './ButtonsGroup/Index.svelte'
+import MDBJumbotron from "./Jumbotron/Index.svelte";
 
 const story = Component => () => ({
   Component
@@ -21,7 +22,8 @@ storiesOf('Components', module)
   .add('Buttons', story(Buttons))
   .add('Buttons Groups', story(BtnGroups))
   .add('Cards', story(Cards))
-  .add('Dropdowns', story(Dropdowns));
+  .add('Dropdowns', story(Dropdowns))
+  .add('Jumbotron', story(MDBJumbotron));
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));
