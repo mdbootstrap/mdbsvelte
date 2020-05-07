@@ -3,7 +3,7 @@
   import clsx from 'clsx';
   import { clean } from '../utils';
 
-  import MDBBtn from '../MDBBtn.svelte';
+  import MDBBtn from '../Btn/MDBBtn.svelte';
 
   const context = getContext('dropdownContext');
 

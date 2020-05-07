@@ -1,6 +1,6 @@
 <script>
   import clsx from 'clsx';
-  import { clean } from './utils';
+  import { clean } from '../utils';
 
   let className = '';
   export { className as class };
