@@ -1,9 +1,5 @@
 <script>
-  import MDBContainer from "../../src/MDBContainer.svelte";
-  import MDBIcon from "../../src/MDBIcon.svelte";
-  import MDBCol from "../../src/MDBCol.svelte";
-  import MDBRow from "../../src/MDBRow.svelte";
-  import MDBBtn from "../../src/MDBBtn.svelte";
+  import {MDBContainer,MDBIcon,MDBCol,MDBRow,MDBBtn} from "../../src/index";
 
   let selected_icon = "<icon-name>";
   let code;

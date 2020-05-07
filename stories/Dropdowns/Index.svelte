@@ -14,6 +14,14 @@
   import DropLeftSource from "!!raw-loader!./DropLeft.svelte";
   import AlignmentDropdown from "./AlignmentDropdown.svelte";
   import AlignmentDropdownSource from "!!raw-loader!./AlignmentDropdown.svelte";
+  import HeaderDropdown from "./HeaderDropdown.svelte";
+  import HeaderDropdownSource from "!!raw-loader!./HeaderDropdown.svelte";
+  import DividerDropdown from "./DividerDropdown.svelte";
+  import DividerDropdownSource from "!!raw-loader!./DividerDropdown.svelte";
+  import DisabledDropdown from "./DisabledDropdown.svelte";
+  import DisabledDropdownSource from "!!raw-loader!./DisabledDropdown.svelte";
+  import ActiveDropdown from "./ActiveDropdown.svelte";
+  import ActiveDropdownSource from "!!raw-loader!./ActiveDropdown.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Dropdowns</h2>
@@ -64,4 +72,24 @@
 </p>
 <Example source={AlignmentDropdownSource}>
   <AlignmentDropdown />
+</Example>
+<h2 class="secondary-heading">Menu headers</h2>
+<p class="description">Add a header to label sections of actions in any dropdown menu.</p>
+<Example source={HeaderDropdownSource}>
+  <HeaderDropdown />
+</Example>
+<h2 class="secondary-heading">Menu dividers</h2>
+<p class="description">Separate groups of related menu items with a divider.</p>
+<Example source={DividerDropdownSource}>
+  <DividerDropdown />
+</Example>
+<h2 class="secondary-heading">Disabled menu items</h2>
+<p class="description">Add <code>.disabled</code> to items in the dropdown to style them as disabled.</p>
+<Example source={DisabledDropdownSource}>
+  <DisabledDropdown />
+</Example>
+<h2 class="secondary-heading">Active menu items</h2>
+<p class="description">Add <code>active</code> to items in the dropdown to style them as active.</p>
+<Example source={ActiveDropdownSource}>
+  <ActiveDropdown />
 </Example>
