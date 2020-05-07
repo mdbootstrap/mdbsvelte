@@ -12,6 +12,8 @@
   import DropRightSource from "!!raw-loader!./DropRight.svelte";
   import DropLeft from "./DropLeft.svelte";
   import DropLeftSource from "!!raw-loader!./DropLeft.svelte";
+  import AlignmentDropdown from "./AlignmentDropdown.svelte";
+  import AlignmentDropdownSource from "!!raw-loader!./AlignmentDropdown.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Dropdowns</h2>
@@ -56,4 +58,10 @@
 <p class="description">Trigger dropdown menus on the left side by adding <code>dropleft</code> prop to the parent.</p>
 <Example source={DropLeftSource}>
   <DropLeft />
+</Example>
+<h2 class="secondary-heading">Alignment</h2>
+<p class="description">By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>right</code> prop to a <code>&lt;MDBDropdownMenu&gt;</code> component to right align the dropdown menu.
+</p>
+<Example source={AlignmentDropdownSource}>
+  <AlignmentDropdown />
 </Example>

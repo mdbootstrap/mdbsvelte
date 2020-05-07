@@ -5,7 +5,7 @@
   <MDBDropdownToggle caret color="primary">
     Dropright
   </MDBDropdownToggle>
-  <MDBDropdownMenu basic>
+  <MDBDropdownMenu>
     <MDBDropdownItem>Action</MDBDropdownItem>
     <MDBDropdownItem>Another Action</MDBDropdownItem>
     <MDBDropdownItem>Something else here</MDBDropdownItem>

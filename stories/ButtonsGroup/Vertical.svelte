@@ -30,7 +30,7 @@
         <MDBDropdownToggle caret color="indigo" class="m-0">
           Dropdown
         </MDBDropdownToggle>
-        <MDBDropdownMenu basic color="info">
+        <MDBDropdownMenu color="info">
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
         </MDBDropdownMenu>
@@ -43,7 +43,7 @@
         <MDBDropdownToggle caret color="indigo" class="m-0 rounded-0">
           Dropdown
         </MDBDropdownToggle>
-        <MDBDropdownMenu basic color="indigo">
+        <MDBDropdownMenu color="indigo">
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
         </MDBDropdownMenu>
@@ -52,7 +52,7 @@
         <MDBDropdownToggle caret color="indigo" class="m-0 rounded-0">
           Dropdown
         </MDBDropdownToggle>
-        <MDBDropdownMenu basic color="indigo">
+        <MDBDropdownMenu color="indigo">
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
         </MDBDropdownMenu>
@@ -61,7 +61,7 @@
         <MDBDropdownToggle caret color="indigo" class="m-0 rounded-0">
           Dropdown
         </MDBDropdownToggle>
-        <MDBDropdownMenu basic color="indigo">
+        <MDBDropdownMenu color="indigo">
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
           <MDBDropdownItem>Dropdown link</MDBDropdownItem>
         </MDBDropdownMenu>

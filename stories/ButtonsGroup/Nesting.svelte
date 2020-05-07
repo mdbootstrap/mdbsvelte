@@ -10,7 +10,7 @@
       <MDBDropdownToggle caret color="info" className="h-100">
         Dropdown
       </MDBDropdownToggle>
-      <MDBDropdownMenu basic color="info">
+      <MDBDropdownMenu color="info">
         <MDBDropdownItem>Dropdown link</MDBDropdownItem>
         <MDBDropdownItem>Dropdown link</MDBDropdownItem>
       </MDBDropdownMenu>

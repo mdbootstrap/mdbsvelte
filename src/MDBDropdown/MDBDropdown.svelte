@@ -23,6 +23,7 @@
   export let dropup = false;
   export let dropright = false;
   export let dropleft = false;
+  export let component;
 
   if(dropup){
     direction="up";
@@ -42,7 +43,6 @@
     );
   }
 
-  let component;
 
   $: subItemIsActive = !!(
     setActiveFromChild &&

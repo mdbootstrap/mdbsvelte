@@ -1,15 +1,13 @@
 <script>
   import {MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from "../../src/index";
 </script>
-<MDBDropdown dropup>
+<MDBDropdown>
   <MDBDropdownToggle caret color="primary">
-    Dropup
+    This dropdown&apos;s menu is right-aligned
   </MDBDropdownToggle>
-  <MDBDropdownMenu>
+  <MDBDropdownMenu right basic>
     <MDBDropdownItem>Action</MDBDropdownItem>
     <MDBDropdownItem>Another Action</MDBDropdownItem>
     <MDBDropdownItem>Something else here</MDBDropdownItem>
-    <MDBDropdownItem divider />
-    <MDBDropdownItem>Separated link</MDBDropdownItem>
   </MDBDropdownMenu>
 </MDBDropdown>
