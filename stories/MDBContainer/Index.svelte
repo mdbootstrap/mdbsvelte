@@ -4,18 +4,6 @@
   import SizeSource from '!!raw-loader!./size.svelte';
   import Example from "../Example.svelte";
 </script>
-<style>
-  .text-left {
-    text-align: left !important;
-  }
-  .table{
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529
-  }
-
-</style>
-
 <Example source={BasicSource} title="Basic Container" output={false}>
 </Example>
 <div>

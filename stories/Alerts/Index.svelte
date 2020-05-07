@@ -9,12 +9,6 @@
   import Dismissing from "./Dismissing.svelte";
 
 </script>
-<style>
-  .primary-heading {
-    font-size: 2.7rem;
-    font-weight: 500;
-  }
-</style>
 
 <h2 class="primary-heading">Svelte Bootstrap Alerts</h2>
 <h1 class="secondary-heading mb-4">Svelte Alerts - Bootstrap 4 &amp; Material Design</h1>

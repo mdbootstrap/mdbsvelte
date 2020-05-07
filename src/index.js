@@ -17,6 +17,10 @@ import MDBCardLink from './MDBCard/MDBCardLink.svelte'
 import MDBCardSubtitle from './MDBCard/MDBCardSubtitle.svelte'
 import MDBCardText from './MDBCard/MDBCardText.svelte'
 import MDBCardTitle from './MDBCard/MDBCardTitle.svelte'
+import MDBDropdown from './MDBDropdown/MDBDropdown.svelte'
+import MDBDropdownItem from './MDBDropdown/MDBDropdownItem.svelte'
+import MDBDropdownMenu from './MDBDropdown/MDBDropdownMenu.svelte'
+import MDBDropdownToggle from './MDBDropdown/MDBDropdownToggle.svelte'
 
 export {
   MDBContainer,
@@ -38,4 +42,8 @@ export {
   MDBCardSubtitle,
   MDBCardText,
   MDBCardTitle,
+  MDBDropdown,
+  MDBDropdownItem,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
 }

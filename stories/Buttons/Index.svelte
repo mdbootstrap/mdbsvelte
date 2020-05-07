@@ -24,12 +24,6 @@
 
 
 </script>
-<style>
-  .primary-heading {
-    font-size: 2.7rem;
-    font-weight: 500;
-  }
-</style>
 <h2 class="primary-heading">React Bootstrap Buttons</h2>
 <h1 class="secondary-heading mb-4">React Buttons - Bootstrap 4 &amp; Material Design</h1>
 <p>React Bootstrap buttons are components which are triggering a desirable user interaction. Easy to customize in

@@ -6,12 +6,6 @@
   import CardGroupSource from "!!raw-loader!./CardGroup.svelte";
 
 </script>
-<style>
-  .primary-heading {
-    font-size: 2.7rem;
-    font-weight: 500;
-  }
-</style>
 <h2 class="primary-heading">Svelte Bootstrap Cards</h2>
 <h1 class="secondary-heading mb-4">Svelte Cards - Bootstrap 4 &amp; Material Design</h1>
 <p>Bootstrap cards are components which display content build of different elements with characteristic shadows,

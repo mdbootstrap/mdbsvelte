@@ -33,23 +33,7 @@
     text-align: center;
   }
 
-  :global(.secondary-heading) {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #444343;
-    overflow: hidden;
-    padding-bottom: .3rem;
-    margin-bottom: .7rem;
-  }
-
-  :global(.section-heading) {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.4rem;
-  }
-
 </style>
-
 <h2 id="how-it-works" class="title mb-3">
   How it works
 </h2>
