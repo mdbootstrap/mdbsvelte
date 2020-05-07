@@ -5,7 +5,11 @@
   export let icon;
   export { className as class };
   const props = clean($$props, ["size"],["icon"]);
-  $: classes = clsx(className, 'fa', icon?`fa-${icon}`:null);
+  export let far;
+  export let fas;
+  let base = far?"fa":"fab";
+  base = fas?"fas":base;
+  $: classes = clsx(className, base, icon?`fa-${icon}`:null);
 
 </script>
 

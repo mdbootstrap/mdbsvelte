@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ListGroup/MDBListGroup.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ListGroup/MDBListGroupItem.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MDBBadge.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/Badges/Basic.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/Badges/Index.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/ListGroups/Basic.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/ListGroups/Index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Badges/Contextual.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Badges/Counter.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Badges/LinkBadge.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Badges/Pill.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBBtn.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Btn/MDBBtn.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBBtnGroup.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Btn/MDBBtnGroup.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBCol.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/MDBCol.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBContainer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/MDBContainer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBDropdown/MDBDropdownToggle.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBDropdown/MDBDropdownToggle.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBRow.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/MDBRow.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/index.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/stories/index.stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MDBBadge.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBBadge.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MDBIcon.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBIcon.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Badges/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Icons/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Icons/Index.svelte" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories/Badges" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -59,11 +51,11 @@
       <recent name="$PROJECT_DIR$/src/MDBCard" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stories/Badges" />
       <recent name="$PROJECT_DIR$/stories" />
       <recent name="$PROJECT_DIR$/stories/Jumbotron" />
       <recent name="$PROJECT_DIR$/stories/Dropdowns" />
       <recent name="$PROJECT_DIR$/stories/ButtonsGroup" />
-      <recent name="$PROJECT_DIR$/stories/Cards" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,7 +82,7 @@
       <updated>1588744822457</updated>
       <workItem from="1588744839808" duration="20375000" />
       <workItem from="1588786174230" duration="5569000" />
-      <workItem from="1588791926026" duration="62014000" />
+      <workItem from="1588791926026" duration="66366000" />
     </task>
     <servers />
   </component>

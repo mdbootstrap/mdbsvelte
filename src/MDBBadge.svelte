@@ -1,13 +1,17 @@
 <script>
   import clsx from 'clsx';
-  import { clean } from './utils';
+  import {clean} from './utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let children = undefined;
   export let color = 'secondary';
   export let href = undefined;
   export let pill = false;
+  export let tag;
+  if (tag === "a" && !href) {
+    href="#"
+  }
 
   const props = clean($$props);
 
@@ -24,7 +28,7 @@
     {#if children}
       {children}
     {:else}
-      <slot />
+      <slot/>
     {/if}
   </a>
 {:else}
@@ -32,7 +36,7 @@
     {#if children}
       {children}
     {:else}
-      <slot />
+      <slot/>
     {/if}
   </span>
 {/if}
