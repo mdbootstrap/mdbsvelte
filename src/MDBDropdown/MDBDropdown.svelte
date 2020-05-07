@@ -21,9 +21,15 @@
   export let inNavbar = false;
   export let setActiveFromChild = false;
   export let dropup = false;
+  export let dropright = false;
+  export let dropleft = false;
 
   if(dropup){
     direction="up";
+  }else if(dropright){
+    direction="right"
+  }else if(dropleft){
+    direction="left"
   }
 
   const props = clean($$props);
@@ -104,7 +110,7 @@
     <slot/>
   </li>
 {:else}
-  <div class={classes} bind:this={component} {...props}>
+  <div class={classes} bind:this={component} style="display:inline-block" {...props}>
     <slot/>
   </div>
 {/if}

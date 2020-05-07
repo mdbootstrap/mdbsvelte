@@ -8,6 +8,10 @@
   import SizeDropdownSource from "!!raw-loader!./SizeDropdown.svelte";
   import DropUp from "./DropUp.svelte";
   import DropUpSource from "!!raw-loader!./DropUp.svelte";
+  import DropRight from "./DropRight.svelte";
+  import DropRightSource from "!!raw-loader!./DropRight.svelte";
+  import DropLeft from "./DropLeft.svelte";
+  import DropLeftSource from "!!raw-loader!./DropLeft.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Dropdowns</h2>
@@ -25,7 +29,7 @@
   decreases User Experience of users of mobile devices. </p>
 <p>Google Material Design guidelines recommend the same approach.</p>
 <hr class="my-5" />
-<Example source={BasicSource} textCenter={false}>
+<Example source={BasicSource}>
   <Basic />
 </Example>
 <h2 class="secondary-heading">Split button</h2>
@@ -35,11 +39,21 @@
 
 <h2 class="secondary-heading">Sizing</h2>
 <p class="description">Button dropdowns work with buttons of all sizes</p>
-<Example source={SizeDropdownSource} textCenter={false}>
+<Example source={SizeDropdownSource}>
   <SizeDropdown />
 </Example>
 <h2 class="secondary-heading">Dropup variation</h2>
 <p class="description">Trigger dropdown menus above elements by adding <code>dropup</code> prop to the parent.</p>
-<Example source={DropUpSource} textCenter={false}>
+<Example source={DropUpSource}>
   <DropUp />
+</Example>
+<h2 class="secondary-heading">Dropright variation</h2>
+<p class="description">Trigger dropdown menus on the right side by adding <code>dropright</code> prop to the parent.</p>
+<Example source={DropRightSource}>
+  <DropRight />
+</Example>
+<h2 class="secondary-heading">Dropleft variation</h2>
+<p class="description">Trigger dropdown menus on the left side by adding <code>dropleft</code> prop to the parent.</p>
+<Example source={DropLeftSource}>
+  <DropLeft />
 </Example>

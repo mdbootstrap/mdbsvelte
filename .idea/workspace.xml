@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stories/Dropdowns/DropUp.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/Dropdowns/SizeDropdown.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Dropdowns/DropRight.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MDBDropdown/MDBDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBDropdown/MDBDropdown.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stories/Dropdowns/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/Index.svelte" afterDir="false" />
@@ -78,7 +77,7 @@
       <updated>1588744822457</updated>
       <workItem from="1588744839808" duration="20375000" />
       <workItem from="1588786174230" duration="5569000" />
-      <workItem from="1588791926026" duration="52839000" />
+      <workItem from="1588791926026" duration="54028000" />
     </task>
     <servers />
   </component>
