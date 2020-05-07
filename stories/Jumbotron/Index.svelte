@@ -4,6 +4,12 @@
   import Example from "../Example.svelte";
   import ImageJumbotron from "./ImageJumbotron.svelte";
   import ImageJumbotronSource from "!!raw-loader!./ImageJumbotron.svelte";
+  import FluidJumbotron from "./FluidJumbotron.svelte";
+  import FluidJumbotronSource from "!!raw-loader!./FluidJumbotron.svelte";
+  import WithImage from "./WithImage.svelte";
+  import WithImageSource from "!!raw-loader!./WithImage.svelte";
+  import ButtonJumbotron from "./ButtonJumbotron.svelte";
+  import ButtonJumbotronSource from "!!raw-loader!./ButtonJumbotron.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Jumbotron</h2>
@@ -44,6 +50,26 @@
     Jumbotron with a background image
   </h2>
   <Example source={ImageJumbotronSource}>
-    <ImageJumbotron />
+    <ImageJumbotron/>
   </Example>
 </section>
+<h2 class="section-heading">
+  Fluid jumbotron
+</h2>
+<p class="mb-4">To make the jumbotron full width, and without rounded corners, add the <code>fluid</code> prop
+  <code>&lt;MDBContainer&gt;</code> or <code>&lt;MDBContainer fluid&gt;</code> within.</p>
+<Example source={FluidJumbotronSource} textCenter={false}>
+  <FluidJumbotron/>
+</Example>
+<h2 class="section-heading">
+  Jumbotron with image
+</h2>
+<Example source={WithImageSource}>
+  <WithImage/>
+</Example>
+<h2 class="section-heading">
+  Jumbotron with buttons
+</h2>
+<Example source={ButtonJumbotronSource}>
+  <ButtonJumbotron/>
+</Example>
