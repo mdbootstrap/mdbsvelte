@@ -4,7 +4,6 @@
   export let source;
   export let title;
   export let output = true;
-
 </script>
 
 <div class="py-3">

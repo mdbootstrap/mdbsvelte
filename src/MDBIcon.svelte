@@ -4,7 +4,7 @@
   let className = '';
   export let icon;
   export { className as class };
-  const props = clean($$props, ["size"]);
+  const props = clean($$props, ["size"],["icon"]);
   $: classes = clsx(className, 'fa', icon?`fa-${icon}`:null);
 
 </script>

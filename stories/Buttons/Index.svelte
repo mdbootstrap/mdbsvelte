@@ -11,6 +11,8 @@
   import GradientSource from "!!raw-loader!./Gradient.svelte";
   import Outline from "./Outline.svelte";
   import OutlineSource from "!!raw-loader!./Outline.svelte";
+  import ButtonIcon from "./ButtonIcon.svelte";
+  import ButtonIconSource from "!!raw-loader!./ButtonIcon.svelte";
 
 </script>
 <h2 class="primary-heading">React Bootstrap Buttons</h2>
@@ -51,4 +53,8 @@
 </p>
 <Example source={OutlineSource}>
   <Outline />
+</Example>
+<h2 class="secondary-heading">Buttons with icons</h2>
+<Example source={ButtonIconSource}>
+  <ButtonIcon />
 </Example>
