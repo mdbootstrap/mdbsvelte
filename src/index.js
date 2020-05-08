@@ -26,6 +26,7 @@ import MDBBtnGroup from './Btn/MDBBtnGroup.svelte';
 import MDBListGroup from './ListGroup/MDBListGroup.svelte';
 import MDBListGroupItem from './ListGroup/MDBListGroupItem.svelte';
 import MDBBadge from './MDBBadge.svelte';
+import MDBSpinner from './MDBSpinner.svelte';
 
 export {
   MDBContainer,
@@ -55,5 +56,6 @@ export {
   MDBBtnGroup,
   MDBListGroupItem,
   MDBListGroup,
-  MDBBadge
+  MDBBadge,
+  MDBSpinner
 }
