@@ -10,7 +10,7 @@
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Loader/Spinner</h2>
 <h1 class="secondary-heading mb-4">Svelte Loader/Spinner - Bootstrap 4 &amp; Material Design</h1>
-<p>React Bootstrap loader is animation that is used to keep visitors entertained while the page is still loading,
+<p>Svelte Bootstrap loader is animation that is used to keep visitors entertained while the page is still loading,
   which helps to increase the user experience.</p>
 <Example source={BasicSource} title="Basic Example">
   <Basic/>

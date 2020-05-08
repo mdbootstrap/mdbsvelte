@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MDBPagination.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MDBPaginationItem.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MDBPaginationLink.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pagination/MDBPageNav.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Pagination/Basic.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Pagination/IconsPage.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Pagination/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview-head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pagination/MDBPagination.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pagination/MDBPagination.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pagination/MDBPaginationItem.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pagination/MDBPageItem.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Example.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Example.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Spinners/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Spinners/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/index.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/stories/index.stories.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,23 +43,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories/Spinners" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories/Pagination" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/stories/Spinners" />
+      <recent name="$PROJECT_DIR$/stories/Pagination" />
+      <recent name="$PROJECT_DIR$/src/Pagination" />
       <recent name="$PROJECT_DIR$/stories" />
+      <recent name="$PROJECT_DIR$/stories/Spinners" />
       <recent name="$PROJECT_DIR$/stories/ListGroups" />
-      <recent name="$PROJECT_DIR$/stories/Badges" />
-      <recent name="$PROJECT_DIR$/stories/Jumbotron" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Pagination" />
       <recent name="$PROJECT_DIR$/src/Btn" />
       <recent name="$PROJECT_DIR$/src/Layout" />
       <recent name="$PROJECT_DIR$/src/ListGroup" />
       <recent name="$PROJECT_DIR$/src/MDBDropdown" />
-      <recent name="$PROJECT_DIR$/src/MDBCard" />
     </key>
   </component>
   <component name="RunDashboard">

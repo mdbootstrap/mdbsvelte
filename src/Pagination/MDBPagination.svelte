@@ -6,7 +6,6 @@
   export { className as class };
   export let listClassName = '';
   export let size = '';
-  export let ariaLabel = 'pagination';
 
   const props = clean($$props);
 
@@ -17,7 +16,7 @@
   });
 </script>
 
-<nav {...props} class={classes} aria-label={ariaLabel}>
+<nav {...props} class={classes}>
   <ul class={listClasses}>
     <slot />
   </ul>

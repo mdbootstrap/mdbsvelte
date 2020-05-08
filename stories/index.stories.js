@@ -11,6 +11,7 @@ import MDBJumbotron from "./Jumbotron/Index.svelte";
 import ListGroups from "./ListGroups/Index.svelte";
 import Badges from "./Badges/Index.svelte";
 import Spinners from "./Spinners/Index.svelte";
+import Pagination from "./Pagination/Index.svelte";
 
 const story = Component => () => ({
   Component
@@ -29,7 +30,8 @@ storiesOf('Components', module)
   .add('Jumbotron', story(MDBJumbotron))
   .add('List Groups', story(ListGroups))
   .add('Badges', story(Badges))
-  .add('Spinner',story(Spinners));
+  .add('Spinner',story(Spinners))
+  .add('Pagination', story(Pagination));
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));

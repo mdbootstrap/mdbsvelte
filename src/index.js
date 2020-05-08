@@ -28,7 +28,8 @@ import MDBListGroupItem from './ListGroup/MDBListGroupItem.svelte';
 import MDBBadge from './MDBBadge.svelte';
 import MDBSpinner from './MDBSpinner.svelte';
 import MDBPagination from './Pagination/MDBPagination.svelte';
-import MDBPaginationItem from './Pagination/MDBPaginationItem.svelte';
+import MDBPageItem from './Pagination/MDBPageItem.svelte';
+import MDBPageNav from './Pagination/MDBPageNav.svelte';
 import MDBPaginationLink from './Pagination/MDBPaginationLink.svelte';
 
 export {
@@ -62,6 +63,7 @@ export {
   MDBBadge,
   MDBSpinner,
   MDBPagination,
-  MDBPaginationItem,
-  MDBPaginationLink
+  MDBPageItem,
+  MDBPaginationLink,
+  MDBPageNav
 }
