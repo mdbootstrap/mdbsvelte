@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stories/Badges/IconsBadge.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/ListGroups/Disabled.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/ListGroups/LabelsList.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/ListGroups/Linkify.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/preview-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview-head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBBadge.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBBadge.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MDBIcon.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/MDBIcon.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/Index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Icons/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Icons/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/ListGroups/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/Index.svelte" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories/Badges" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories/ListGroups" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -49,11 +47,11 @@
       <recent name="$PROJECT_DIR$/src/MDBCard" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stories/ListGroups" />
       <recent name="$PROJECT_DIR$/stories/Badges" />
       <recent name="$PROJECT_DIR$/stories" />
       <recent name="$PROJECT_DIR$/stories/Jumbotron" />
       <recent name="$PROJECT_DIR$/stories/Dropdowns" />
-      <recent name="$PROJECT_DIR$/stories/ButtonsGroup" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -80,7 +78,7 @@
       <updated>1588744822457</updated>
       <workItem from="1588744839808" duration="20375000" />
       <workItem from="1588786174230" duration="5569000" />
-      <workItem from="1588791926026" duration="68770000" />
+      <workItem from="1588791926026" duration="70325000" />
     </task>
     <servers />
   </component>
