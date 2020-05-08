@@ -4,7 +4,7 @@
   export let source;
   export let title;
   export let output = true;
-  export let textCenter=true;
+  export let textCenter=false;
 </script>
 
 <div class="py-3">
