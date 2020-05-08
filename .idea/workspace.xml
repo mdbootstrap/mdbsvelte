@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stories/Title.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Pagination/PageSize.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Pagination/ShapePage.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/Pagination/StatesPage.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pagination/MDBPagination.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pagination/MDBPagination.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Example.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Example.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stories/Pagination/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/Index.svelte" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

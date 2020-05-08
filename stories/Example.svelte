@@ -14,7 +14,7 @@
   {/if}
   {#if description}
     <div>
-      {description}
+      {@html description}
     </div>
   {/if}
   <slot name="info"/>
