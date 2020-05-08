@@ -4,3 +4,4 @@ public/bundle.*
 package-lock.json
 yarn.lock
 mdbsvelte-1.0.0.tgz
+.npmrc

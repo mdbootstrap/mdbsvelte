@@ -13,7 +13,7 @@
     href="#"
   }
 
-  let badge_colors = ["primary","secondary", "default", "success", "info", "warning", "danger"]
+  let badge_colors = ["primary","secondary", "default", "success", "info", "warning", "danger", "light", "dark"]
 
   const props = clean($$props);
 

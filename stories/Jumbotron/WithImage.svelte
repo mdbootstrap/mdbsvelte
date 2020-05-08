@@ -9,7 +9,7 @@
     MDBCardImage,
     MDBCardBody,
     MDBCardText
-  } from "../../src/index";
+  } from "mdbsvelte";
 </script>
 <MDBJumbotron fluid>
   <MDBContainer>

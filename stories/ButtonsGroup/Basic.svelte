@@ -1,5 +1,5 @@
 <script>
-  import {MDBBtnGroup, MDBBtn} from "../../src/index";
+  import {MDBBtnGroup, MDBBtn} from "mdbsvelte";
 </script>
 <MDBBtnGroup>
   <MDBBtn>Left</MDBBtn>

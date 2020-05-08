@@ -1,5 +1,5 @@
 <script>
-  import {MDBBtnGroup, MDBBtn, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from "../../src/index";
+  import {MDBBtnGroup, MDBBtn, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from "mdbsvelte";
 </script>
 <MDBBtnGroup>
   <MDBBtn color="danger" class="m-0">

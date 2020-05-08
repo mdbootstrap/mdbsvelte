@@ -1,5 +1,5 @@
 <script>
-  import {MDBBadge, MDBContainer} from "../../src/index";
+  import {MDBBadge, MDBContainer} from "mdbsvelte";
 </script>
 <MDBContainer>
   <MDBBadge tag="a" color="default">Default</MDBBadge>

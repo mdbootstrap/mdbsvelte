@@ -1,5 +1,5 @@
 <script>
-  import {MDBListGroup, MDBListGroupItem, MDBContainer, MDBBadge} from "../../src/index";
+  import {MDBListGroup, MDBListGroupItem, MDBContainer, MDBBadge} from "mdbsvelte";
 </script>
 <MDBContainer>
   <MDBListGroup style="width: 22rem">

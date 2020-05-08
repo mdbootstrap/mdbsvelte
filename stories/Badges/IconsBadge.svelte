@@ -1,5 +1,5 @@
 <script>
-  import {MDBBadge, MDBContainer, MDBIcon, MDBRow, MDBCol} from "../../src/index";
+  import {MDBBadge, MDBContainer, MDBIcon, MDBRow, MDBCol} from "mdbsvelte";
 </script>
 <MDBContainer>
   <MDBRow>

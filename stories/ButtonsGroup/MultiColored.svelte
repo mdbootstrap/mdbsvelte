@@ -1,5 +1,5 @@
 <script>
-  import {MDBBtn, MDBBtnGroup, MDBIcon, MDBCol, MDBRow} from "../../src/index";
+  import {MDBBtn, MDBBtnGroup, MDBIcon, MDBCol, MDBRow} from "mdbsvelte";
 </script>
 <MDBRow>
   <MDBCol xl="5" md="6" class="mb-xl-0 mb-4">

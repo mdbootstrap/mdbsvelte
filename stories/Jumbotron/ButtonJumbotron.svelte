@@ -9,7 +9,7 @@
     MDBCardBody,
     MDBCardText,
     MDBCardTitle
-  } from "../../src/index";
+  } from "mdbsvelte";
 </script>
 <MDBContainer class="mt-5 text-center">
   <MDBRow>

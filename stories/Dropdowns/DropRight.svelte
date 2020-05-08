@@ -1,5 +1,5 @@
 <script>
-  import {MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from "../../src/index";
+  import {MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from "mdbsvelte";
 </script>
 <MDBDropdown dropright>
   <MDBDropdownToggle caret color="primary">

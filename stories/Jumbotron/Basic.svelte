@@ -1,5 +1,5 @@
 <script>
-  import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "../../src/index";
+  import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbsvelte";
 </script>
 <MDBContainer class="mt-5 text-center">
   <MDBRow>

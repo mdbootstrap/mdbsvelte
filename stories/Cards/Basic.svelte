@@ -1,5 +1,5 @@
 <script>
-  import {MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol} from "../../src/index";
+  import {MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol} from "mdbsvelte";
 </script>
 <MDBCol>
   <MDBCard style="width: 22rem">

@@ -8,7 +8,7 @@
     MDBCardTitle,
     MDBCardText,
     MDBCol
-  } from "../../src/index";
+  } from "mdbsvelte";
 </script>
 <MDBCardGroup>
   <MDBCard>

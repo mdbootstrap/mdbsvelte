@@ -1,5 +1,5 @@
 <script>
-  import {MDBContainer, MDBIcon, MDBCol, MDBRow, MDBBtn} from "../../src/index";
+  import {MDBContainer, MDBIcon, MDBCol, MDBRow, MDBBtn} from "mdbsvelte";
 
   let selected_icon = "<icon-name>";
   let index = 0;

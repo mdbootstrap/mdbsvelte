@@ -8,7 +8,7 @@
     MDBDropdownItem,
     MDBRow,
     MDBCol
-  } from "../../src/index";
+  } from "mdbsvelte";
 </script>
 <MDBRow center>
   <MDBCol xl="2" lg="3" md="4" class="mb-md-0 mb-4">

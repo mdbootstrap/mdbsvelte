@@ -1,5 +1,5 @@
 <script>
-  import {MDBBtn, MDBContainer} from "../../src/index";
+  import {MDBBtn, MDBContainer} from "mdbsvelte";
 </script>
 <MDBContainer>
   <MDBBtn outline color="primary">Primary</MDBBtn>

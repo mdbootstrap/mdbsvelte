@@ -1,6 +1,6 @@
 <script>
 
-  import {MDBPagination, MDBPageItem, MDBPageNav, MDBCol, MDBRow} from "../../src/index";
+  import {MDBPagination, MDBPageItem, MDBPageNav, MDBCol, MDBRow} from "mdbsvelte";
 
 </script>
 <MDBRow>

@@ -1,5 +1,5 @@
 <script>
-  import {MDBBtnGroup, MDBBtn} from "../../src/index";
+  import {MDBBtnGroup, MDBBtn} from "mdbsvelte";
 </script>
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <MDBBtnGroup class="mr-2">

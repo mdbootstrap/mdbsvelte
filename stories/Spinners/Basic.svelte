@@ -1,5 +1,5 @@
 <script>
-  import {MDBRow, MDBCol, MDBSpinner} from "../../src/index";
+  import {MDBRow, MDBCol, MDBSpinner} from "mdbsvelte";
 
   const colors = [
     "primary", "secondary", "success", "danger", "warning", "info", "light", "dark"

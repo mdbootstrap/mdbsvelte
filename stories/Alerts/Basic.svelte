@@ -1,5 +1,5 @@
 <script>
-  import {MDBAlert, MDBContainer} from "../../src/index";
+  import {MDBAlert, MDBContainer} from "mdbsvelte";
 </script>
 <MDBContainer>
   <MDBAlert color="primary">

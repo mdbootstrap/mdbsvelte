@@ -1,5 +1,5 @@
 <script>
-  import {MDBContainer, MDBRow, MDBCol} from "../../src/index";
+  import {MDBContainer, MDBRow, MDBCol} from "mdbsvelte";
 </script>
 <MDBContainer>
   <MDBRow start>

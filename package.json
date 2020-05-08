@@ -1,18 +1,12 @@
 {
   "name": "mdbsvelte",
-  "version": "1.0.0",
-  "main": "dist/mdbsvelte.js",
-  "module": "dist/mdbsvelte.es.js",
-  "jsnext:main": "dist/mdbsvelte.es.js",
+  "version": "0.0.1",
+  "main": "public/bundle.js",
   "svelte": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:SauravKanchan/mdbsvelte.git"
   },
-  "files": [
-    "dist",
-    "src"
-  ],
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@storybook/addon-actions": "^5.3.18",
@@ -22,6 +16,7 @@
     "babel-loader": "^8.1.0",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "mini-css-extract-plugin": "^0.6.0",
     "prismjs": "^1.20.0",
@@ -37,7 +32,9 @@
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack-dev-server --content-base public",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:build": "build-storybook -c storybook",
+    "predeploy": "npm run storybook:build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "clsx": "^1.1.0",
