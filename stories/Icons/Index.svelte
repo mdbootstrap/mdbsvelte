@@ -16,11 +16,11 @@
       <MDBCol md="4">
         <MDBBtn outline color="primary" class="w-100" on:click={()=> index=i }>
           {#if types[i] === "far"}
-            <MDBIcon far icon={icon} className="mr-1"/> {icon}
+            <MDBIcon far icon={icon} class="mr-1"/> {icon}
             {:else if types[i] === "fas"}
-                <MDBIcon fas icon={icon} className="mr-1"/> {icon}
+                <MDBIcon fas icon={icon} class="mr-1"/> {icon}
             {:else}
-            <MDBIcon fab icon={icon} className="mr-1"/> {icon}
+            <MDBIcon fab icon={icon} class="mr-1"/> {icon}
           {/if}
         </MDBBtn>
       </MDBCol>

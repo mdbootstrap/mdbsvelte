@@ -8,6 +8,10 @@
   import LinkifySource from "!!raw-loader!./Linkify.svelte";
   import Disabled from "./Disabled.svelte";
   import DisabledSource from "!!raw-loader!./Disabled.svelte";
+  import ColorList from "./ColorList.svelte";
+  import ColorListSource from "!!raw-loader!./ColorList.svelte";
+  import CustomList from "./CustomList.svelte";
+  import CustomListSource from "!!raw-loader!./CustomList.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap List Group</h2>
@@ -51,3 +55,13 @@
   Contextual classes
 </h2>
 <p class="description">Use <code>color</code> prop to style list items.</p>
+<Example source={ColorListSource} textCenter={false}>
+  <ColorList />
+</Example>
+<h2 class="secondary-heading mb-3">
+  Custom content
+</h2>
+<p class="description">Add nearly any HTML within, even for linked list groups like the one below.</p>
+<Example source={CustomListSource} textCenter={false}>
+  <CustomList />
+</Example>

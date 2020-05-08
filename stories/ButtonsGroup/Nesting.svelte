@@ -7,7 +7,7 @@
   <MDBBtn color="info" size="lg">2</MDBBtn>
   <MDBBtnGroup>
     <MDBDropdown>
-      <MDBDropdownToggle caret color="info" className="h-100">
+      <MDBDropdownToggle caret color="info" class="h-100">
         Dropdown
       </MDBDropdownToggle>
       <MDBDropdownMenu color="info">
