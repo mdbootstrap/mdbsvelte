@@ -10,6 +10,8 @@
   import PillSource from "!!raw-loader!./Pill.svelte";
   import LinkBadge from "./LinkBadge.svelte";
   import LinkBadgeSource from "!!raw-loader!./LinkBadge.svelte";
+  import IconsBadge from "./IconsBadge.svelte";
+  import IconsBadgeSource from "!!raw-loader!./IconsBadge.svelte";
 
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Tags, Labels &amp; Badges</h2>
@@ -55,4 +57,10 @@
   badges with hover and focus states.</p>
 <Example source={LinkBadgeSource}>
   <LinkBadge />
+</Example>
+<h2 class="section-heading pb-2">
+  Badges with icons
+</h2>
+<Example source={IconsBadgeSource}>
+  <IconsBadge />
 </Example>

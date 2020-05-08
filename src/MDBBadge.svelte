@@ -13,12 +13,14 @@
     href="#"
   }
 
+  let badge_colors = ["primary","secondary", "default", "success", "info", "warning", "danger"]
+
   const props = clean($$props);
 
   $: classes = clsx(
     className,
     'badge',
-    `badge-${color}`,
+    badge_colors.includes(color)?`badge-${color}`:color,
     pill ? 'badge-pill' : false
   );
 </script>

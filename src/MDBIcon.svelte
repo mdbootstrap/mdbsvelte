@@ -7,12 +7,15 @@
   const props = clean($$props, ["size"],["icon"]);
   export let far;
   export let fas;
-  let base = far?"fa":"fab";
+  export let fab;
+  let base = far?"fa":"fas";
   base = fas?"fas":base;
+  base = fab?"fab":base;
+
   $: classes = clsx(className, base, icon?`fa-${icon}`:null);
 
 </script>
 
-<div {...props} class={classes}>
+<i {...props} class={classes}>
   <slot />
-</div>
+</i>

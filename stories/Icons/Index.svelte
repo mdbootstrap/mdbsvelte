@@ -20,9 +20,8 @@
             {:else if types[i] === "fas"}
                 <MDBIcon fas icon={icon} className="mr-1"/> {icon}
             {:else}
-            <MDBIcon icon={icon} className="mr-1"/> {icon}
+            <MDBIcon fab icon={icon} className="mr-1"/> {icon}
           {/if}
-          {i}
         </MDBBtn>
       </MDBCol>
     {/each}
