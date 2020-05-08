@@ -11,6 +11,8 @@
   import PageSizeSource from "!!raw-loader!./PageSize.svelte";
   import ShapePage from "./ShapePage.svelte";
   import ShapePageSource from "!!raw-loader!./PageSize.svelte";
+  import ColorsPagination from "./ColorsPagination.svelte";
+  import ColorsPaginationSource from "!!raw-loader!./ColorsPagination.svelte";
 
   let description = `<p>React Bootstrap pagination is a component used to indicate existance of a series of related content across
     multiple
@@ -44,4 +46,7 @@ Simply add <code>circle</code> prop to the <code>&lt;MDBPagination&gt;</code> co
   source={ShapePageSource}
 >
   <ShapePage />
+</Example>
+<Example title="Colors" source={ColorsPaginationSource}>
+  <ColorsPagination />
 </Example>

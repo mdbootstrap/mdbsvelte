@@ -7,12 +7,13 @@
   export let listClassName = '';
   export let size = '';
   export let circle;
+  export let color = "blue";
 
-  const props = clean($$props);
+  const props = clean($$props, ["color", "circle", "size"]);
 
   $: classes = clsx(className);
 
-  $: listClasses = clsx(listClassName, 'pagination',
+  $: listClasses = clsx(listClassName, 'pagination', `pg-${color}`,
     circle ? 'pagination-circle' : null,
     {
       [`pagination-${size}`]: !!size
