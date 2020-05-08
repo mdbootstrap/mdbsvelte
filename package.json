@@ -11,10 +11,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "predeploy": "npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "deploy": "gh-pages -d storybook-static",
+    "prepublishOnly": "npm run dist"
   },
   "files": [
     "dist",

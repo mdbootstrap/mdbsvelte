@@ -1,4 +1,6 @@
 # MDBSvelte
+[![npm version](https://badge.fury.io/js/mdbsvelte.svg)](https://badge.fury.io/js/mdbsvelte)
+
 Read full documentaion at [saurav.tech/mdbsvelte](https://saurav.tech/mdbsvelte/)
 ## Getting started
 ### Step 1: Install the package

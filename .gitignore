@@ -3,3 +3,4 @@
 .DS_Store
 .npmrc
 .idea
+storybook-static

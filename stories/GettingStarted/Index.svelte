@@ -6,6 +6,8 @@
   import Simple from "./Simple.svelte";
   import SimpleSource from "!!raw-loader!./Simple.svelte";
 
+  let unpkg = `<script href="https://unpkg.com/mdbsvelte@latest/dist/mdbsvelte.js"></` + "script>"
+
   let css_links = `
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -16,7 +18,9 @@
     <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
   `
-  </script>
+
+
+</script>
 <MDBContainer>
   <MDBRow>
     <MDBCol md="12" class="text-center">
@@ -30,13 +34,23 @@
     </MDBCol>
     <MDBCol md="12" class="mt-4">
       <h1 class="h1">Installation</h1>
-      <Example source="npm i mdbsvelte --save" title="Install the package"/>
+      <MDBRow>
+        <MDBCol>
+          <Example source="npm i mdbsvelte" title="npm"/>
+        </MDBCol>
+        <MDBCol>
+          <Example source="yarn add mdbsvelte" title="yarn"/>
+        </MDBCol>
+        <MDBCol>
+          <Example source={unpkg} title="unpkg"/>
+        </MDBCol>
+      </MDBRow>
       <Example source={css_links} title="Add the css to your html layout(index.html)"/>
     </MDBCol>
     <MDBCol md="12" class="mt-4">
       <h1 class="h1">Usage</h1>
       <Example source={SimpleSource}>
-        <Simple />
+        <Simple/>
       </Example>
     </MDBCol>
   </MDBRow>
