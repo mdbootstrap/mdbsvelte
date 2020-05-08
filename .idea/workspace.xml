@@ -2,25 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.storybook/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/iframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/main.3ae98007f33b2969f868.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/main.7946e971b21a1e90530a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/main.7946e971b21a1e90530a.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/runtime~main.7946e971b21a1e90530a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/runtime~main.7946e971b21a1e90530a.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/runtime~main.a70cae47b0d915ec6f24.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui_dll.LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui_dll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.852d74c4c4fd15f2e984.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/iframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/main.7946e971b21a1e90530a.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/main.7946e971b21a1e90530a.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/main.7aeacc4af9b013f0106a.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/runtime~main.7946e971b21a1e90530a.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/runtime~main.7946e971b21a1e90530a.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/runtime~main.a70cae47b0d915ec6f24.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui_dll.LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui_dll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storybook-static/vendors~main.9ec1007e8a58ef49e472.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

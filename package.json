@@ -3,6 +3,7 @@
   "main": "dist/mdbsvelte.js",
   "module": "dist/mdbsvelte.es.js",
   "version": "0.0.1",
+  "homepage": "https://github.com/SauravKanchan/mdbsvelte#readme",
   "scripts": {
     "dist": "rollup -c",
     "dev": "rollup -c -w",
@@ -12,6 +13,15 @@
     "predeploy": "npm run storybook:build",
     "deploy": "gh-pages -d storybook-static"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SauravKanchan/mdbsvelte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SauravKanchan/mdbsvelte"
+  },
+  "author": "Saurav Kanchan",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@rollup/plugin-commonjs": "11.0.2",
