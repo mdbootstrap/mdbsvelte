@@ -13,6 +13,14 @@
     "predeploy": "npm run storybook:build",
     "deploy": "gh-pages -d storybook-static"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "svelte",
+    "MDBootstrap"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SauravKanchan/mdbsvelte.git"
