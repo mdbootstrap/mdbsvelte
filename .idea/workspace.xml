@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stories/ListGroups/Disabled.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/ListGroups/LabelsList.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/ListGroups/Linkify.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview-head.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,19 +35,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Btn" />
-      <recent name="$PROJECT_DIR$/src/Layout" />
-      <recent name="$PROJECT_DIR$/src/ListGroup" />
-      <recent name="$PROJECT_DIR$/src/MDBDropdown" />
-      <recent name="$PROJECT_DIR$/src/MDBCard" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/stories/ListGroups" />
       <recent name="$PROJECT_DIR$/stories/Badges" />
       <recent name="$PROJECT_DIR$/stories" />
       <recent name="$PROJECT_DIR$/stories/Jumbotron" />
       <recent name="$PROJECT_DIR$/stories/Dropdowns" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Btn" />
+      <recent name="$PROJECT_DIR$/src/Layout" />
+      <recent name="$PROJECT_DIR$/src/ListGroup" />
+      <recent name="$PROJECT_DIR$/src/MDBDropdown" />
+      <recent name="$PROJECT_DIR$/src/MDBCard" />
     </key>
   </component>
   <component name="RunDashboard">
