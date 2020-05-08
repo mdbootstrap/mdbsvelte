@@ -1,13 +1,7 @@
-import { addParameters, configure } from '@storybook/svelte';
-import pkg from '../package.json';
-import { themes } from '@storybook/theming';
+import { addons } from '@storybook/addons';
+import yourTheme from './theme';
 
-addParameters({
-  options: {
-    name: `MDBSvelte ${pkg.version}`,
-    url: 'https://github.com/SauravKanchan/mdbsvelte',
-    panelPosition: 'right',
-    showPanel: false,
-    theme: themes.dark
-  },
+addons.setConfig({
+  theme: yourTheme,
 });
+
