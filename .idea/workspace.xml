@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stories/Pagination/ColorsPagination.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/Index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/PrismCode.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/PrismCode.svelte" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
