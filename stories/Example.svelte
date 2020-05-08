@@ -10,7 +10,7 @@
 
 <div class="py-3">
   {#if title}
-    <h2>{title}</h2>
+    <h2 class="secondary-heading">{title}</h2>
   {/if}
   {#if description}
     <div>

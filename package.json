@@ -3,7 +3,7 @@
   "main": "dist/mdbsvelte.js",
   "module": "dist/mdbsvelte.es.js",
   "version": "0.0.1",
-  "homepage": "https://github.com/SauravKanchan/mdbsvelte#readme",
+  "homepage": "http://saurav.tech/mdbsvelte",
   "scripts": {
     "dist": "rollup -c",
     "dev": "rollup -c -w",
@@ -12,6 +12,9 @@
     "storybook:build": "build-storybook",
     "predeploy": "npm run storybook:build",
     "deploy": "gh-pages -d storybook-static"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "files": [
     "dist",
