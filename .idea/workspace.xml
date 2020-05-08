@@ -2,85 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39201142-fefd-4eef-9c9d-cd647a0028fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.storybook/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storybook-static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui_dll.LICENCE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storybook-static/sb_dll/storybook_ui_dll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/mdbsvelte.es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/mdbsvelte.es.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/mdbsvelte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/mdbsvelte.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/iframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/main.7946e971b21a1e90530a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/main.7946e971b21a1e90530a.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/main.cbc2e07e76e08a0c797a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/runtime~main.7946e971b21a1e90530a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/runtime~main.7946e971b21a1e90530a.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/runtime~main.a70cae47b0d915ec6f24.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.7946e971b21a1e90530a.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storybook-static/vendors~main.e41d49c71621ca32f175.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Alerts/Additional.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Alerts/Additional.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Alerts/AlertsLink.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Alerts/AlertsLink.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Alerts/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Alerts/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Alerts/Dismissing.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Alerts/Dismissing.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/Contextual.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/Contextual.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/Counter.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/Counter.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/IconsBadge.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/IconsBadge.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/LinkBadge.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/LinkBadge.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Badges/Pill.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Badges/Pill.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/ActiveState.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/ActiveState.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/AdditionalStyles.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/AdditionalStyles.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/ButtonIcon.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/ButtonIcon.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/DisabledButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/DisabledButton.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/Gradient.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/Gradient.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/LinkButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/LinkButton.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/Outline.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/Outline.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Buttons/SizeButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Buttons/SizeButton.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ButtonsGroup/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ButtonsGroup/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ButtonsGroup/MultiColored.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ButtonsGroup/MultiColored.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ButtonsGroup/Nesting.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ButtonsGroup/Nesting.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ButtonsGroup/Size.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ButtonsGroup/Size.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ButtonsGroup/Toolbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ButtonsGroup/Toolbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ButtonsGroup/Vertical.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ButtonsGroup/Vertical.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Cards/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Cards/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Cards/CardGroup.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Cards/CardGroup.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/ActiveDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/ActiveDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/AlignmentDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/AlignmentDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/DisabledDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/DisabledDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/DividerDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/DividerDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/DropLeft.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/DropLeft.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/DropRight.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/DropRight.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/DropUp.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/DropUp.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/HeaderDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/HeaderDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/SizeDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/SizeDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Dropdowns/SplitDropdown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Dropdowns/SplitDropdown.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/AutoLayout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/AutoLayout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/Broken.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/Broken.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/ColumnBreaks.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/ColumnBreaks.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/ColumnWrapping.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/ColumnWrapping.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/HorizonatlAlign.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/HorizonatlAlign.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/Margin.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/Margin.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/Nesting.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/Nesting.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/Offsetting.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/Offsetting.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/Ordering.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/Ordering.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Grid/ResponsiveBreakpoints.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Grid/ResponsiveBreakpoints.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Icons/Index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Icons/Index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Jumbotron/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Jumbotron/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Jumbotron/ButtonJumbotron.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Jumbotron/ButtonJumbotron.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Jumbotron/FluidJumbotron.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Jumbotron/FluidJumbotron.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Jumbotron/ImageJumbotron.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Jumbotron/ImageJumbotron.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Jumbotron/WithImage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Jumbotron/WithImage.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/ColorList.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/ColorList.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/CustomList.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/CustomList.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/Disabled.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/Disabled.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/LabelsList.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/LabelsList.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/ListGroups/Linkify.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/ListGroups/Linkify.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/ColorsPagination.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/ColorsPagination.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/IconsPage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/IconsPage.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/PageSize.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/PageSize.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/ShapePage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/ShapePage.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Pagination/StatesPage.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Pagination/StatesPage.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Spinners/Basic.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Spinners/Basic.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Spinners/Growing.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Spinners/Growing.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories/Spinners/Size.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Spinners/Size.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pagination/MDBPageNav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pagination/MDBPageNav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

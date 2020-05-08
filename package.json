@@ -1,43 +1,38 @@
 {
   "name": "mdbsvelte",
+  "main": "dist/mdbsvelte.js",
+  "module": "dist/mdbsvelte.es.js",
   "version": "0.0.1",
-  "main": "public/bundle.js",
-  "svelte": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:SauravKanchan/mdbsvelte.git"
+  "scripts": {
+    "dist": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
+    "predeploy": "npm run storybook:build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/svelte": "^5.3.18",
     "babel-loader": "^8.1.0",
-    "cross-env": "^5.2.0",
-    "css-loader": "^2.1.1",
     "gh-pages": "^2.2.0",
-    "jquery": "^3.5.1",
-    "mini-css-extract-plugin": "^0.6.0",
     "prismjs": "^1.20.0",
-    "serve": "^11.0.0",
-    "style-loader": "^0.23.1",
+    "raw-loader": "^4.0.1",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.22.2",
-    "svelte-loader": "^2.13.6",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.3.1"
-  },
-  "scripts": {
-    "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --content-base public",
-    "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -c storybook",
-    "predeploy": "npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "svelte-loader": "^2.13.6"
   },
   "dependencies": {
     "clsx": "^1.1.0",
-    "raw-loader": "^4.0.1"
+    "sirv-cli": "^0.4.4"
   }
 }
