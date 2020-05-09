@@ -1,21 +1,24 @@
 <script>
 
-  import { clean, clsx } from './utils';
+  import {clean, clsx} from './utils';
+
   let className = '';
   export let icon;
-  export { className as class };
-  const props = clean($$props, ["size"],["icon"]);
+  export {className as class};
+  export let size;
+  const props = clean($$props, ["size"], ["icon"]);
+  export let type;
   export let far;
   export let fas;
   export let fab;
-  let base = far?"fa":"fas";
-  base = fas?"fas":base;
-  base = fab?"fab":base;
+  let base = far|type==="far" ? "fa" : "fas";
+  base = fas|type==="fas" ? "fas" : base;
+  base = fab|type==="fab" ? "fab" : base;
 
-  $: classes = clsx(className, base, icon?`fa-${icon}`:null);
+  $: classes = clsx(className, base, icon ? `fa-${icon}` : null, size ? `fa-${size}` : null);
 
 </script>
 
 <i {...props} class={classes}>
-  <slot />
+  <slot/>
 </i>
