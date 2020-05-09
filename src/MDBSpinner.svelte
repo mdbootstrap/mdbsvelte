@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from './utils';
+  import {clean, clsx} from './utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let type = 'border';
   export let size = '';
   export let color = '';

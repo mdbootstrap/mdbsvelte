@@ -1,15 +1,15 @@
 <script>
-  import { MDBProgress } from 'mdbsvelte';
+  import {MDBProgress} from 'mdbsvelte';
 </script>
 
 <div class="text-center">1 of 5</div>
-<MDBProgress value="1" max="5" />
+<MDBProgress value="1" max="5"/>
 <div class="text-center">50 of 135</div>
-<MDBProgress value={50} max="135" />
+<MDBProgress value={50} max="135"/>
 <div class="text-center">75 of 111</div>
-<MDBProgress value={75} max={111} />
+<MDBProgress value={75} max={111}/>
 <div class="text-center">463 of 500</div>
-<MDBProgress value="463" max={500} />
+<MDBProgress value="463" max={500}/>
 
 <div class="text-center">Various (40) of 55</div>
 <MDBProgress multi>

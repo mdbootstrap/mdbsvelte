@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let light = false;
   export let dark = false;
   export let fixed = '';
@@ -33,5 +33,5 @@
 </script>
 
 <nav {...props} class={classes}>
-  <slot />
+  <slot/>
 </nav>

@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let tabs = false;
   export let pills = false;
   export let vertical = false;
@@ -41,5 +41,5 @@
 </script>
 
 <ul {...props} class={classes}>
-  <slot />
+  <slot/>
 </ul>

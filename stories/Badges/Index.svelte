@@ -32,7 +32,7 @@
 </Example>
 <p class="my-4 py-2">Badges can be used as part of links or buttons to provide a counter.</p>
 <Example source={CounterSource}>
-  <Counter />
+  <Counter/>
 </Example>
 
 <h2 class="section-heading">
@@ -40,7 +40,7 @@
 </h2>
 <p class="mb-4">Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
 <Example source={ContextualSource}>
-  <Contextual />
+  <Contextual/>
 </Example>
 <h2 class="section-heading">
   Pill badges
@@ -48,7 +48,7 @@
 <p class="mb-4">Use the <code>pill</code> prop to make badges more rounded (with a larger <code>border-radius</code>
   and additional horizontal <code>padding</code>).</p>
 <Example source={PillSource}>
-  <Pill />
+  <Pill/>
 </Example>
 <h2 class="section-heading">
   Links
@@ -56,11 +56,11 @@
 <p class="mb-4">Using the contextual badges with an <code>&lt;a&gt;</code> tag quickly provide <em>actionable</em>
   badges with hover and focus states.</p>
 <Example source={LinkBadgeSource}>
-  <LinkBadge />
+  <LinkBadge/>
 </Example>
 <h2 class="section-heading pb-2">
   Badges with icons
 </h2>
 <Example source={IconsBadgeSource}>
-  <IconsBadge />
+  <IconsBadge/>
 </Example>

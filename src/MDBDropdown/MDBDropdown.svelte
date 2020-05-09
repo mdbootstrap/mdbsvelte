@@ -1,7 +1,7 @@
 <script>
   import {setContext} from 'svelte';
 
-  import { clean,clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   import {createContext} from './DropdownContext';
 
@@ -25,12 +25,12 @@
   export let dropleft = false;
   export let component;
 
-  if(dropup){
-    direction="up";
-  }else if(dropright){
-    direction="right"
-  }else if(dropleft){
-    direction="left"
+  if (dropup) {
+    direction = "up";
+  } else if (dropright) {
+    direction = "right"
+  } else if (dropleft) {
+    direction = "left"
   }
 
   const props = clean($$props);
@@ -94,12 +94,12 @@
   function handleDocumentClick(e) {
     if (e && (e.which === 3 || (e.type === 'keyup' && e.which !== 9))) return;
 
-      if (
-        component.contains(e.target) &&
-        component !== e.target &&
-        (e.type !== 'keyup' || e.which === 9)
-      ) {
-        return;
+    if (
+      component.contains(e.target) &&
+      component !== e.target &&
+      (e.type !== 'keyup' || e.which === 9)
+    ) {
+      return;
     }
 
     toggle(e);

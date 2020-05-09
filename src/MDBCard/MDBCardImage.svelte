@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let top = false;
   export let bottom = false;
   export let src;
@@ -24,4 +24,4 @@
   }
 </script>
 
-<img {...props} class={classes} {src} {alt} />
+<img {...props} class={classes} {src} {alt}/>

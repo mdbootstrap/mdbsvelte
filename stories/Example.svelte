@@ -25,9 +25,9 @@
       </div>
     {/if}
     {#if source}
-    <div class="mt-3">
-      <PrismCode class="language-html h-100">{source}</PrismCode>
-    </div>
+      <div class="mt-3">
+        <PrismCode class="language-html h-100">{source}</PrismCode>
+      </div>
     {/if}
   </div>
 </div>

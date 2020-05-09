@@ -49,19 +49,19 @@
   <code>disabled</code> .
 </div>
 <Example source={DisabledSource} textCenter={false}>
-  <Disabled />
+  <Disabled/>
 </Example>
 <h2 class="secondary-heading mb-3">
   Contextual classes
 </h2>
 <p class="description">Use <code>color</code> prop to style list items.</p>
 <Example source={ColorListSource} textCenter={false}>
-  <ColorList />
+  <ColorList/>
 </Example>
 <h2 class="secondary-heading mb-3">
   Custom content
 </h2>
 <p class="description">Add nearly any HTML within, even for linked list groups like the one below.</p>
 <Example source={CustomListSource} textCenter={false}>
-  <CustomList />
+  <CustomList/>
 </Example>

@@ -51,5 +51,7 @@
     "svelte": "^3.22.2",
     "svelte-loader": "^2.13.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-waves": "^0.7.6"
+  }
 }

@@ -18,5 +18,5 @@
   <Basic/>
 </Example>
 <Example source={SupportedContentSource} title="Supported Content">
-  <SupportedContent />
+  <SupportedContent/>
 </Example>

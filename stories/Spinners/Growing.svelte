@@ -8,7 +8,7 @@
 <MDBRow>
   {#each colors as color}
     <MDBCol>
-      <MDBSpinner {color} type="grow" />
+      <MDBSpinner {color} type="grow"/>
     </MDBCol>
   {/each}
 </MDBRow>

@@ -25,7 +25,7 @@
   Card groups
 </h2>
 <Example source={CardGroupSource} textCenter={false}>
-  <CardGroup />
+  <CardGroup/>
 </Example>
 <h2 class="section-heading mb-4">
   Nesting

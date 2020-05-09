@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let disabled = false;
   export let active = false;
   export let href = '#';
@@ -29,5 +29,5 @@
 </script>
 
 <a {...props} {href} on:click on:click={handleClick} class={classes}>
-  <slot />
+  <slot/>
 </a>

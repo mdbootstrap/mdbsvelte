@@ -1,5 +1,5 @@
 <script>
-  import { MDBProgress } from 'mdbsvelte';
+  import {MDBProgress} from 'mdbsvelte';
 </script>
 
 <MDBProgress value="25">25%</MDBProgress>

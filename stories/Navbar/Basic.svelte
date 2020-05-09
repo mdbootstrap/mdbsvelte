@@ -4,7 +4,9 @@
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
   } from "mdbsvelte";
+
   let isOpen = true;
+
   function toggleCollapse() {
     isOpen = !isOpen;
   }

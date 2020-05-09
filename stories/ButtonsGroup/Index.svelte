@@ -21,7 +21,7 @@
   Basic example
 </h2>
 <Example source={BasicSource}>
-  <Basic />
+  <Basic/>
 </Example>
 <h2 class="section-heading mb-4">
   Button toolbar
@@ -30,7 +30,7 @@
   space out groups, buttons, and more.
 </p>
 <Example source={ToolbarSource}>
-  <Toolbar />
+  <Toolbar/>
 </Example>
 <h2 class="section-heading mb-4">
   Sizing
@@ -40,7 +40,7 @@
   including each one when nesting multiple groups.
 </p>
 <Example source={SizeSource}>
-  <Size />
+  <Size/>
 </Example>
 <h2 class="section-heading mb-4">
   Nesting
@@ -52,7 +52,7 @@
 </p>
 
 <Example source={NestingSource}>
-  <Nesting />
+  <Nesting/>
 </Example>
 
 <h2 class="section-heading mb-4">
@@ -62,11 +62,11 @@
 <p>Make a set of buttons appear vertically stacked rather than horizontally.
 </p>
 <Example source={VerticalSource}>
-  <Vertical />
+  <Vertical/>
 </Example>
 <h2 class="section-heading mb-4">
   Multicolored button group
 </h2>
 <Example source={MultiColoredSource} textCenter={false}>
-  <MultiColored />
+  <MultiColored/>
 </Example>

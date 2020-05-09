@@ -1,22 +1,23 @@
 <script>
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
+
   let className = '';
   const props = clean($$props, []);
   export let size;
   export let vertical;
 
-  let elementClasses = [ vertical?"btn-group-vertical" :"btn-group"];
+  let elementClasses = [vertical ? "btn-group-vertical" : "btn-group"];
 
-  if(className){
+  if (className) {
     elementClasses.push(elementClasses)
   }
 
-  if(size){
+  if (size) {
     elementClasses.push(`btn-group-${size}`)
   }
 
 </script>
 
 <div {...props} role="group" class={elementClasses.join(' ')}>
-  <slot />
+  <slot/>
 </div>

@@ -27,9 +27,12 @@
 <h2 class="primary-heading">Svelte Bootstrap Dropdowns</h2>
 <h1 class="secondary-heading mb-4">Svelte Dropdowns - Bootstrap 4 &amp; Material Design</h1>
 <h2 class="section-heading mb-4">Overview</h2>
-<hr class="my-5" />
-<p>Svelte Bootstrap dropdown is a toggleable menu embedding additional links or content. It allows you to construct advanced navigation and link categorization.</p>
-<p>In case of more complicated navigations systems dropdowns are the essential elements providing you with possibility of placing all the most relevant links in our navigation bar (or other component acting as navigation - such as SideNav)
+<hr class="my-5"/>
+<p>Svelte Bootstrap dropdown is a toggleable menu embedding additional links or content. It allows you to construct
+  advanced navigation and link categorization.</p>
+<p>In case of more complicated navigations systems dropdowns are the essential elements providing you with possibility
+  of placing all the most relevant links in our navigation bar (or other component acting as navigation - such as
+  SideNav)
 </p>
 <p>Aside from being not only highly functional, MDB dropdowns are also extraordinary visually attractive. It gives
   them this characteristic Material Design effects, like shadows, living colors or charming waves effect after
@@ -38,58 +41,60 @@
 <p>MDB is "mobile first" framework so, we avoid mixing functional elements and interaction by hovering because it
   decreases User Experience of users of mobile devices. </p>
 <p>Google Material Design guidelines recommend the same approach.</p>
-<hr class="my-5" />
+<hr class="my-5"/>
 <Example source={BasicSource}>
-  <Basic />
+  <Basic/>
 </Example>
 <h2 class="secondary-heading">Split button</h2>
 <Example source={SplitDropdownSource}>
-  <SplitDropdown />
+  <SplitDropdown/>
 </Example>
 
 <h2 class="secondary-heading">Sizing</h2>
 <p class="description">Button dropdowns work with buttons of all sizes</p>
 <Example source={SizeDropdownSource}>
-  <SizeDropdown />
+  <SizeDropdown/>
 </Example>
 <h2 class="secondary-heading">Dropup variation</h2>
 <p class="description">Trigger dropdown menus above elements by adding <code>dropup</code> prop to the parent.</p>
 <Example source={DropUpSource}>
-  <DropUp />
+  <DropUp/>
 </Example>
 <h2 class="secondary-heading">Dropright variation</h2>
 <p class="description">Trigger dropdown menus on the right side by adding <code>dropright</code> prop to the parent.</p>
 <Example source={DropRightSource}>
-  <DropRight />
+  <DropRight/>
 </Example>
 <h2 class="secondary-heading">Dropleft variation</h2>
 <p class="description">Trigger dropdown menus on the left side by adding <code>dropleft</code> prop to the parent.</p>
 <Example source={DropLeftSource}>
-  <DropLeft />
+  <DropLeft/>
 </Example>
 <h2 class="secondary-heading">Alignment</h2>
-<p class="description">By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>right</code> prop to a <code>&lt;MDBDropdownMenu&gt;</code> component to right align the dropdown menu.
+<p class="description">By default, a dropdown menu is automatically positioned 100% from the top and along the left side
+  of its parent. Add <code>right</code> prop to a <code>&lt;MDBDropdownMenu&gt;</code> component to right align the
+  dropdown menu.
 </p>
 <Example source={AlignmentDropdownSource}>
-  <AlignmentDropdown />
+  <AlignmentDropdown/>
 </Example>
 <h2 class="secondary-heading">Menu headers</h2>
 <p class="description">Add a header to label sections of actions in any dropdown menu.</p>
 <Example source={HeaderDropdownSource}>
-  <HeaderDropdown />
+  <HeaderDropdown/>
 </Example>
 <h2 class="secondary-heading">Menu dividers</h2>
 <p class="description">Separate groups of related menu items with a divider.</p>
 <Example source={DividerDropdownSource}>
-  <DividerDropdown />
+  <DividerDropdown/>
 </Example>
 <h2 class="secondary-heading">Disabled menu items</h2>
 <p class="description">Add <code>.disabled</code> to items in the dropdown to style them as disabled.</p>
 <Example source={DisabledDropdownSource}>
-  <DisabledDropdown />
+  <DisabledDropdown/>
 </Example>
 <h2 class="secondary-heading">Active menu items</h2>
 <p class="description">Add <code>active</code> to items in the dropdown to style them as active.</p>
 <Example source={ActiveDropdownSource}>
-  <ActiveDropdown />
+  <ActiveDropdown/>
 </Example>

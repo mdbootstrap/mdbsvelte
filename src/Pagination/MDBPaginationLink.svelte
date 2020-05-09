@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let next = false;
   export let previous = false;
   export let first = false;
@@ -48,6 +48,6 @@
     </span>
     <span class="sr-only"> {realLabel} </span>
   {:else}
-    <slot />
+    <slot/>
   {/if}
 </a>

@@ -6,7 +6,7 @@
     DANGER
   </MDBBtn>
   <MDBDropdown>
-    <MDBDropdownToggle caret color="danger" class="m-0" />
+    <MDBDropdownToggle caret color="danger" class="m-0"/>
     <MDBDropdownMenu color="danger">
       <MDBDropdownItem>Action</MDBDropdownItem>
       <MDBDropdownItem>Another Action</MDBDropdownItem>

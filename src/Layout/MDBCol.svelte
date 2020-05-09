@@ -1,12 +1,12 @@
 <script>
-  import { clean, clsx } from '../utils';
-  import { getColumnSizeClass, isObject } from '../utils';
+  import {clean, clsx} from '../utils';
+  import {getColumnSizeClass, isObject} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let size;
 
-  const props = clean($$props,[]);
+  const props = clean($$props, []);
 
   const colClasses = [];
 
@@ -38,7 +38,7 @@
   });
 
 
-  if(size){
+  if (size) {
     colClasses.push(`col-${size}`)
   }
 
@@ -52,5 +52,5 @@
 </script>
 
 <div {...props} class={colClasses.join(' ')}>
-  <slot />
+  <slot/>
 </div>

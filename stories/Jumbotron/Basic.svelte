@@ -1,5 +1,5 @@
 <script>
-  import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbsvelte";
+  import {MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol} from "mdbsvelte";
 </script>
 <MDBContainer class="mt-5 text-center">
   <MDBRow>
@@ -10,7 +10,7 @@
           This is a simple hero unit, a simple Jumbotron-style component for
           calling extra attention to featured content or information.
         </p>
-        <hr class="my-2" />
+        <hr class="my-2"/>
         <p>
           It uses utility classes for typgraphy and spacing to space content out
           within the larger container.

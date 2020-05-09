@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let flush = false;
 
   const props = clean($$props);
@@ -16,5 +16,5 @@
 </script>
 
 <ul {...props} class={classes}>
-  <slot />
+  <slot/>
 </ul>

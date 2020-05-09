@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from './utils';
+  import {clean, clsx} from './utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let bar = false;
   export let multi = false;
   export let value = 0;
@@ -30,7 +30,7 @@
 
 {#if bar}
   {#if multi}
-    <slot />
+    <slot/>
   {:else}
     <div
       {...props}
@@ -40,13 +40,13 @@
       aria-valuenow={value}
       aria-valuemin="0"
       aria-valuemax={max}>
-      <slot />
+      <slot/>
     </div>
   {/if}
 {:else}
   <div {...props} class={classes}>
     {#if multi}
-      <slot />
+      <slot/>
     {:else}
       <div
         class={progressBarClasses}
@@ -55,7 +55,7 @@
         aria-valuenow={value}
         aria-valuemin="0"
         aria-valuemax={max}>
-        <slot />
+        <slot/>
       </div>
     {/if}
   </div>

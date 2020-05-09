@@ -1,9 +1,9 @@
 <script>
   import MDBDropdown from './MDBDropdown.svelte';
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let active = false;
   export let addonType = false;
   export let direction = 'down';
@@ -36,5 +36,5 @@
   {setActiveFromChild}
   {dropup}
   on:click>
-  <slot />
+  <slot/>
 </MDBDropdown>

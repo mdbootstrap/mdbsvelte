@@ -1,8 +1,8 @@
 <script>
-  import { clean,clsx } from './utils';
+  import {clean, clsx} from './utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
 
   export let type = 'text';
   export let size = undefined;
@@ -23,7 +23,7 @@
   export let disabled = false;
 
   // eslint-disable-next-line no-unused-vars
-  const { type: _omitType, color: _omitColor, ...props } = clean($$props);
+  const {type: _omitType, color: _omitColor, ...props} = clean($$props);
 
   let classes;
   let tag;
@@ -100,7 +100,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'password'}
     <input
       {...props}
@@ -118,7 +118,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'email'}
     <input
       {...props}
@@ -136,7 +136,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'file'}
     <input
       {...props}
@@ -154,7 +154,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'checkbox'}
     <input
       {...props}
@@ -173,7 +173,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'radio'}
     <input
       {...props}
@@ -191,7 +191,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'url'}
     <input
       {...props}
@@ -209,7 +209,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'number'}
     <input
       {...props}
@@ -227,7 +227,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'date'}
     <input
       {...props}
@@ -245,7 +245,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'time'}
     <input
       {...props}
@@ -263,7 +263,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'datetime'}
     <input
       {...props}
@@ -281,7 +281,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'color'}
     <input
       {...props}
@@ -299,7 +299,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'range'}
     <input
       {...props}
@@ -317,7 +317,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else if type === 'search'}
     <input
       {...props}
@@ -335,7 +335,7 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder} />
+      {placeholder}/>
   {:else}
     <input
       {...props}
@@ -353,7 +353,7 @@
       {name}
       {disabled}
       {placeholder}
-      {value} />
+      {value}/>
   {/if}
 
 {:else if tag === 'textarea'}
@@ -370,7 +370,7 @@
     on:input
     bind:value
     {name}
-    {disabled} />
+    {disabled}/>
 
 {:else if tag === 'select' && !multiple}
   <select
@@ -384,7 +384,7 @@
     bind:value
     {name}
     {disabled}>
-    <slot />
+    <slot/>
   </select>
 
 {:else if tag === 'select' && multiple}
@@ -400,6 +400,6 @@
     bind:value
     {name}
     {disabled}>
-    <slot />
+    <slot/>
   </select>
 {/if}

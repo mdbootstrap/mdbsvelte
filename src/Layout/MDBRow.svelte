@@ -1,37 +1,37 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let noGutters = false;
   export let form = false;
   const props = clean($$props, []);
   let rowClasses = [];
   let position = ["start", "center", "end", "around", "between"];
 
-  for (let pos in position){
-    if(props[position[pos]]){
+  for (let pos in position) {
+    if (props[position[pos]]) {
       rowClasses.push(`justify-content-${position[pos]}`)
     }
   }
 
-  if(className){
+  if (className) {
     rowClasses.push(rowClasses)
   }
 
-  if(form){
+  if (form) {
     rowClasses.push('form-row')
-  }else{
+  } else {
     rowClasses.push('row')
   }
 
-  if(noGutters){
+  if (noGutters) {
     rowClasses.push('no-gutters')
   }
 
 </script>
 
-<div {...props}  class={rowClasses.join(' ')}>
-  <slot />
+<div {...props} class={rowClasses.join(' ')}>
+  <slot/>
 </div>

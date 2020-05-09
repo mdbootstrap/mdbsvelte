@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let href = '/';
 
   const props = clean($$props);
@@ -12,5 +12,5 @@
 </script>
 
 <a {...props} class={classes} {href}>
-  <slot />
+  <slot/>
 </a>

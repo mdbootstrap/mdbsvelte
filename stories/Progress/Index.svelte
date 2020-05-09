@@ -28,29 +28,29 @@
 </Title>
 
 <Example title="Sample" source={sampleSource}>
-  <Sample />
+  <Sample/>
 </Example>
 
 <Example title="Colors" source={colorsSource}>
-  <Colors />
+  <Colors/>
 </Example>
 
 <Example title="Labels" source={labelsSource}>
-  <Labels />
+  <Labels/>
 </Example>
 
 <Example title="Striped" source={stripedSource}>
-  <Striped />
+  <Striped/>
 </Example>
 
 <Example title="Animated" source={animatedSource}>
-  <Animated />
+  <Animated/>
 </Example>
 
 <Example title="Multi" source={multiSource}>
-  <Multi />
+  <Multi/>
 </Example>
 
 <Example title="Max" source={maxSource}>
-  <Max />
+  <Max/>
 </Example>

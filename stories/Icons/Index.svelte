@@ -15,7 +15,7 @@
 
 </script>
 <style>
-  .notification{
+  .notification {
     position: fixed;
     top: 0;
     left: 0;

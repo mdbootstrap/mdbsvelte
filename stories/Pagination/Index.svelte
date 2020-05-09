@@ -31,22 +31,22 @@
   <IconsPage/>
 </Example>
 <Example source={StatesPageSource}
-  title="Disabled and active states" description="<p>Pagination links are customizable for different circumstances. Use <code>disabled</code> prop for links that
+         title="Disabled and active states" description="<p>Pagination links are customizable for different circumstances. Use <code>disabled</code> prop for links that
     appear un-clickable and <code>active</code> to indicate the current page.</p>">
   <StatesPage/>
 </Example>
 <Example source={PageSizeSource}
-  title="Sizing"
-  description="<p>Fancy larger or smaller pagination? Add <code>lg</code> prop or <code>sm</code> for additional sizes.</p>">
-  <PageSize />
+         title="Sizing"
+         description="<p>Fancy larger or smaller pagination? Add <code>lg</code> prop or <code>sm</code> for additional sizes.</p>">
+  <PageSize/>
 </Example>
 <Example title="Shape"
-description="<p>The way pagination 'feels' can be easily altered by changing its style from rectangular to circular.
+         description="<p>The way pagination 'feels' can be easily altered by changing its style from rectangular to circular.
 Simply add <code>circle</code> prop to the <code>&lt;MDBPagination&gt;</code> component.</p>"
-  source={ShapePageSource}
+         source={ShapePageSource}
 >
-  <ShapePage />
+  <ShapePage/>
 </Example>
 <Example title="Colors" source={ColorsPaginationSource}>
-  <ColorsPagination />
+  <ColorsPagination/>
 </Example>

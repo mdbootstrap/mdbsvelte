@@ -91,5 +91,5 @@
 <p class="description">Make buttons look inactive by adding the <code>disabled</code> boolean prop to any <code>&lt;MDBBtn&gt;</code>
   component.</p>
 <Example source={DisabledButtonSource}>
-  <DisabledButton />
+  <DisabledButton/>
 </Example>

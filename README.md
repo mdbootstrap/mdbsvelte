@@ -7,7 +7,7 @@
 <h1 align="center">Svelte Bootstrap with Material Design</h1>
 
 <p align="center">
-  Based on the latest <b>Bootstrap 4</b> and Svelte <b>3</b>.
+  Based on the latest <b>Bootstrap 4</b> and <b>Svelte 3</b>. Absolutely <b>no jQuery</b>.
 </p>
 <p align="center">
   <img alt="npm" src="https://img.shields.io/npm/dm/mdbsvelte"/>

@@ -49,5 +49,5 @@
 <p class="mb-4">Using the Svelte Alert component, it’s possible to dismiss any alert inline. You can see this in action
   with a live demo:</p>
 <Example source={DismissingSource}>
-  <Dismissing />
+  <Dismissing/>
 </Example>

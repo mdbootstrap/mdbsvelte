@@ -1,6 +1,7 @@
 <script>
 
-  import { clean,clsx } from './utils';
+  import {clean, clsx} from './utils';
+
   let className = '';
   export {className as class};
   export let children = undefined;
@@ -9,17 +10,17 @@
   export let pill = false;
   export let tag;
   if (tag === "a" && !href) {
-    href="#"
+    href = "#"
   }
 
-  let badge_colors = ["primary","secondary", "default", "success", "info", "warning", "danger", "light", "dark"]
+  let badge_colors = ["primary", "secondary", "default", "success", "info", "warning", "danger", "light", "dark"]
 
   const props = clean($$props);
 
   $: classes = clsx(
     className,
     'badge',
-    badge_colors.includes(color)?`badge-${color}`:color,
+    badge_colors.includes(color) ? `badge-${color}` : color,
     pill ? 'badge-pill' : false
   );
 </script>

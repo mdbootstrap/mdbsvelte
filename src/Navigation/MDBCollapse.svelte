@@ -1,13 +1,14 @@
 <script>
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
-  import { createEventDispatcher } from 'svelte';
-  import { slide } from 'svelte/transition';
+  import {createEventDispatcher} from 'svelte';
+  import {slide} from 'svelte/transition';
+
   const noop = () => undefined;
 
   export let isOpen = false;
   let className = '';
-  export { className as class };
+  export {className as class};
   export let navbar = false;
   export let onEntering = noop;
   export let onEntered = noop;
@@ -54,7 +55,7 @@
   }
 </script>
 
-<svelte:window bind:innerWidth={windowWidth} />
+<svelte:window bind:innerWidth={windowWidth}/>
 
 {#if isOpen}
   <div
@@ -69,6 +70,6 @@
     on:outroend={onExited}
     class={classes}
     {...props}>
-    <slot />
+    <slot/>
   </div>
 {/if}

@@ -1,5 +1,5 @@
 <script>
-  import { MDBJumbotron, MDBContainer } from "mdbsvelte";
+  import {MDBJumbotron, MDBContainer} from "mdbsvelte";
 </script>
 <MDBJumbotron fluid>
   <MDBContainer>

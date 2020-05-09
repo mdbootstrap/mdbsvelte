@@ -1,14 +1,14 @@
 <script>
-  import { MDBProgress } from 'mdbsvelte';
+  import {MDBProgress} from 'mdbsvelte';
 </script>
 
 <div class="text-center">Plain</div>
 <MDBProgress multi>
-  <MDBProgress bar value="15" />
-  <MDBProgress bar color="success" value="20" />
-  <MDBProgress bar color="info" value="25" />
-  <MDBProgress bar color="warning" value="20" />
-  <MDBProgress bar color="danger" value="15" />
+  <MDBProgress bar value="15"/>
+  <MDBProgress bar color="success" value="20"/>
+  <MDBProgress bar color="info" value="25"/>
+  <MDBProgress bar color="warning" value="20"/>
+  <MDBProgress bar color="danger" value="15"/>
 </MDBProgress>
 <div class="text-center">With Labels</div>
 <MDBProgress multi>

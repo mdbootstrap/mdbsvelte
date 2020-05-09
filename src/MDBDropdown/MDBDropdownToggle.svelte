@@ -1,14 +1,14 @@
 <script>
-  import { getContext } from 'svelte';
+  import {getContext} from 'svelte';
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   import MDBBtn from '../Btn/MDBBtn.svelte';
 
   const context = getContext('dropdownContext');
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let caret = false;
   export let color = 'secondary';
   export let disabled = false;

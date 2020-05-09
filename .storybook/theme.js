@@ -1,4 +1,4 @@
-import { create } from '@storybook/theming/create';
+import {create} from '@storybook/theming/create';
 import pkg from "../package";
 
 export default create({

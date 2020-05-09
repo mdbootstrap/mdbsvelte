@@ -1,9 +1,9 @@
 <script>
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let body = false;
   export let color = '';
 
@@ -22,6 +22,6 @@
   );
 </script>
 
-<div {...props}  class={classes} on:click {style}>
-  <slot />
+<div {...props} class={classes} on:click {style}>
+  <slot/>
 </div>

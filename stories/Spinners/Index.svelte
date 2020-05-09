@@ -16,8 +16,8 @@
   <Basic/>
 </Example>
 <Example source={GrowingSource} title="Growing Loaders">
-  <Growing />
+  <Growing/>
 </Example>
 <Example source={SizeSource} title="Loader sizing">
-  <Size />
+  <Size/>
 </Example>

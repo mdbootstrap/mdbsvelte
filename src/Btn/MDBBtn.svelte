@@ -1,7 +1,6 @@
 <script>
 
-  import {clean,clsx} from '../utils';
-
+  import {clean, clsx} from '../utils';
   let className = '';
   export {className as class};
   export let active = false;
@@ -16,6 +15,7 @@
   export let style = '';
   export let value = '';
   export let gradient;
+  let domElement;
 
   if (!color) {
     href ? color = "primary" : color = 'default';
@@ -64,6 +64,7 @@
     {value}
     aria-label={ariaLabel || defaultAriaLabel}
     {style}
+    bind:this={domElement}
   >
     <slot>
       {#if close}

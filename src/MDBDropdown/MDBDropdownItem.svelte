@@ -1,12 +1,12 @@
 <script>
-  import { getContext } from 'svelte';
+  import {getContext} from 'svelte';
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   const context = getContext('dropdownContext');
 
   let className = '';
-  export { className as class };
+  export {className as class};
 
   export let active = false;
   export let disabled = false;
@@ -39,19 +39,19 @@
 
 {#if header}
   <h6 {...props} on:click on:click={handleItemClick} class={classes}>
-    <slot />
+    <slot/>
   </h6>
 
 {:else if divider}
   <div {...props} on:click on:click={handleItemClick} class={classes}>
-    <slot />
+    <slot/>
   </div>
 {:else if href}
   <a on:{...props} on:click on:click={handleItemClick} {href} class={classes}>
-    <slot />
+    <slot/>
   </a>
 {:else}
   <button {...props} on:click on:click={handleItemClick} class={classes}>
-    <slot />
+    <slot/>
   </button>
 {/if}

@@ -1,12 +1,12 @@
 <script>
-  import { getContext } from 'svelte';
+  import {getContext} from 'svelte';
 
-  import { clean, clsx } from '../utils';
+  import {clean, clsx} from '../utils';
 
   const context = getContext('dropdownContext');
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let right = false;
 
   const props = clean($$props);
@@ -18,5 +18,5 @@
 </script>
 
 <div {...props} class={classes}>
-  <slot />
+  <slot/>
 </div>
