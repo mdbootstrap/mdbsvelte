@@ -1,11 +1,12 @@
 <script>
-  import clsx from 'clsx';
-  import { afterUpdate } from 'svelte';
+  import {clsx} from '../src/utils';
+  import {afterUpdate} from 'svelte';
   import Prism from 'prismjs';
+
   let className = '';
   let isAsync = false;
-  export { className as class };
-  export { isAsync as async };
+  export {className as class};
+  export {isAsync as async};
   let classes = clsx(
     'language-html',
     className,
@@ -27,6 +28,6 @@
 
 <pre>
   <code class={classes} bind:this="{_domNode}">
-    <slot />
+    <slot/>
   </code>
 </pre>

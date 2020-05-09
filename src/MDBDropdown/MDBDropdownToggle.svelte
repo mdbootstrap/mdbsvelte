@@ -1,7 +1,7 @@
 <script>
   import { getContext } from 'svelte';
-  import clsx from 'clsx';
-  import { clean } from '../utils';
+
+  import { clean, clsx } from '../utils';
 
   import MDBBtn from '../Btn/MDBBtn.svelte';
 

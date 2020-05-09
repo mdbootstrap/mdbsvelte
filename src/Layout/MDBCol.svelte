@@ -1,5 +1,5 @@
 <script>
-  import { clean } from '../utils';
+  import { clean, clsx } from '../utils';
   import { getColumnSizeClass, isObject } from '../utils';
 
   let className = '';

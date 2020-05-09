@@ -1,5 +1,5 @@
 <script>
-  import { clean } from '../utils';
+  import { clean, clsx } from '../utils';
   let className = '';
   const props = clean($$props, []);
   export let size;

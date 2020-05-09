@@ -1,6 +1,6 @@
 <script>
   import MDBDropdown from './MDBDropdown.svelte';
-  import { clean } from '../utils';
+  import { clean, clsx } from '../utils';
 
   let className = '';
   export { className as class };

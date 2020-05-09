@@ -1,6 +1,6 @@
 <script>
-  import clsx from 'clsx';
-  import {clean} from '../utils';
+
+  import {clean,clsx} from '../utils';
 
   let className = '';
   export {className as class};
@@ -17,8 +17,8 @@
   export let value = '';
   export let gradient;
 
-  if(!color){
-    href ? color = "primary" :  color = 'default';
+  if (!color) {
+    href ? color = "primary" : color = 'default';
   }
 
   const props = clean($$props, ["color", "gradient", "value", "style", "size"]);
