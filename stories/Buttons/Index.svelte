@@ -34,7 +34,7 @@
   Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
   thrown in for more control.
 </p>
-<Example source={BasicSource}>
+<Example textCenter={true} source={BasicSource}>
   <Basic/>
 </Example>
 <h2 class="secondary-heading">Additional styles</h2>
@@ -42,7 +42,7 @@
   MDBootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
   thrown in for more control.
 </p>
-<Example source={AdditionalStylesSource}>
+<Example textCenter={true} source={AdditionalStylesSource}>
   <AdditionalStyles/>
 </Example>
 <h2 class="secondary-heading">Gradient buttons</h2>
@@ -50,7 +50,7 @@
   Check our documentation about <a href="https://mdbootstrap.com/docs/Svelte/css/gradients/">gradients</a>.
 </p>
 
-<Example source={GradientSource}>
+<Example textCenter={true} source={GradientSource}>
   <Gradient/>
 </Example>
 
@@ -60,36 +60,36 @@
   In need of a button, but not the hefty background colors they bring? <code>outline</code> property removes all
   background images and colors on any button.
 </p>
-<Example source={OutlineSource}>
+<Example textCenter={true} source={OutlineSource}>
   <Outline/>
 </Example>
 <h2 class="secondary-heading">Buttons with icons</h2>
-<Example source={ButtonIconSource}>
+<Example textCenter={true} source={ButtonIconSource}>
   <ButtonIcon/>
 </Example>
 <h2 class="secondary-heading">Buttons as link</h2>
 <p>
   In order to use links styled as button just use MDBButton component with <code>href</code> property.
 </p>
-<Example source={LinkButtonSource}>
+<Example textCenter={true} source={LinkButtonSource}>
   <LinkButton/>
 </Example>
 <h2 class="secondary-heading">Sizes</h2>
 <p class="description">Fancy larger or smaller buttons? Add <code>size</code> property for
   additional sizes.</p>
 
-<Example source={SizeButtonSource}>
+<Example textCenter={true} source={SizeButtonSource}>
   <SizeButton/>
 </Example>
 <h2 class="secondary-heading">Active state</h2>
 <p class="description">Buttons will appear pressed (with a darker background, darker border, and inset shadow) when
   active. You can force the same active appearance with <code>active</code> prop.</p>
-<Example source={ActiveStateSource}>
+<Example textCenter={true} source={ActiveStateSource}>
   <ActiveState/>
 </Example>
 <h2 class="secondary-heading">Disabled state</h2>
 <p class="description">Make buttons look inactive by adding the <code>disabled</code> boolean prop to any <code>&lt;MDBBtn&gt;</code>
   component.</p>
-<Example source={DisabledButtonSource}>
+<Example textCenter={true} source={DisabledButtonSource}>
   <DisabledButton/>
 </Example>
