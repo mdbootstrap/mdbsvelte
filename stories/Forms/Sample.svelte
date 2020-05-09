@@ -3,7 +3,7 @@
 </script>
 <MDBContainer>
   <MDBRow>
-    <MDBCol md="6" class="offset-md-3">
+    <MDBCol md="6">
       <form>
         <p class="h5 text-center mb-4">Sign in</p>
         <div class="grey-text">
@@ -16,5 +16,24 @@
         </div>
       </form>
     </MDBCol>
+
+    <MDBCol md="6">
+      <form>
+        <p class="h4 text-center mb-4">Sign in</p>
+        <label for="defaultFormLoginEmailEx" class="grey-text">
+          Your email
+        </label>
+        <input type="email" id="defaultFormLoginEmailEx" class="form-control" />
+        <br />
+        <label for="defaultFormLoginPasswordEx" class="grey-text">
+          Your password
+        </label>
+        <input type="password" id="defaultFormLoginPasswordEx" class="form-control" />
+        <div class="text-center mt-4">
+          <MDBBtn color="indigo" type="submit">Login</MDBBtn>
+        </div>
+      </form>
+    </MDBCol>
+
   </MDBRow>
 </MDBContainer>
