@@ -26,7 +26,7 @@
   $: classes = clsx(className, 'navbar', getExpandClass(expand), {
     'navbar-light': light,
     'navbar-dark': dark,
-    [`bg-${color}`]: color,
+    [`${color}`]: color,
     [`fixed-${fixed}`]: fixed,
     [`sticky-${sticky}`]: sticky
   });
