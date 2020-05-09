@@ -3,6 +3,8 @@
   import BasicSource from "!!raw-loader!./Basic.svelte";
   import Example from "../Example.svelte";
   import Title from "../Title.svelte";
+  import SupportedContent from "./SupportedContent.svelte";
+  import SupportedContentSource from "!!raw-loader!./SupportedContent.svelte";
 </script>
 <Title title="Navbar">
   <p>Bootstrap navbar is a horizontal navigation component which apart from traditional, text links, might embed icons,
@@ -14,4 +16,7 @@
 </Title>
 <Example source={BasicSource} title="Basic Example">
   <Basic/>
+</Example>
+<Example source={SupportedContentSource} title="Supported Content">
+  <SupportedContent />
 </Example>

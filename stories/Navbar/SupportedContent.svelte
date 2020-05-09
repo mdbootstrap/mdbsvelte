@@ -1,16 +1,17 @@
 <script>
 
   import {
-    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-    MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
+    MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon
   } from "mdbsvelte";
+
   let isOpen = true;
+
   function toggleCollapse() {
     isOpen = !isOpen;
   }
-
 </script>
-<MDBNavbar color="primary-color" dark expand="md">
+<MDBNavbar color="default-color" dark expand="md">
   <MDBNavbarBrand>
     <strong class="white-text">Navbar</strong>
   </MDBNavbarBrand>
@@ -29,9 +30,9 @@
       <MDBNavItem>
         <MDBDropdown>
           <MDBDropdownToggle nav caret>
-            <span class="mr-2">Dropdown</span>
+            <div class="d-none d-md-inline">Dropdown</div>
           </MDBDropdownToggle>
-          <MDBDropdownMenu>
+          <MDBDropdownMenu class="dropdown-default">
             <MDBDropdownItem href="#!">Action</MDBDropdownItem>
             <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
             <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
@@ -42,12 +43,27 @@
     </MDBNavbarNav>
     <MDBNavbarNav right>
       <MDBNavItem>
-
-        <MDBFormInline waves>
-          <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
-          </div>
-        </MDBFormInline>
+        <MDBNavLink class="waves-effect waves-light" to="#!">
+          <MDBIcon fab icon="twitter"/>
+        </MDBNavLink>
+      </MDBNavItem>
+      <MDBNavItem>
+        <MDBNavLink class="waves-effect waves-light" to="#!">
+          <MDBIcon fab icon="google-plus-g"/>
+        </MDBNavLink>
+      </MDBNavItem>
+      <MDBNavItem>
+        <MDBDropdown>
+          <MDBDropdownToggle nav caret>
+            <MDBIcon icon="user"/>
+          </MDBDropdownToggle>
+          <MDBDropdownMenu right class="dropdown-default">
+            <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+            <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+            <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+            <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+          </MDBDropdownMenu>
+        </MDBDropdown>
       </MDBNavItem>
     </MDBNavbarNav>
   </MDBCollapse>

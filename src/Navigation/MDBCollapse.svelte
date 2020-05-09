@@ -1,7 +1,8 @@
 <script>
-  import { clean, clsx } from './utils';
+  import { clean, clsx } from '../utils';
 
   import { createEventDispatcher } from 'svelte';
+  import { slide } from 'svelte/transition';
   const noop = () => undefined;
 
   export let isOpen = false;

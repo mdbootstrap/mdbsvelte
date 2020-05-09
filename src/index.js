@@ -39,7 +39,7 @@ import MDBNavbarBrand from './Navigation/MDBNavbarBrand.svelte'
 import MDBNavbarToggler from './Navigation/MDBNavbarToggler.svelte'
 import MDBNavItem from './Navigation/MDBNavItem.svelte'
 import MDBNavLink from './Navigation/MDBNavLink.svelte'
-import MDBCollapse from './MDBCollapse.svelte';
+import MDBCollapse from './Navigation/MDBCollapse.svelte';
 import MDBNavbarNav from './Navigation/MDBNavbarNav.svelte'
 import MDBFormInline from './MDBFormInline.svelte';
 export {
