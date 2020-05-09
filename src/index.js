@@ -41,7 +41,7 @@ import MDBNavItem from './Navigation/MDBNavItem.svelte'
 import MDBNavLink from './Navigation/MDBNavLink.svelte'
 import MDBCollapse from './MDBCollapse.svelte';
 import MDBNavbarNav from './Navigation/MDBNavbarNav.svelte'
-
+import MDBFormInline from './MDBFormInline.svelte';
 export {
   MDBContainer,
   MDBCol,
@@ -85,5 +85,6 @@ export {
   MDBNavItem,
   MDBNavLink,
   MDBCollapse,
-  MDBNavbarNav
+  MDBNavbarNav,
+  MDBFormInline
 }

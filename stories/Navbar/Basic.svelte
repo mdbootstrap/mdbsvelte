@@ -7,7 +7,7 @@
   let isOpen = true;
 
 </script>
-<MDBNavbar color="indigo" dark expand="md">
+<MDBNavbar color="primary-color" dark expand="md">
   <MDBNavbarBrand>
     <strong class="white-text">Navbar</strong>
   </MDBNavbarBrand>
@@ -40,11 +40,11 @@
     <MDBNavbarNav right>
       <MDBNavItem>
 
-<!--        <MDBFormInline waves>-->
+        <MDBFormInline waves>
           <div class="md-form my-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
           </div>
-<!--        </MDBFormInline>-->
+        </MDBFormInline>
       </MDBNavItem>
     </MDBNavbarNav>
   </MDBCollapse>

@@ -5,10 +5,10 @@
   export {className as class};
   const props = clean($$props, []);
   let elementClasses;
-  $: elementClasses = clsx(className)
+  $: elementClasses = clsx(className, 'form-inline')
 
 </script>
 
-<div {...props} class={elementClasses}>
+<form {...props} class={elementClasses}>
   <slot/>
-</div>
+</form>
