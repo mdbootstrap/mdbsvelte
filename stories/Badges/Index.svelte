@@ -16,7 +16,7 @@
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Tags, Labels &amp; Badges</h2>
 <h1 class="secondary-heading mb-4">Svelte Tags, Labels &amp; Badges - Bootstrap 4 &amp; Material Design</h1>
-<p>React Bootstrap tags are components which separate content placed in the same wrapper, but in the separate pane.
+<p>Svelte Bootstrap tags are components which separate content placed in the same wrapper, but in the separate pane.
   Only one pane can be displayed at the time.</p>
 <p>Their main goal is to provide your visitors with an intuitive way of getting what they want. Just consider, how
   convenient it is to find all the articles related to web development just by using <span class="badge badge-success">

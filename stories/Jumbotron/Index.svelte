@@ -14,7 +14,7 @@
 </script>
 <h2 class="primary-heading">Svelte Bootstrap Jumbotron</h2>
 <h1 class="secondary-heading mb-4">Svelte Jumbotron - Bootstrap 4 &amp; Material Design</h1>
-<p class="description">React Jumbotron is a responsive component which the main goal is to focus visitor's attention
+<p class="description">Svelte Jumbotron is a responsive component which the main goal is to focus visitor's attention
   or highlight the
   special
   piece of information.</p>

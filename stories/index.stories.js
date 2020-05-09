@@ -37,7 +37,7 @@ storiesOf('Components', module)
   .add('Badges', story(Badges))
   .add('Spinner', story(Spinners))
   .add('Pagination', story(Pagination))
-  .add('Progress', story(Progress));
+  .add('Progress', story(Progress))
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));

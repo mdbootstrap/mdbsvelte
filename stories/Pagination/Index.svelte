@@ -14,7 +14,7 @@
   import ColorsPagination from "./ColorsPagination.svelte";
   import ColorsPaginationSource from "!!raw-loader!./ColorsPagination.svelte";
 
-  let description = `<p>React Bootstrap pagination is a component used to indicate existance of a series of related content across
+  let description = `<p>Svelte Bootstrap pagination is a component used to indicate existance of a series of related content across
     multiple
     pages and enables navigation across them.</p><p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all
     while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the

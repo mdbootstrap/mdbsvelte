@@ -24,9 +24,9 @@
 
 
 </script>
-<h2 class="primary-heading">React Bootstrap Buttons</h2>
-<h1 class="secondary-heading mb-4">React Buttons - Bootstrap 4 &amp; Material Design</h1>
-<p>React Bootstrap buttons are components which are triggering a desirable user interaction. Easy to customize in
+<h2 class="primary-heading">Svelte Bootstrap Buttons</h2>
+<h1 class="secondary-heading mb-4">Svelte Buttons - Bootstrap 4 &amp; Material Design</h1>
+<p>Svelte Bootstrap buttons are components which are triggering a desirable user interaction. Easy to customize in
   terms of size, shape, and color.</p>
 
 <h2 class="secondary-heading">Basic examples</h2>
@@ -47,7 +47,7 @@
 </Example>
 <h2 class="secondary-heading">Gradient buttons</h2>
 <p>
-  Check our documentation about <a href="https://mdbootstrap.com/docs/react/css/gradients/">gradients</a>.
+  Check our documentation about <a href="https://mdbootstrap.com/docs/Svelte/css/gradients/">gradients</a>.
 </p>
 
 <Example source={GradientSource}>

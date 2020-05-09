@@ -32,6 +32,13 @@ import MDBPageItem from './Pagination/MDBPageItem.svelte';
 import MDBPageNav from './Pagination/MDBPageNav.svelte';
 import MDBPaginationLink from './Pagination/MDBPaginationLink.svelte';
 import MDBProgress from './MDBProgress.svelte'
+import MDBInput from './MDBInput.svelte';
+import MDBNav from './Navigation/MDBNav.svelte'
+import MDBNavbar from './Navigation/MDBNavbar.svelte'
+import MDBNavbarBrand from './Navigation/MDBNavbarBrand.svelte'
+import MDBNavbarToggler from './Navigation/MDBNavbarToggler.svelte'
+import MDBNavItem from './Navigation/MDBNavItem.svelte'
+import MDBNavLink from './Navigation/MDBNavLink.svelte'
 
 export {
   MDBContainer,
@@ -67,5 +74,12 @@ export {
   MDBPageItem,
   MDBPaginationLink,
   MDBPageNav,
-  MDBProgress
+  MDBProgress,
+  MDBInput,
+  MDBNav,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavItem,
+  MDBNavLink
 }

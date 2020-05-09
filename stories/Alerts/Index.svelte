@@ -46,7 +46,7 @@
 <h2 class="section-heading">
   Dismissing
 </h2>
-<p class="mb-4">Using the React Alert component, it’s possible to dismiss any alert inline. You can see this in action
+<p class="mb-4">Using the Svelte Alert component, it’s possible to dismiss any alert inline. You can see this in action
   with a live demo:</p>
 <Example source={DismissingSource}>
   <Dismissing />
