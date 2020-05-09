@@ -4,3 +4,4 @@
 .npmrc
 .idea
 storybook-static
+dist

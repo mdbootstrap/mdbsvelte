@@ -1,5 +1,20 @@
-# MDBSvelte
-[![npm version](https://badge.fury.io/js/mdbsvelte.svg)](https://badge.fury.io/js/mdbsvelte)
+<p align="center">
+  <a href="http://mdbootstrap.com/docs/vue/">
+    <img width="500" src="mdbsvelte.png">
+  </a>
+</p>
+
+<h1 align="center">Svelte Bootstrap with Material Design</h1>
+
+<p align="center">
+  Based on the latest <b>Bootstrap 4</b> and Svelte <b>3</b>.
+</p>
+<p align="center">
+  <img alt="npm" src="https://img.shields.io/npm/dm/mdbsvelte"/>
+  <a href="https://github.com/SauravKanchan/mdbsvelte/blob/master/LICENSE">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+<a href="https://badge.fury.io/js/mdbsvelte"><img src="https://badge.fury.io/js/mdbsvelte.svg" alt="npm version" height="18"></a>
+</p>
 
 Read full documentaion at [saurav.tech/mdbsvelte](https://saurav.tech/mdbsvelte/)
 ## Getting started
