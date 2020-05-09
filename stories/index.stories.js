@@ -15,6 +15,7 @@ import Pagination from "./Pagination/Index.svelte";
 import GettingStarted from './GettingStarted/Index.svelte'
 import Progress from './Progress/Index.svelte'
 import Navbar from './Navbar/Index.svelte';
+import FormsBasic from './Forms/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -42,6 +43,9 @@ storiesOf('Components', module)
 
 storiesOf('Navigation', module)
   .add('Navbar', story(Navbar));
+
+storiesOf("Forms", module)
+  .add("Basic Examples", story(FormsBasic));
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));

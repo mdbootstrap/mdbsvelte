@@ -21,7 +21,7 @@
 </script>
 
 <Title title="Progress Bar">
-  <p>React Bootstrap progress bar is a component which displays a progress of a process in which user is involved.
+  <p>Svelte Bootstrap progress bar is a component which displays a progress of a process in which user is involved.
     Their color, shape, and animation can be customized.</p>
   <p>If it takes too long for your website to load up, your user will be less stressed about it when he sees a simple
     progress bar. It means as much as “Everything is fine. The content you want to see will load in a few seconds”</p>
