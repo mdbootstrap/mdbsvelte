@@ -14,9 +14,13 @@
   <a href="https://github.com/SauravKanchan/mdbsvelte/blob/master/LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
 <a href="https://badge.fury.io/js/mdbsvelte"><img src="https://badge.fury.io/js/mdbsvelte.svg" alt="npm version" height="18"></a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte.svg?type=shield"/></a>
 </p>
 
 Read full documentaion at [saurav.tech/mdbsvelte](https://saurav.tech/mdbsvelte/)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte?ref=badge_large)
+
 ## Getting started
 ### Step 1: Install the package
 ```bash
