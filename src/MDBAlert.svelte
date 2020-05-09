@@ -1,23 +1,23 @@
 <script>
-  import { fade as fadeTransition } from 'svelte/transition';
+  import {fade as fadeTransition} from 'svelte/transition';
 
-  import { clean, clsx } from './utils';
+  import {clean, clsx} from './utils';
 
   let className = '';
-  export { className as class };
+  export {className as class};
   export let children = undefined;
   export let color = 'success';
   export let closeClassName = '';
   export let closeAriaLabel = 'Close';
   export let isOpen = true;
   export let fade = true;
-  export let transition = { duration: fade ? 400 : 0 };
-  export let dismiss=false;
+  export let transition = {duration: fade ? 400 : 0};
+  export let dismiss = false;
+  export let toggle = () => {
+    isOpen = !(isOpen)
+  };
 
-  function toggle() {
-    isOpen = false
-  }
-  const props = clean($$props,["color"]);
+  const props = clean($$props, ["color"]);
 
   $: classes = clsx(className, 'alert', `alert-${color}`, {
     'alert-dismissible': toggle
@@ -43,7 +43,7 @@
     {#if children}
       {children}
     {:else}
-      <slot />
+      <slot/>
     {/if}
   </div>
 {/if}

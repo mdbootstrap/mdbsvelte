@@ -7,6 +7,7 @@
   import Additional from "./Additional.svelte";
   import AdditionalSource from "!!raw-loader!./Additional.svelte";
   import Dismissing from "./Dismissing.svelte";
+  import DismissingSource from "!!raw-loader!./Dismissing.svelte";
 
 </script>
 
@@ -47,6 +48,6 @@
 </h2>
 <p class="mb-4">Using the React Alert component, it’s possible to dismiss any alert inline. You can see this in action
   with a live demo:</p>
-<Example>
+<Example source={DismissingSource}>
   <Dismissing />
 </Example>
