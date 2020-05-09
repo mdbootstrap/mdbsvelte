@@ -11,14 +11,24 @@
     code = `<MDBIcon ${types[index]} icon="${icons[index]}" />`;
     clipboard.writeText(code);
     isOpen = true;
-    console.log(isOpen)
   }
 
 </script>
+<style>
+  .notification{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+</style>
 <MDBContainer>
-  <MDBAlert color="success" dismiss bind:isOpen={isOpen}>
-    <strong>Copied top Clipboard:</strong> {code}
-  </MDBAlert>
+  <div class="notification">
+    <MDBAlert color="success" dismiss bind:isOpen={isOpen}>
+      <strong>Copied top Clipboard:</strong> {code}
+    </MDBAlert>
+  </div>
   <h1 class="h1">List of Icons, Total {icons.length}</h1>
   <code>{code}</code>
   <hr/>
