@@ -31,6 +31,7 @@ import MDBPagination from './Pagination/MDBPagination.svelte';
 import MDBPageItem from './Pagination/MDBPageItem.svelte';
 import MDBPageNav from './Pagination/MDBPageNav.svelte';
 import MDBPaginationLink from './Pagination/MDBPaginationLink.svelte';
+import MDBProgress from './MDBProgress.svelte'
 
 export {
   MDBContainer,
@@ -65,5 +66,6 @@ export {
   MDBPagination,
   MDBPageItem,
   MDBPaginationLink,
-  MDBPageNav
+  MDBPageNav,
+  MDBProgress
 }

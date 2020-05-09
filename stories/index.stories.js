@@ -13,6 +13,7 @@ import Badges from "./Badges/Index.svelte";
 import Spinners from "./Spinners/Index.svelte";
 import Pagination from "./Pagination/Index.svelte";
 import GettingStarted from './GettingStarted/Index.svelte'
+import Progress from  './Progress/Index.svelte'
 
 const story = Component => () => ({
   Component
@@ -35,7 +36,8 @@ storiesOf('Components', module)
   .add('List Groups', story(ListGroups))
   .add('Badges', story(Badges))
   .add('Spinner', story(Spinners))
-  .add('Pagination', story(Pagination));
+  .add('Pagination', story(Pagination))
+  .add('Progress', story(Progress));
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));

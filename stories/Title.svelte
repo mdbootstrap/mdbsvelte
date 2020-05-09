@@ -9,3 +9,4 @@
     {@html description}
   </div>
 {/if}
+<slot></slot>
