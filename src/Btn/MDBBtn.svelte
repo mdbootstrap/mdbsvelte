@@ -16,6 +16,11 @@
   export let value = '';
   export let gradient;
   let domElement;
+  export let rounded;
+
+  if(rounded){
+    style="border-radius: 10em"+style
+  }
 
   if (!color) {
     href ? color = "primary" : color = 'default';

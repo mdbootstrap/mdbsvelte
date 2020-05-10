@@ -8,6 +8,7 @@
   import SubscriptionForm from "./SubscriptionForm.svelte";
   import SubscriptionFormSource from '!!raw-loader!./SubscriptionForm.svelte';
   import FormWithCardSource from '!!raw-loader!./FormWithCard.svelte';
+  import FormGradientSource from '!!raw-loader!./FormGradient.svelte';
   import FormWithCard from "./FormWithCard.svelte";
   import FormGradient from "./FormGradient.svelte";
 
@@ -30,6 +31,6 @@
 <Example title="Form With Cards" source={FormWithCardSource}>
   <FormWithCard />
 </Example>
-<Example title="Form Gradient">
+<Example title="Form Gradient" source={FormGradientSource}>
   <FormGradient />
 </Example>

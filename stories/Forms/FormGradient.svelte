@@ -3,7 +3,7 @@
 </script>
 <MDBContainer>
   <MDBRow>
-    <MDBCol md="6">
+    <MDBCol md="6" class="offset-md-3">
       <MDBCard>
         <div class="header pt-3 peach-gradient">
           <MDBRow class="d-flex justify-content-center">
