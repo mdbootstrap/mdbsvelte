@@ -44,6 +44,7 @@ import MDBNavbarNav from './Navigation/MDBNavbarNav.svelte'
 import MDBFormInline from './forms/MDBFormInline.svelte';
 import MDBInputGroup from './forms/MDBInputGroup.svelte';
 import {fragment} from "./utils";
+import MDBFooter from "./MDBFooter.svelte";
 import waves from 'node-waves';
 
 waves.init();
@@ -94,5 +95,6 @@ export {
   MDBNavbarNav,
   MDBFormInline,
   MDBInputGroup,
-  fragment
+  fragment,
+  MDBFooter
 }
