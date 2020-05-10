@@ -5,6 +5,7 @@
   import MaterialSource from '!!raw-loader!./Material.svelte';
   import SizeDefaultSource from '!!raw-loader!./SizeDefault.svelte';
   import SizeMaterialSource from '!!raw-loader!./SizeMaterial.svelte';
+  import ButtonAddonsSource from '!!raw-loader!./ButtonAddons.svelte';
   import MultipleInputGroupSource from '!!raw-loader!./MultipleInputGroup.svelte';
   import MultipleAddonsSource from '!!raw-loader!./MultipleAddons.svelte';
   import Title from "../Title.svelte";
@@ -15,6 +16,7 @@
   import SizeMaterial from "./SizeMaterial.svelte";
   import MultipleInputGroup from "./MultipleInputGroup.svelte";
   import MultipleAddons from "./MultipleAddons.svelte";
+  import ButtonAddons from "./ButtonAddons.svelte";
 
 </script>
 
@@ -52,4 +54,7 @@
 </Example>
 <Example title="Multiple Addons" source={MultipleAddonsSource}>
   <MultipleAddons/>
+</Example>
+<Example source={ButtonAddonsSource} title="Button Addons">
+  <ButtonAddons/>
 </Example>

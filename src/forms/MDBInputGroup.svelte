@@ -33,23 +33,10 @@
   <label for="{id}">Your vanity URL</label>
 {/if}
 <div {...props} class={classes}>
-  {#if append}
-    <div class="input-group-append">
-      <span class={childClass}>{append}</span>
+  {#if prepend}
+    <div class="input-group-prepend">
+      <span class={childClass}>{prepend}</span>
     </div>
-  {/if}
-
-
-  {#if slotAppend}
-    <div class="input-group-append">
-      <slot name="append"/>
-    </div>
-  {/if}
-
-  {#if !slotInput}
-    <MDBInput formGroup={true} {id} {type} placeholder={hint}/>
-  {:else}
-    <slot name="input"/>
   {/if}
 
   {#if slotPrepend}
@@ -57,9 +44,25 @@
       <slot name="prepend"/>
     </div>
   {/if}
-  {#if prepend}
-    <div class="input-group-prepend">
-      <span class={childClass}>{prepend}</span>
+
+
+
+  {#if !slotInput}
+    <MDBInput formGroup={true} {id} {type} placeholder={hint}/>
+  {:else}
+    <slot name="input"/>
+  {/if}
+
+  {#if append}
+    <div class="input-group-append">
+      <span class={childClass}>{append}</span>
     </div>
   {/if}
+
+  {#if slotAppend}
+    <div class="input-group-append">
+      <slot name="append"/>
+    </div>
+  {/if}
+
 </div>
