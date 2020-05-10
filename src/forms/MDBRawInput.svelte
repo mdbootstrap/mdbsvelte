@@ -1,6 +1,6 @@
 <script>
-  import {clean, clsx} from './utils';
-  import MDBIcon from "./MDBIcon.svelte";
+  import {clean, clsx} from '../utils';
+  import MDBIcon from "../MDBIcon.svelte";
 
   let className = '';
   export {className as class};
@@ -27,8 +27,8 @@
   export let fab;
   export let icon;
   export let label;
-
-  placeholder = placeholder ? placeholder : label;
+  export let hint;
+  placeholder = placeholder ? placeholder : label ? label : hint;
 
   // eslint-disable-next-line no-unused-vars
   const props = clean($$props, ["fas", "fab", "far", "formGroup", "name", "multiple"]);

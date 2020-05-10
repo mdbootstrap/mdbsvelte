@@ -1,5 +1,5 @@
 <script>
-  import {clean, clsx} from './utils';
+  import {clean, clsx} from '../utils';
   import MDBInput from "./MDBInput.svelte";
 
   let className = '';
@@ -12,7 +12,10 @@
   export let append;
   export let label;
   export let id = '';
-  export let material
+  export let material;
+  export let slotInput;
+  let slots = $$props.$$slots;
+  slotInput = slots ? slots.input : false;
 
   $: classes = clsx(
     {'md-form': material},
@@ -35,11 +38,14 @@
       <span class={childClass}>{prepend}</span>
     </div>
   {/if}
-  <MDBInput formGroup={true} {id} {type} placeholder={hint}/>
   {#if append}
     <div class="input-group-append">
       <span class={childClass}>{append}</span>
     </div>
   {/if}
-  <slot/>
+  {#if !slotInput}
+    <MDBInput formGroup={true} {id} {type} placeholder={hint}/>
+  {:else}
+    <slot name="input"/>
+  {/if}
 </div>

@@ -32,7 +32,7 @@ import MDBPageItem from './Pagination/MDBPageItem.svelte';
 import MDBPageNav from './Pagination/MDBPageNav.svelte';
 import MDBPaginationLink from './Pagination/MDBPaginationLink.svelte';
 import MDBProgress from './MDBProgress.svelte'
-import MDBInput from './MDBInput.svelte';
+import MDBInput from './forms/MDBInput.svelte';
 import MDBNav from './Navigation/MDBNav.svelte'
 import MDBNavbar from './Navigation/MDBNavbar.svelte'
 import MDBNavbarBrand from './Navigation/MDBNavbarBrand.svelte'
@@ -41,8 +41,8 @@ import MDBNavItem from './Navigation/MDBNavItem.svelte'
 import MDBNavLink from './Navigation/MDBNavLink.svelte'
 import MDBCollapse from './Navigation/MDBCollapse.svelte';
 import MDBNavbarNav from './Navigation/MDBNavbarNav.svelte'
-import MDBFormInline from './MDBFormInline.svelte';
-import MDBInputGroup from './MDBInputGroup.svelte';
+import MDBFormInline from './forms/MDBFormInline.svelte';
+import MDBInputGroup from './forms/MDBInputGroup.svelte';
 import waves from 'node-waves';
 
 waves.init();
