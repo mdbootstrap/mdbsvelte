@@ -9,7 +9,7 @@
   let elementClasses = [vertical ? "btn-group-vertical" : "btn-group"];
 
   if (className) {
-    elementClasses.push(elementClasses)
+    elementClasses.push(className)
   }
 
   if (size) {

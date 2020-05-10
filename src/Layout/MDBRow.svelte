@@ -17,7 +17,7 @@
   }
 
   if (className) {
-    rowClasses.push(rowClasses)
+    rowClasses.push(className)
   }
 
   if (form) {
@@ -29,7 +29,6 @@
   if (noGutters) {
     rowClasses.push('no-gutters')
   }
-
 </script>
 
 <div {...props} class={rowClasses.join(' ')}>
