@@ -12,6 +12,7 @@
   export let fill = false;
   export let navbar = false;
   export let card = false;
+  export let color;
 
   const props = clean($$props);
 
@@ -26,6 +27,7 @@
 
   $: classes = clsx(
     className,
+    color,
     navbar ? 'navbar-nav' : 'nav',
     horizontal ? `justify-content-${horizontal}` : false,
     getVerticalClass(vertical),

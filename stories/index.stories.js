@@ -18,6 +18,7 @@ import Navbar from './Navbar/Index.svelte';
 import FormsBasic from './Forms/Index.svelte';
 import InputGroup from './InputGroup/Index.svelte';
 import Footer from './Footer/Index.svelte';
+import Navs from './Navs/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -45,7 +46,8 @@ storiesOf('Components', module)
 
 storiesOf('Navigation', module)
   .add('Navbar', story(Navbar))
-  .add('Footer', story(Footer));
+  .add('Footer', story(Footer))
+  .add('Navs', story(Navs));
 
 storiesOf("Forms", module)
   .add("Basic Examples", story(FormsBasic))
