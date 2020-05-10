@@ -43,6 +43,7 @@ import MDBCollapse from './Navigation/MDBCollapse.svelte';
 import MDBNavbarNav from './Navigation/MDBNavbarNav.svelte'
 import MDBFormInline from './forms/MDBFormInline.svelte';
 import MDBInputGroup from './forms/MDBInputGroup.svelte';
+import {fragment} from "./utils";
 import waves from 'node-waves';
 
 waves.init();
@@ -92,5 +93,6 @@ export {
   MDBCollapse,
   MDBNavbarNav,
   MDBFormInline,
-  MDBInputGroup
+  MDBInputGroup,
+  fragment
 }

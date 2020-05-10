@@ -118,3 +118,7 @@ export function clsx() {
   }
   return str;
 }
+
+export function fragment(node) {
+  node.parentElement.appendChild(document.adoptNode(node).content);
+}

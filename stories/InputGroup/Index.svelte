@@ -6,6 +6,7 @@
   import SizeDefaultSource from '!!raw-loader!./SizeDefault.svelte';
   import SizeMaterialSource from '!!raw-loader!./SizeMaterial.svelte';
   import MultipleInputGroupSource from '!!raw-loader!./MultipleInputGroup.svelte';
+  import MultipleAddonsSource from '!!raw-loader!./MultipleAddons.svelte';
   import Title from "../Title.svelte";
   import MDBRow from "../../src/Layout/MDBRow.svelte";
   import MDBCol from "../../src/Layout/MDBCol.svelte";
@@ -13,6 +14,7 @@
   import SizeDefault from "./SizeDefault.svelte";
   import SizeMaterial from "./SizeMaterial.svelte";
   import MultipleInputGroup from "./MultipleInputGroup.svelte";
+  import MultipleAddons from "./MultipleAddons.svelte";
 
 </script>
 
@@ -45,7 +47,9 @@
 </MDBRow>
 <Example title="Multiple Input Group"
          description='<p>If you wanna use multiple inputs you can pass the inputs as a slot <code>slot="input"</code> </p>'
-         source={MultipleInputGroupSource}
->
+         source={MultipleInputGroupSource}>
   <MultipleInputGroup/>
+</Example>
+<Example title="Multiple Addons" source={MultipleAddonsSource}>
+  <MultipleAddons/>
 </Example>
