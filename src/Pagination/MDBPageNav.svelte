@@ -6,7 +6,6 @@
   export {className as class};
   export let active = false;
   export let disabled = false;
-  export let href = "#";
   const props = clean($$props);
 
   $: classes = clsx(className, 'page-link waves-effect waves-effect', {
@@ -15,6 +14,6 @@
   });
 </script>
 
-<a {...props} {href} class={classes}>
+<a {...props} class={classes}>
   <slot/>
 </a>

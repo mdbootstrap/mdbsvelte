@@ -6,8 +6,12 @@
 </script>
 {#if !formGroup}
   <div class="md-form">
-    <MDBRawInput {...$$props}/>
+    <MDBRawInput {...$$props}>
+      <slot/>
+    </MDBRawInput>
   </div>
 {:else}
-  <MDBRawInput {...$$props}/>
+  <MDBRawInput {...$$props}>
+    <slot/>
+  </MDBRawInput>
 {/if}

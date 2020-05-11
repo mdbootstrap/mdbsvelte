@@ -28,6 +28,7 @@
   export let icon;
   export let label;
   export let hint;
+  console.log($$props.$$slots);
   placeholder = placeholder ? placeholder : label ? label : hint;
 
   // eslint-disable-next-line no-unused-vars

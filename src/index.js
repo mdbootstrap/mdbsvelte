@@ -49,6 +49,8 @@ import waves from 'node-waves';
 import MDBTable from './Table/MDBTable.svelte';
 import MDBTableHead from './Table/MDBTableHead.svelte';
 import MDBTableBody from './Table/MDBTableBody.svelte';
+import MDBDataTable from './Table/MDBDataTable.svelte'
+
 waves.init();
 
 export {
@@ -101,5 +103,6 @@ export {
   MDBFooter,
   MDBTable,
   MDBTableHead,
-  MDBTableBody
+  MDBTableBody,
+  MDBDataTable
 }
