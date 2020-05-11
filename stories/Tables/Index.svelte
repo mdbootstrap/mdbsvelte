@@ -9,6 +9,7 @@
   import CaptionsSource from "!!raw-loader!./Captions.svelte";
   import BorderLessSource from "!!raw-loader!./BorderLess.svelte";
   import ResponsiveTableSource from "!!raw-loader!./ResponsiveTable.svelte";
+  import TableDataInPropsSource from "!!raw-loader!./TableDataInProps.svelte";
   import Example from "../Example.svelte";
   import Title from "../Title.svelte";
   import TableHeadOptions from "./TableHeadOptions.svelte";
@@ -19,6 +20,7 @@
   import Captions from "./Captions.svelte";
   import BorderLess from "./BorderLess.svelte";
   import ResponsiveTable from "./ResponsiveTable.svelte";
+  import TableDataInProps from "./TableDataInProps.svelte";
 </script>
 <Title title="Table">
 </Title>
@@ -58,4 +60,7 @@
          description="Create responsive table by adding prop <code>responsive</code> to make them scroll horizontally on small
          devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.">
   <ResponsiveTable/>
+</Example>
+<Example source={TableDataInPropsSource} title="Table Data as props">
+  <TableDataInProps />
 </Example>
