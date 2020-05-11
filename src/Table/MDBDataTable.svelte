@@ -9,6 +9,12 @@
   import MDBRow from "../Layout/MDBRow.svelte";
   import MDBCol from "../Layout/MDBCol.svelte";
   import MDBInput from "../forms/MDBInput.svelte";
+  import MDBPagination from "../Pagination/MDBPagination.svelte";
+  import MDBPageItem from "../Pagination/MDBPageItem.svelte";
+  import MDBPageNav from "../Pagination/MDBPageNav.svelte";
+  import MDBInputGroup from "../forms/MDBInputGroup.svelte";
+  import MDBIcon from "../MDBIcon.svelte";
+  let query;
 
   let className = '';
   let elementClasses;
@@ -16,57 +22,64 @@
   export let color;
   export let data;
   export let entries = 25;
+  export let entriesOptions = [25, 50, 100];
+  export let columns = [];
   let page = 1;
 
-  let table_data = [...data].slice((page - 1) * entries, page * entries);
+  let table_data, lastPage;
 
   const props = clean($$props, ["color", "data"]);
-  $: elementClasses = clsx(className, color)
+  $: (() => {
+    lastPage = Math.ceil(data.length / entries);
+    elementClasses = clsx(className, color);
+    table_data = [...data].slice((page - 1) * entries, page * entries);
 
+  })()
 </script>
 
 <div class="mdb-datatable dt-bootstrap4">
   <MDBRow between>
-    <MDBCol md="2">
-      <MDBInput type="select">
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-      </MDBInput>
+    <MDBCol md="3">
+      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries}>
+        {#each entriesOptions as option}
+          <option value={option}>{option}</option>
+        {/each}
+      </MDBInputGroup>
     </MDBCol>
     <MDBCol md="4">
-      <MDBInput hint="Search"/>
+      <MDBInput hint="Search" bind:value={query}/>
     </MDBCol>
   </MDBRow>
   <MDBRow>
     <MDBTable {...props} class={elementClasses}>
-      <MDBTableHead/>
+      <MDBTableHead columns={columns}/>
       <MDBTableBody data={table_data}/>
     </MDBTable>
   </MDBRow>
   <MDBRow end>
     <MDBPagination>
       <MDBPageItem>
-        <MDBPageNav aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
+        <MDBPageNav noWaves>
+          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length)} of {data.length} items
         </MDBPageNav>
       </MDBPageItem>
+      {#if page !==1 }
+        <MDBPageItem>
+          <MDBPageNav aria-label="Previous" on:click={()=>page--}>
+            <MDBIcon fas icon="chevron-left"/>
+          </MDBPageNav>
+        </MDBPageItem>
+      {/if}
       <MDBPageItem>
-        <MDBPageNav>
-          1
-        </MDBPageNav>
+        <MDBPageNav>{page}</MDBPageNav>
       </MDBPageItem>
-      <MDBPageItem>
-        <MDBPageNav>2</MDBPageNav>
-      </MDBPageItem>
-      <MDBPageItem>
-        <MDBPageNav>3</MDBPageNav>
-      </MDBPageItem>
-      <MDBPageItem>
-        <MDBPageNav aria-label="Previous" on:click={()=>alert("hurray")}>
-          <span aria-hidden="true">&raquo;</span>
-        </MDBPageNav>
-      </MDBPageItem>
+      {#if page < lastPage}
+        <MDBPageItem>
+          <MDBPageNav aria-label="Previous" on:click={()=>page++}>
+            <MDBIcon fas icon="chevron-right"/>
+          </MDBPageNav>
+        </MDBPageItem>
+      {/if}
     </MDBPagination>
   </MDBRow>
 </div>

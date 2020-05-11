@@ -1,8 +1,9 @@
 <script>
-  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {clean, clsx, forwardEventsBuilder} from '../utils/utils';
   import {current_component} from 'svelte/internal';
+
   const forwardEvents = forwardEventsBuilder(current_component);
-import MDBInput from "./MDBInput.svelte";
+  import MDBInput from "./MDBInput.svelte";
 
   let className = '';
   export {className as class};
@@ -15,6 +16,7 @@ import MDBInput from "./MDBInput.svelte";
   export let label;
   export let id = '';
   export let material;
+  export let value;
   let slotInput = $$props.$$slots ? $$props.$$slots.input : false;
   let slotAppend = $$props.$$slots ? $$props.$$slots.append : false;
   let slotPrepend = $$props.$$slots ? $$props.$$slots.prepend : false;
@@ -50,7 +52,9 @@ import MDBInput from "./MDBInput.svelte";
 
 
   {#if !slotInput}
-    <MDBInput formGroup={true} {id} {type} placeholder={hint}/>
+    <MDBInput formGroup={true} {id} {type} placeholder={hint} bind:value={value}>
+      <slot/>
+    </MDBInput>
   {:else}
     <slot name="input"/>
   {/if}

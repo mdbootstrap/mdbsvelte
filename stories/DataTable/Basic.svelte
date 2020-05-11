@@ -2,6 +2,7 @@
 
   import {MDBDataTable} from "mdbsvelte";
 
+  let columns = ["Name", "Position", "Office", "Age", "Start date", "Salary"];
   let data = [
     {
       name: 'Tiger Nixon',
@@ -462,4 +463,4 @@
   ]
 
 </script>
-<MDBDataTable hover data={data} entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} />
+<MDBDataTable hover columns={columns} data={data} entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} />
