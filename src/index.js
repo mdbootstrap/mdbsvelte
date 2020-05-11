@@ -46,7 +46,9 @@ import MDBInputGroup from './forms/MDBInputGroup.svelte';
 import {fragment} from "./utils/utils";
 import MDBFooter from "./MDBFooter.svelte";
 import waves from 'node-waves';
-
+import MDBTable from './MDBTable.svelte';
+import MDBTableHead from './MDBTableHead.svelte';
+import MDBTableBody from './MDBTableBody.svelte';
 waves.init();
 
 export {
@@ -96,5 +98,8 @@ export {
   MDBFormInline,
   MDBInputGroup,
   fragment,
-  MDBFooter
+  MDBFooter,
+  MDBTable,
+  MDBTableHead,
+  MDBTableBody
 }

@@ -3,9 +3,11 @@
 
   let className = '';
   export {className as class};
-  const props = clean($$props, []);
   let elementClasses;
-  $: elementClasses = clsx(className)
+  export let color;
+  const props = clean($$props, ["color"]);
+
+  $: elementClasses = clsx(className, color)
 
 </script>
 

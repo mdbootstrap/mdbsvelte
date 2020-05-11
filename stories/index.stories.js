@@ -19,6 +19,7 @@ import FormsBasic from './Forms/Index.svelte';
 import InputGroup from './InputGroup/Index.svelte';
 import Footer from './Footer/Index.svelte';
 import Navs from './Navs/Index.svelte';
+import Tables from './Tables/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -52,6 +53,9 @@ storiesOf('Navigation', module)
 storiesOf("Forms", module)
   .add("Basic Examples", story(FormsBasic))
   .add('Input Groups', story(InputGroup));
+
+storiesOf('Tables', module)
+  .add('Basic Examples', story(Tables));
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));
