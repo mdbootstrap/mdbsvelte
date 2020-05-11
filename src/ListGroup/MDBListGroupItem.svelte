@@ -1,8 +1,9 @@
 <script>
 
-  import {clean, clsx} from '../utils/utils';
-
-  let className = '';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+let className = '';
   export {className as class};
   export let active = false;
   export let disabled = false;
@@ -24,15 +25,15 @@
 </script>
 
 {#if href}
-  <a {...props} class={classes} {href} {disabled} {active}>
+  <a use:forwardEvents {...props} class={classes} {href} {disabled} {active}>
     <slot/>
   </a>
 {:else if tag === 'button'}
-  <button {...props} class={classes} type="button" on:click {disabled} {active}>
+  <button use:forwardEvents {...props} class={classes} type="button" on:click {disabled} {active}>
     <slot/>
   </button>
 {:else}
-  <li {...props} class={classes} {disabled} {active}>
+  <li use:forwardEvents {...props} class={classes} {disabled} {active}>
     <slot/>
   </li>
 {/if}

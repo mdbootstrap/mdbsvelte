@@ -1,6 +1,8 @@
 <script>
-  import {clean, clsx} from '../utils/utils';
-  import MDBInput from "./MDBInput.svelte";
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+import MDBInput from "./MDBInput.svelte";
 
   let className = '';
   export {className as class};
@@ -32,7 +34,7 @@
 {#if label}
   <label for="{id}">Your vanity URL</label>
 {/if}
-<div {...props} class={classes}>
+<div use:forwardEvents {...props} class={classes}>
   {#if prepend}
     <div class="input-group-prepend">
       <span class={childClass}>{prepend}</span>

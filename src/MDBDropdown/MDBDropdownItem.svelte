@@ -1,9 +1,10 @@
 <script>
   import {getContext} from 'svelte';
 
-  import {clean, clsx} from '../utils/utils';
-
-  const context = getContext('dropdownContext');
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+const context = getContext('dropdownContext');
 
   let className = '';
   export {className as class};
@@ -38,20 +39,20 @@
 </script>
 
 {#if header}
-  <h6 {...props} on:click on:click={handleItemClick} class={classes}>
+  <h6 use:forwardEvents {...props} on:click on:click={handleItemClick} class={classes}>
     <slot/>
   </h6>
 
 {:else if divider}
-  <div {...props} on:click on:click={handleItemClick} class={classes}>
+  <div use:forwardEvents {...props} on:click on:click={handleItemClick} class={classes}>
     <slot/>
   </div>
 {:else if href}
-  <a on:{...props} on:click on:click={handleItemClick} {href} class={classes}>
+  <a on:use:forwardEvents {...props} on:click on:click={handleItemClick} {href} class={classes}>
     <slot/>
   </a>
 {:else}
-  <button {...props} on:click on:click={handleItemClick} class={classes}>
+  <button use:forwardEvents {...props} on:click on:click={handleItemClick} class={classes}>
     <slot/>
   </button>
 {/if}

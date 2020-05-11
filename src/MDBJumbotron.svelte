@@ -1,8 +1,12 @@
 <script>
 
-  import {clean, clsx} from './utils/utils';
+  import {clean, clsx ,forwardEventsBuilder} from './utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
 
-  let className = '';
+
+
+let className = '';
   export {className as class};
   export let fluid = false;
   export let tag = 'div';
@@ -13,11 +17,11 @@
 </script>
 
 {#if tag === 'section'}
-  <section {...props} class={classes}>
+  <section use:forwardEvents {...props} class={classes}>
     <slot/>
   </section>
 {:else}
-  <div {...props} class={classes}>
+  <div use:forwardEvents {...props} class={classes}>
     <slot/>
   </div>
 {/if}

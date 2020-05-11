@@ -1,8 +1,9 @@
 <script>
 
-  import {clean, clsx} from '../utils/utils';
-
-  let className = '';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+let className = '';
   export {className as class};
   export let light = false;
   export let dark = false;
@@ -32,6 +33,6 @@
   });
 </script>
 
-<nav {...props} class={classes}>
+<nav use:forwardEvents {...props} class={classes}>
   <slot/>
 </nav>

@@ -1,9 +1,10 @@
 <script>
   import {getContext} from 'svelte';
 
-  import {clean, clsx} from '../utils/utils';
-
-  const context = getContext('dropdownContext');
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+const context = getContext('dropdownContext');
 
   let className = '';
   export {className as class};
@@ -17,6 +18,6 @@
   });
 </script>
 
-<div {...props} class={classes}>
+<div use:forwardEvents {...props} class={classes}>
   <slot/>
 </div>

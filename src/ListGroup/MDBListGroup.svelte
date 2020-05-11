@@ -1,8 +1,9 @@
 <script>
 
-  import {clean, clsx} from '../utils/utils';
-
-  let className = '';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+let className = '';
   export {className as class};
   export let flush = false;
 
@@ -15,6 +16,6 @@
   );
 </script>
 
-<ul {...props} class={classes}>
+<ul use:forwardEvents {...props} class={classes}>
   <slot/>
 </ul>

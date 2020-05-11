@@ -1,5 +1,8 @@
 <script>
-  import {clean, clsx} from '../utils/utils';
+  import {clean, clsx, forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+
+  const forwardEvents = forwardEventsBuilder(current_component);
   import MDBIcon from "../MDBIcon.svelte";
 
   let className = '';
@@ -28,7 +31,6 @@
   export let icon;
   export let label;
   export let hint;
-  console.log($$props.$$slots);
   placeholder = placeholder ? placeholder : label ? label : hint;
 
   // eslint-disable-next-line no-unused-vars
@@ -98,7 +100,7 @@
 {#if tag === 'input'}
   {#if type === 'text'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="text"
       on:blur
@@ -116,7 +118,7 @@
       {placeholder}/>
   {:else if type === 'password'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="password"
       on:blur
@@ -134,7 +136,7 @@
       {placeholder}/>
   {:else if type === 'email'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="email"
       on:blur
@@ -152,7 +154,7 @@
       {placeholder}/>
   {:else if type === 'file'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="file"
       on:blur
@@ -170,7 +172,7 @@
       {placeholder}/>
   {:else if type === 'checkbox'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="checkbox"
       on:blur
@@ -189,7 +191,7 @@
       {placeholder}/>
   {:else if type === 'radio'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="radio"
       on:blur
@@ -207,7 +209,7 @@
       {placeholder}/>
   {:else if type === 'url'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="url"
       on:blur
@@ -225,7 +227,7 @@
       {placeholder}/>
   {:else if type === 'number'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="number"
       on:blur
@@ -243,7 +245,7 @@
       {placeholder}/>
   {:else if type === 'date'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="date"
       on:blur
@@ -261,7 +263,7 @@
       {placeholder}/>
   {:else if type === 'time'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="time"
       on:blur
@@ -279,7 +281,7 @@
       {placeholder}/>
   {:else if type === 'datetime'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="datetime"
       on:blur
@@ -297,7 +299,7 @@
       {placeholder}/>
   {:else if type === 'color'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="color"
       on:blur
@@ -315,7 +317,7 @@
       {placeholder}/>
   {:else if type === 'range'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="range"
       on:blur
@@ -333,7 +335,7 @@
       {placeholder}/>
   {:else if type === 'search'}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       type="search"
       on:blur
@@ -351,7 +353,7 @@
       {placeholder}/>
   {:else}
     <input
-      {...props}
+      use:forwardEvents {...props}
       {id}
       {type}
       on:blur
@@ -371,7 +373,7 @@
 
 {:else if tag === 'textarea'}
   <textarea
-    {...props}
+    use:forwardEvents {...props}
     {id}
     class={classes}
     on:blur
@@ -387,7 +389,7 @@
 
 {:else if tag === 'select' && !multiple}
   <select
-    {...props}
+    use:forwardEvents {...props}
     {id}
     class={classes}
     on:blur
@@ -402,7 +404,7 @@
 
 {:else if tag === 'select' && multiple}
   <select
-    {...props}
+    use:forwardEvents {...props}
     {id}
     multiple
     class={classes}

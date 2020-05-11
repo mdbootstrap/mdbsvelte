@@ -1,9 +1,10 @@
 <script>
   import {getContext} from 'svelte';
 
-  import {clean, clsx} from '../utils/utils';
-
-  import MDBBtn from '../Btn/MDBBtn.svelte';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+import MDBBtn from '../Btn/MDBBtn.svelte';
 
   const context = getContext('dropdownContext');
 
@@ -44,7 +45,7 @@
 
 {#if nav}
   <a
-    {...props}
+    use:forwardEvents {...props}
     on:click
     on:click={toggleMDBBtn}
     href="#nav"
@@ -56,7 +57,7 @@
   </a>
 {:else if tag === 'span'}
   <span
-    {...props}
+    use:forwardEvents {...props}
     on:click
     on:click={toggleMDBBtn}
     {ariaHaspopup}

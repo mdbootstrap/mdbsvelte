@@ -1,6 +1,10 @@
 <script>
 
-  import {clean, clsx} from './utils/utils';
+  import {clean, clsx ,forwardEventsBuilder} from './utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+
+
 
   let className = '';
   export {className as class};
@@ -33,7 +37,7 @@
     <slot/>
   {:else}
     <div
-      {...props}
+      use:forwardEvents {...props}
       class={progressBarClasses}
       style="width: {percent}%"
       role="progressbar"
@@ -44,7 +48,7 @@
     </div>
   {/if}
 {:else}
-  <div {...props} class={classes}>
+  <div use:forwardEvents {...props} class={classes}>
     {#if multi}
       <slot/>
     {:else}

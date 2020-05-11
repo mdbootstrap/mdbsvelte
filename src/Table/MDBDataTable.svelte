@@ -1,12 +1,13 @@
 <script>
-  import {clean, clsx} from '../utils/utils';
+  import {clean, clsx, forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+
+  const forwardEvents = forwardEventsBuilder(current_component);
   import MDBTableHead from "./MDBTableHead.svelte";
   import MDBTableBody from "./MDBTableBody.svelte";
   import MDBTable from "./MDBTable.svelte";
   import MDBRow from "../Layout/MDBRow.svelte";
-  import {MDBPagination, MDBPageItem, MDBPageNav} from '../index';
   import MDBCol from "../Layout/MDBCol.svelte";
-  import MDBFormInline from "../forms/MDBFormInline.svelte";
   import MDBInput from "../forms/MDBInput.svelte";
 
   let className = '';
@@ -34,7 +35,7 @@
       </MDBInput>
     </MDBCol>
     <MDBCol md="4">
-      <MDBInput hint="Search" />
+      <MDBInput hint="Search"/>
     </MDBCol>
   </MDBRow>
   <MDBRow>
@@ -44,28 +45,28 @@
     </MDBTable>
   </MDBRow>
   <MDBRow end>
-      <MDBPagination>
-        <MDBPageItem>
-          <MDBPageNav aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </MDBPageNav>
-        </MDBPageItem>
-        <MDBPageItem>
-          <MDBPageNav>
-            1
-          </MDBPageNav>
-        </MDBPageItem>
-        <MDBPageItem>
-          <MDBPageNav>2</MDBPageNav>
-        </MDBPageItem>
-        <MDBPageItem>
-          <MDBPageNav>3</MDBPageNav>
-        </MDBPageItem>
-        <MDBPageItem>
-          <MDBPageNav aria-label="Previous">
-            <span aria-hidden="true">&raquo;</span>
-          </MDBPageNav>
-        </MDBPageItem>
-      </MDBPagination>
+    <MDBPagination>
+      <MDBPageItem>
+        <MDBPageNav aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </MDBPageNav>
+      </MDBPageItem>
+      <MDBPageItem>
+        <MDBPageNav>
+          1
+        </MDBPageNav>
+      </MDBPageItem>
+      <MDBPageItem>
+        <MDBPageNav>2</MDBPageNav>
+      </MDBPageItem>
+      <MDBPageItem>
+        <MDBPageNav>3</MDBPageNav>
+      </MDBPageItem>
+      <MDBPageItem>
+        <MDBPageNav aria-label="Previous" on:click={()=>alert("hurray")}>
+          <span aria-hidden="true">&raquo;</span>
+        </MDBPageNav>
+      </MDBPageItem>
+    </MDBPagination>
   </MDBRow>
 </div>

@@ -1,8 +1,12 @@
 <script>
 
-  import {clean, clsx} from './utils/utils';
+  import {clean, clsx ,forwardEventsBuilder} from './utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
 
-  let className = '';
+
+
+let className = '';
   export let icon;
   export {className as class};
   export let size;
@@ -20,6 +24,6 @@
 
 </script>
 
-<i {...props} class={classes}>
+<i use:forwardEvents {...props} class={classes}>
   <slot/>
 </i>

@@ -1,5 +1,7 @@
 <script>
-  import { clean, clsx } from '../utils/utils';
+  import { clean, clsx ,forwardEventsBuilder } from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
 
   let className = '';
   export { className as class };
@@ -32,12 +34,12 @@
 
 {#if responsive}
   <div class={responsiveClassName}>
-    <table {...props} class={classes}>
+    <table use:forwardEvents {...props} class={classes}>
       <slot />
     </table>
   </div>
 {:else}
-  <table {...props} class={classes}>
+  <table use:forwardEvents {...props} class={classes}>
     <slot />
   </table>
 {/if}

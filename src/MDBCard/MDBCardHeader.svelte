@@ -1,8 +1,9 @@
 <script>
 
-  import {clean, clsx} from '../utils/utils';
-
-  let className = '';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+let className = '';
   export {className as class};
 
   export let tag = 'div';
@@ -13,11 +14,11 @@
 </script>
 
 {#if tag === 'h3'}
-  <h3 {...props} class={classes} on:click>
+  <h3 use:forwardEvents {...props} class={classes} on:click>
     <slot/>
   </h3>
 {:else}
-  <div {...props} class={classes} on:click>
+  <div use:forwardEvents {...props} class={classes} on:click>
     <slot/>
   </div>
 {/if}

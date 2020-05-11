@@ -1,7 +1,8 @@
 <script>
-  import {clean, clsx} from '../utils/utils';
-
-  let className = '';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+let className = '';
   const props = clean($$props, []);
   export let size;
   export let vertical;
@@ -18,6 +19,6 @@
 
 </script>
 
-<div {...props} role="group" class={elementClasses.join(' ')}>
+<div use:forwardEvents {...props} role="group" class={elementClasses.join(' ')}>
   <slot/>
 </div>

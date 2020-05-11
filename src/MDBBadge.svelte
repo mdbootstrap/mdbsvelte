@@ -1,8 +1,12 @@
 <script>
 
-  import {clean, clsx} from './utils/utils';
+  import {clean, clsx ,forwardEventsBuilder} from './utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
 
-  let className = '';
+
+
+let className = '';
   export {className as class};
   export let children = undefined;
   export let color = 'secondary';
@@ -26,7 +30,7 @@
 </script>
 
 {#if href}
-  <a {...props} {href} class={classes}>
+  <a use:forwardEvents {...props} {href} class={classes}>
     {#if children}
       {children}
     {:else}
@@ -34,7 +38,7 @@
     {/if}
   </a>
 {:else}
-  <span {...props} class={classes}>
+  <span use:forwardEvents {...props} class={classes}>
     {#if children}
       {children}
     {:else}

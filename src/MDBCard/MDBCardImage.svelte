@@ -1,8 +1,9 @@
 <script>
 
-  import {clean, clsx} from '../utils/utils';
-
-  let className = '';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+let className = '';
   export {className as class};
   export let top = false;
   export let bottom = false;
@@ -24,4 +25,4 @@
   }
 </script>
 
-<img {...props} class={classes} {src} {alt}/>
+<img use:forwardEvents {...props} class={classes} {src} {alt}/>

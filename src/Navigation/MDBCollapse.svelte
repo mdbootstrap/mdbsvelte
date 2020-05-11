@@ -1,7 +1,8 @@
 <script>
-  import {clean, clsx} from '../utils/utils';
-
-  import {createEventDispatcher} from 'svelte';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+import {createEventDispatcher} from 'svelte';
   import {slide} from 'svelte/transition';
 
   const noop = () => undefined;
@@ -69,7 +70,7 @@
     on:outrostart={onExiting}
     on:outroend={onExited}
     class={classes}
-    {...props}>
+    use:forwardEvents {...props}>
     <slot/>
   </div>
 {/if}

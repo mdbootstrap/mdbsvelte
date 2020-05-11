@@ -1,9 +1,10 @@
 <script>
   import {setContext} from 'svelte';
 
-  import {clean, clsx} from '../utils/utils';
-
-  import {createContext} from './DropdownContext';
+  import {clean, clsx ,forwardEventsBuilder} from '../utils/utils';
+  import {current_component} from 'svelte/internal';
+  const forwardEvents = forwardEventsBuilder(current_component);
+import {createContext} from './DropdownContext';
 
   let context = createContext();
   setContext('dropdownContext', context);
@@ -106,11 +107,11 @@
   }
 </script>
 {#if nav}
-  <li class={classes} bind:this={component} {...props}>
+  <li class={classes} bind:this={component} use:forwardEvents {...props}>
     <slot/>
   </li>
 {:else}
-  <div class={classes} bind:this={component} style="display:inline-block" {...props}>
+  <div class={classes} bind:this={component} style="display:inline-block" use:forwardEvents {...props}>
     <slot/>
   </div>
 {/if}
