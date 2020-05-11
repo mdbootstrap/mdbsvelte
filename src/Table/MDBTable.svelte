@@ -1,5 +1,5 @@
 <script>
-  import { clean, clsx } from './utils/utils';
+  import { clean, clsx } from '../utils/utils';
 
   let className = '';
   export { className as class };
@@ -10,6 +10,7 @@
   export let dark = false;
   export let hover = false;
   export let responsive = false;
+  export let small;
 
   const props = clean($$props);
 
@@ -21,7 +22,8 @@
     borderless ? 'table-borderless' : false,
     striped ? 'table-striped' : false,
     dark ? 'table-dark' : false,
-    hover ? 'table-hover' : false
+    hover ? 'table-hover' : false,
+    small ? 'table-sm':false
   );
 
   $: responsiveClassName =

@@ -1,0 +1,59 @@
+<script>
+
+  import {MDBTable, MDBTableBody, MDBTableHead} from "mdbsvelte";
+
+</script>
+<MDBTable responsive>
+  <MDBTableHead>
+    <tr>
+      <th>#</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+      <th>Heading</th>
+    </tr>
+  </MDBTableHead>
+  <MDBTableBody>
+    <tr>
+      <td>1</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+  </MDBTableBody>
+</MDBTable>
