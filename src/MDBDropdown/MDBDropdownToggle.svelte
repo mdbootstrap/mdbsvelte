@@ -46,7 +46,6 @@ import MDBBtn from '../Btn/MDBBtn.svelte';
 {#if nav}
   <a
     use:forwardEvents {...props}
-    on:click
     on:click={toggleMDBBtn}
     href="#nav"
     {ariaHaspopup}
@@ -57,8 +56,7 @@ import MDBBtn from '../Btn/MDBBtn.svelte';
   </a>
 {:else if tag === 'span'}
   <span
-    use:forwardEvents {...props}
-    on:click
+    {...props}
     on:click={toggleMDBBtn}
     {ariaHaspopup}
     class={classes}

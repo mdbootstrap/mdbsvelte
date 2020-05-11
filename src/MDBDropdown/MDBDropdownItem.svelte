@@ -39,20 +39,20 @@ const context = getContext('dropdownContext');
 </script>
 
 {#if header}
-  <h6 use:forwardEvents {...props} on:click on:click={handleItemClick} class={classes}>
+  <h6 use:forwardEvents {...props} on:click={handleItemClick} class={classes}>
     <slot/>
   </h6>
 
 {:else if divider}
-  <div use:forwardEvents {...props} on:click on:click={handleItemClick} class={classes}>
+  <div use:forwardEvents {...props} on:click={handleItemClick} class={classes}>
     <slot/>
   </div>
 {:else if href}
-  <a on:use:forwardEvents {...props} on:click on:click={handleItemClick} {href} class={classes}>
+  <a on:use:forwardEvents {...props} on:click={handleItemClick} {href} class={classes}>
     <slot/>
   </a>
 {:else}
-  <button use:forwardEvents {...props} on:click on:click={handleItemClick} class={classes}>
+  <button use:forwardEvents {...props} on:click={handleItemClick} class={classes}>
     <slot/>
   </button>
 {/if}

@@ -103,13 +103,7 @@
       use:forwardEvents {...props}
       {id}
       type="text"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -121,13 +115,7 @@
       use:forwardEvents {...props}
       {id}
       type="password"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -139,13 +127,7 @@
       use:forwardEvents {...props}
       {id}
       type="email"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -157,13 +139,7 @@
       use:forwardEvents {...props}
       {id}
       type="file"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:files
       {readonly}
       class={classes}
@@ -175,13 +151,7 @@
       use:forwardEvents {...props}
       {id}
       type="checkbox"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:checked
       bind:value
       {readonly}
@@ -194,13 +164,7 @@
       use:forwardEvents {...props}
       {id}
       type="radio"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -212,13 +176,7 @@
       use:forwardEvents {...props}
       {id}
       type="url"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -230,13 +188,7 @@
       use:forwardEvents {...props}
       {id}
       type="number"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -248,13 +200,7 @@
       use:forwardEvents {...props}
       {id}
       type="date"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -266,13 +212,7 @@
       use:forwardEvents {...props}
       {id}
       type="time"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -284,13 +224,7 @@
       use:forwardEvents {...props}
       {id}
       type="datetime"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -302,13 +236,7 @@
       use:forwardEvents {...props}
       {id}
       type="color"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -320,13 +248,7 @@
       use:forwardEvents {...props}
       {id}
       type="range"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -338,13 +260,7 @@
       use:forwardEvents {...props}
       {id}
       type="search"
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
-      on:change
-      on:input
+
       bind:value
       {readonly}
       class={classes}
@@ -356,11 +272,6 @@
       use:forwardEvents {...props}
       {id}
       {type}
-      on:blur
-      on:focus
-      on:keydown
-      on:keypress
-      on:keyup
       on:input={handleInput}
       on:change={handleInput}
       {readonly}
@@ -376,13 +287,7 @@
     use:forwardEvents {...props}
     {id}
     class={classes}
-    on:blur
-    on:focus
-    on:keydown
-    on:keypress
-    on:keyup
-    on:change
-    on:input
+
     bind:value
     {name}
     {disabled}/>
@@ -392,10 +297,6 @@
     use:forwardEvents {...props}
     {id}
     class={classes}
-    on:blur
-    on:focus
-    on:change
-    on:input
     bind:value
     {name}
     {disabled}>
@@ -408,10 +309,6 @@
     {id}
     multiple
     class={classes}
-    on:blur
-    on:focus
-    on:change
-    on:input
     bind:value
     {name}
     {disabled}>

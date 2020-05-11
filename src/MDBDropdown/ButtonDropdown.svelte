@@ -22,7 +22,7 @@ let className = '';
 </script>
 
 <MDBDropdown
-  use:forwardEvents {...props}
+  {...props}
   {group}
   class={className}
   {disabled}
@@ -36,6 +36,6 @@ let className = '';
   {inNavbar}
   {setActiveFromChild}
   {dropup}
-  on:click>
+  >
   <slot/>
 </MDBDropdown>

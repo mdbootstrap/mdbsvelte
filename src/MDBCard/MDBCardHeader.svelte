@@ -14,11 +14,11 @@ let className = '';
 </script>
 
 {#if tag === 'h3'}
-  <h3 use:forwardEvents {...props} class={classes} on:click>
+  <h3 use:forwardEvents {...props} class={classes}>
     <slot/>
   </h3>
 {:else}
-  <div use:forwardEvents {...props} class={classes} on:click>
+  <div use:forwardEvents {...props} class={classes}>
     <slot/>
   </div>
 {/if}

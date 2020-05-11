@@ -23,6 +23,6 @@ let className = '';
   );
 </script>
 
-<div use:forwardEvents {...props} class={classes} on:click {style}>
+<div use:forwardEvents {...props} class={classes} {style}>
   <slot/>
 </div>

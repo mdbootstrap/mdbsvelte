@@ -42,7 +42,7 @@ let className = '';
   }
 </script>
 
-<a use:forwardEvents {...props} class={classes} on:click {href}>
+<a use:forwardEvents {...props} class={classes} {href}>
   {#if previous || next || first || last}
     <span aria-hidden="true">
       <slot> {defaultCaret} </slot>

@@ -13,7 +13,7 @@ import MDBBtn from '../Btn/MDBBtn.svelte';
   $: classes = clsx(className, 'navbar-toggler');
 </script>
 
-<MDBBtn {...props} on:click class={classes}>
+<MDBBtn {...props} class={classes}>
   <slot>
     <span class="navbar-toggler-icon"/>
   </slot>

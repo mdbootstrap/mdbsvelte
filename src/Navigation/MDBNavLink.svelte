@@ -29,6 +29,6 @@ let className = '';
   }
 </script>
 
-<a use:forwardEvents {...props} {href} on:click on:click={handleClick} class={classes}>
+<a use:forwardEvents {...props} {href} on:click={handleClick} class={classes}>
   <slot/>
 </a>

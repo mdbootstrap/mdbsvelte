@@ -61,10 +61,7 @@ import {createEventDispatcher} from 'svelte';
 {#if isOpen}
   <div
     transition:slide
-    on:introstart
-    on:introend
-    on:outrostart
-    on:outroend
+
     on:introstart={onEntering}
     on:introend={onEntered}
     on:outrostart={onExiting}

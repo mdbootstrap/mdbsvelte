@@ -51,7 +51,6 @@ let className = '';
     use:forwardEvents {...props}
     class={classes}
     {disabled}
-    on:click
     {href}
     aria-label={ariaLabel || defaultAriaLabel}
     {style}>
@@ -67,7 +66,6 @@ let className = '';
     type="button"
     class={classes}
     {disabled}
-    on:click
     {value}
     aria-label={ariaLabel || defaultAriaLabel}
     {style}

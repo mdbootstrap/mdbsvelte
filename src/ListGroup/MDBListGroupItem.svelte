@@ -29,7 +29,7 @@ let className = '';
     <slot/>
   </a>
 {:else if tag === 'button'}
-  <button use:forwardEvents {...props} class={classes} type="button" on:click {disabled} {active}>
+  <button use:forwardEvents {...props} class={classes} type="button" {disabled} {active}>
     <slot/>
   </button>
 {:else}
