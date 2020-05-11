@@ -6,3 +6,4 @@
 storybook-static
 dist
 public
+*test.js

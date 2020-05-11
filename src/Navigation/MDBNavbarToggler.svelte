@@ -1,6 +1,6 @@
 <script>
 
-  import {clean, clsx} from '../utils';
+  import {clean, clsx} from '../utils/utils';
 
   import MDBBtn from '../Btn/MDBBtn.svelte';
 

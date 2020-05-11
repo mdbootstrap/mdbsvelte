@@ -1,5 +1,5 @@
 <script>
-  import {clean, clsx} from '../utils';
+  import {clean, clsx} from '../utils/utils';
   import MDBInput from "./MDBInput.svelte";
 
   let className = '';

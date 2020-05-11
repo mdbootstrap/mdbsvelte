@@ -1,7 +1,7 @@
 <script>
   import {getContext} from 'svelte';
 
-  import {clean, clsx} from '../utils';
+  import {clean, clsx} from '../utils/utils';
 
   const context = getContext('dropdownContext');
 

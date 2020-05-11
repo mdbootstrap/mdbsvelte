@@ -1,5 +1,5 @@
 <script>
-  import {clean, clsx} from '../utils';
+  import {clean, clsx} from '../utils/utils';
   import MDBIcon from "../MDBIcon.svelte";
 
   let className = '';

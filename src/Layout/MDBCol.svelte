@@ -1,6 +1,6 @@
 <script>
-  import {clean, clsx} from '../utils';
-  import {getColumnSizeClass, isObject} from '../utils';
+  import {clean, clsx} from '../utils/utils';
+  import {getColumnSizeClass, isObject} from '../utils/utils';
 
   let className = '';
   export {className as class};

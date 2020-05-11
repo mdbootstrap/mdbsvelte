@@ -1,5 +1,5 @@
 <script>
-  import {clsx} from '../src/utils';
+  import {clsx} from '../src/utils/utils';
   import {afterUpdate} from 'svelte';
   import Prism from 'prismjs';
 

@@ -1,7 +1,7 @@
 <script>
   import {fade as fadeTransition} from 'svelte/transition';
 
-  import {clean, clsx} from './utils';
+  import {clean, clsx} from './utils/utils';
 
   let className = '';
   export {className as class};

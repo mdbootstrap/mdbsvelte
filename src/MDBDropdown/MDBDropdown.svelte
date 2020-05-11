@@ -1,7 +1,7 @@
 <script>
   import {setContext} from 'svelte';
 
-  import {clean, clsx} from '../utils';
+  import {clean, clsx} from '../utils/utils';
 
   import {createContext} from './DropdownContext';
 
