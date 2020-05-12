@@ -43,7 +43,8 @@
       res.map((d) => {
         total_data.push(d.obj)
       });
-    }else {
+      page = 1
+    } else {
       total_data = [...data]
     }
 
@@ -68,14 +69,14 @@
 <div class="mdb-datatable dt-bootstrap4">
   <MDBRow between>
     <MDBCol md="3">
-      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries}>
+      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} class="m-0">
         {#each entriesOptions as option}
           <option value={option}>{option}</option>
         {/each}
       </MDBInputGroup>
     </MDBCol>
     <MDBCol md="4">
-      <MDBInput hint="Search" bind:value={query} on:keyup={update_table} />
+      <MDBInputGroup material hint="Search" bind:value={query} on:keyup={update_table} class="m-0"/>
     </MDBCol>
   </MDBRow>
   <MDBRow>
@@ -88,7 +89,7 @@
     <MDBPagination>
       <MDBPageItem>
         <MDBPageNav noWaves>
-          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length)} of {total_data.length} items
+          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length, total_data.length)} of {total_data.length} items
         </MDBPageNav>
       </MDBPageItem>
       {#if page !==1 }
