@@ -8,7 +8,6 @@ let className = '';
   let elementClasses;
   export let data;
   $: elementClasses = clsx(className)
-  $: console.log("Table",data)
 </script>
 
 <tbody use:forwardEvents {...props} class={elementClasses}>

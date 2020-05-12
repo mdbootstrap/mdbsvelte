@@ -15,7 +15,7 @@
   import MDBInputGroup from "../forms/MDBInputGroup.svelte";
   import MDBIcon from "../MDBIcon.svelte";
 
-  let query='fail';
+  let query;
   const fuzzysort = require('fuzzysort');
 
   let className = '';
@@ -35,26 +35,26 @@
 
 
   function update_table() {
+    if (query && table_data) {
+      let res = fuzzysort.go(query, data, {
+        keys: Object.keys(table_data[0])
+      });
+      total_data = [];
+      res.map((d) => {
+        total_data.push(d.obj)
+      });
+    }else {
+      total_data = [...data]
+    }
+
     lastPage = Math.ceil(data.length / entries);
     table_data = total_data.slice((page - 1) * entries, page * entries);
   }
 
   update_table();
 
-  $: if (query) {
-    let res = fuzzysort.go(query, data, {
-      keys: Object.keys(table_data[0])
-    })
-    total_data = []
-    res.map((d) => {
-      total_data.push(d.obj)
-    })
-    total_data = total_data
-    console.log(total_data)
-  };
-
   function next() {
-    page ++;
+    page++;
     update_table()
   }
 
@@ -66,17 +66,16 @@
 </script>
 
 <div class="mdb-datatable dt-bootstrap4">
-  {query}
   <MDBRow between>
     <MDBCol md="3">
-      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} on:change={update_table}>
+      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries}>
         {#each entriesOptions as option}
           <option value={option}>{option}</option>
         {/each}
       </MDBInputGroup>
     </MDBCol>
     <MDBCol md="4">
-      <MDBInput hint="Search" bind:value={query}/>
+      <MDBInput hint="Search" bind:value={query} on:keyup={update_table} />
     </MDBCol>
   </MDBRow>
   <MDBRow>
