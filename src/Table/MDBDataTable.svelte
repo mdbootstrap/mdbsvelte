@@ -14,7 +14,9 @@
   import MDBPageNav from "../Pagination/MDBPageNav.svelte";
   import MDBInputGroup from "../forms/MDBInputGroup.svelte";
   import MDBIcon from "../MDBIcon.svelte";
+
   let query;
+  const fuzzysort = require('fuzzysort');
 
   let className = '';
   let elementClasses;
@@ -24,23 +26,40 @@
   export let entries = 25;
   export let entriesOptions = [25, 50, 100];
   export let columns = [];
-  let page = 1;
+  let total_data = [...data];
+  const props = clean($$props, ["color", "data"]);
+  elementClasses = clsx(className, color);
 
+  let page = 1;
   let table_data, lastPage;
 
-  const props = clean($$props, ["color", "data"]);
-  $: (() => {
-    lastPage = Math.ceil(data.length / entries);
-    elementClasses = clsx(className, color);
-    table_data = [...data].slice((page - 1) * entries, page * entries);
 
-  })()
+  function update_table() {
+    lastPage = Math.ceil(data.length / entries);
+    table_data = total_data.slice((page - 1) * entries, page * entries);
+  }
+
+  update_table();
+
+  $: if (query) {
+    let res = fuzzysort.go(query, data, {
+      keys: Object.keys(table_data[0])
+    })
+    total_data = []
+    res.map((d) => {
+      total_data.push(d.obj)
+    })
+    // table_data = table_data
+    console.log(total_data)
+  }
+  ;
+
 </script>
 
 <div class="mdb-datatable dt-bootstrap4">
   <MDBRow between>
     <MDBCol md="3">
-      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries}>
+      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} on:change={update_table}>
         {#each entriesOptions as option}
           <option value={option}>{option}</option>
         {/each}
@@ -53,14 +72,14 @@
   <MDBRow>
     <MDBTable {...props} class={elementClasses}>
       <MDBTableHead columns={columns}/>
-      <MDBTableBody data={table_data}/>
+      <MDBTableBody bind:data={table_data}/>
     </MDBTable>
   </MDBRow>
   <MDBRow end>
     <MDBPagination>
       <MDBPageItem>
         <MDBPageNav noWaves>
-          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length)} of {data.length} items
+          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length)} of {total_data.length} items
         </MDBPageNav>
       </MDBPageItem>
       {#if page !==1 }

@@ -52,6 +52,7 @@
     "svelte-loader": "^2.13.6"
   },
   "dependencies": {
+    "fuzzysort": "^1.1.4",
     "node-waves": "^0.7.6"
   }
 }

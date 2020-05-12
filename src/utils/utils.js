@@ -127,7 +127,7 @@ import {bubble, listen} from 'svelte/internal';
 
 export function forwardEventsBuilder(component, additionalEvents = []) {
   const events = [
-    'focus', 'blur',
+    'focus', 'blur', 'change',
     'fullscreenchange', 'fullscreenerror', 'scroll',
     'cut', 'copy', 'paste',
     'keydown', 'keypress', 'keyup',

@@ -91,7 +91,7 @@
   }
 
   const handleInput = (event) => {
-    value = event.target.value;
+    value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
   };
 </script>
 {#if !formGroup}
@@ -100,193 +100,22 @@
       <MDBIcon {fab} {far} {fas} icon={icon} class="prefix"/>
     {/if}
     {#if tag === 'input'}
-      {#if type === 'text'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="text"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'password'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="password"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'email'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="email"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'file'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="file"
-          bind:files
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'checkbox'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="checkbox"
-
-          bind:checked
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'radio'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="radio"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'url'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="url"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'number'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="number"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'date'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="date"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'time'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="time"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'datetime'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="datetime"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'color'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="color"
-
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'range'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="range"
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else if type === 'search'}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          type="search"
-          bind:value
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}/>
-      {:else}
-        <input
-          use:forwardEvents {...props}
-          {id}
-          {type}
-          on:input={handleInput}
-          on:change={handleInput}
-          {readonly}
-          class={classes}
-          {name}
-          {disabled}
-          {placeholder}
-          {value}/>
-      {/if}
-
+      <input
+        use:forwardEvents {...props}
+        {id}
+        {type}
+        {readonly}
+        class={classes}
+        {name}
+        {disabled}
+        {placeholder}
+        on:change={handleInput}
+      />
     {:else if tag === 'textarea'}
       <textarea
         use:forwardEvents {...props}
         {id}
         class={classes}
-
         bind:value
         {name}
         {disabled}/>
@@ -321,193 +150,22 @@
     <MDBIcon {fab} {far} {fas} icon={icon} class="prefix"/>
   {/if}
   {#if tag === 'input'}
-    {#if type === 'text'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="text"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'password'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="password"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'email'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="email"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'file'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="file"
-        bind:files
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'checkbox'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="checkbox"
-
-        bind:checked
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'radio'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="radio"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'url'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="url"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'number'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="number"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'date'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="date"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'time'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="time"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'datetime'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="datetime"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'color'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="color"
-
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'range'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="range"
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else if type === 'search'}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        type="search"
-        bind:value
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}/>
-    {:else}
-      <input
-        use:forwardEvents {...props}
-        {id}
-        {type}
-        on:input={handleInput}
-        on:change={handleInput}
-        {readonly}
-        class={classes}
-        {name}
-        {disabled}
-        {placeholder}
-        {value}/>
-    {/if}
-
+    <input
+      use:forwardEvents {...props}
+      {id}
+      {type}
+      {readonly}
+      class={classes}
+      {name}
+      {disabled}
+      {placeholder}
+      on:change={handleInput}
+    />
   {:else if tag === 'textarea'}
     <textarea
       use:forwardEvents {...props}
       {id}
       class={classes}
-
       bind:value
       {name}
       {disabled}/>
