@@ -4,6 +4,7 @@
   import MDBInput from "../../src/forms/MDBInput.svelte";
   import MDBRow from "../../src/Layout/MDBRow.svelte";
   import IconCard from "./IconCard.svelte";
+
   const options = {
     limit: 10, // don't return more results than you need!
     allowTypo: false, // if you don't care about allowing typos
@@ -1428,15 +1429,14 @@
   }
 
   function search() {
-    display = [];
-    count= 0;
-    if(query){
+    count = 0;
+    if (query) {
       let result = fuzzysort.go(query, Object.keys(icons), options);
       display = [];
       result.map((d) => {
         display.push(d.target)
       })
-    }else{
+    } else {
       load_more();
     }
   }
@@ -1490,15 +1490,13 @@
   <MDBRow>
     {#each display as icon}
       <MDBCol md="2" class="p-2" on:click={()=>copy(icon)}>
-        <IconCard icon={icon} type={icons[icon]} size="3x"/>
+        <IconCard icon={icon} type={icons[icon]} size="3x" title={icon} />
       </MDBCol>
     {/each}
   </MDBRow>
-  <MDBRow>
-    <MDBCol md="3" class="ml-auto mr-auto">
-      <MDBBtn color="dark" on:click={load_more}>
-        Load More
-      </MDBBtn>
-    </MDBCol>
-  </MDBRow>
+  <div class="text-center mt-3">
+    <MDBBtn color="dark" on:click={load_more} >
+      Load More
+    </MDBBtn>
+  </div>
 </MDBContainer>
