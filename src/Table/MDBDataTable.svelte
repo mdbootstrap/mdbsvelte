@@ -15,7 +15,7 @@
   import MDBInputGroup from "../forms/MDBInputGroup.svelte";
   import MDBIcon from "../MDBIcon.svelte";
 
-  let query;
+  let query='fail';
   const fuzzysort = require('fuzzysort');
 
   let className = '';
@@ -49,14 +49,24 @@
     res.map((d) => {
       total_data.push(d.obj)
     })
-    // table_data = table_data
+    total_data = total_data
     console.log(total_data)
+  };
+
+  function next() {
+    page ++;
+    update_table()
   }
-  ;
+
+  function prev() {
+    page--;
+    update_table()
+  }
 
 </script>
 
 <div class="mdb-datatable dt-bootstrap4">
+  {query}
   <MDBRow between>
     <MDBCol md="3">
       <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} on:change={update_table}>
@@ -84,7 +94,7 @@
       </MDBPageItem>
       {#if page !==1 }
         <MDBPageItem>
-          <MDBPageNav aria-label="Previous" on:click={()=>page--}>
+          <MDBPageNav aria-label="Previous" on:click={prev}>
             <MDBIcon fas icon="chevron-left"/>
           </MDBPageNav>
         </MDBPageItem>
@@ -94,7 +104,7 @@
       </MDBPageItem>
       {#if page < lastPage}
         <MDBPageItem>
-          <MDBPageNav aria-label="Previous" on:click={()=>page++}>
+          <MDBPageNav aria-label="Previous" on:click={next}>
             <MDBIcon fas icon="chevron-right"/>
           </MDBPageNav>
         </MDBPageItem>

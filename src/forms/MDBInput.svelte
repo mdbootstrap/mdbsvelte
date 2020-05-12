@@ -109,7 +109,7 @@
         {name}
         {disabled}
         {placeholder}
-        on:change={handleInput}
+        on:input={handleInput}
       />
     {:else if tag === 'textarea'}
       <textarea
@@ -159,7 +159,7 @@
       {name}
       {disabled}
       {placeholder}
-      on:change={handleInput}
+      on:input={handleInput}
     />
   {:else if tag === 'textarea'}
     <textarea
