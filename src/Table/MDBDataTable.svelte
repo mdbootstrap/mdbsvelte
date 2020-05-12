@@ -54,13 +54,8 @@
 
   update_table();
 
-  function next() {
-    page++;
-    update_table()
-  }
-
-  function prev() {
-    page--;
+  function go_to_page(p) {
+    page=p;
     update_table()
   }
 
@@ -89,26 +84,33 @@
     <MDBPagination>
       <MDBPageItem>
         <MDBPageNav noWaves>
-          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length, total_data.length)} of {total_data.length} items
+          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length, total_data.length)} of {total_data.length}
+          items
         </MDBPageNav>
       </MDBPageItem>
-      {#if page !==1 }
-        <MDBPageItem>
-          <MDBPageNav aria-label="Previous" on:click={prev}>
-            <MDBIcon fas icon="chevron-left"/>
-          </MDBPageNav>
-        </MDBPageItem>
-      {/if}
+      <MDBPageItem disabled={page===1}>
+        <MDBPageNav aria-label="Previous" on:click={()=>go_to_page(1)}>
+          <MDBIcon fas icon="angle-double-left"/>
+        </MDBPageNav>
+      </MDBPageItem>
+      <MDBPageItem disabled={page===1}>
+        <MDBPageNav aria-label="Previous" on:click={()=>go_to_page(page-1)}>
+          <MDBIcon fas icon="chevron-left"/>
+        </MDBPageNav>
+      </MDBPageItem>
       <MDBPageItem>
         <MDBPageNav>{page}</MDBPageNav>
       </MDBPageItem>
-      {#if page < lastPage}
-        <MDBPageItem>
-          <MDBPageNav aria-label="Previous" on:click={next}>
-            <MDBIcon fas icon="chevron-right"/>
-          </MDBPageNav>
-        </MDBPageItem>
-      {/if}
+      <MDBPageItem disabled={page===lastPage}>
+        <MDBPageNav aria-label="Previous" on:click={()=>go_to_page(page+1)}>
+          <MDBIcon fas icon="chevron-right"/>
+        </MDBPageNav>
+      </MDBPageItem>
+      <MDBPageItem disabled={page===lastPage}>
+        <MDBPageNav aria-label="Previous" on:click={()=>go_to_page(lastPage)}>
+          <MDBIcon fas icon="angle-double-right"/>
+        </MDBPageNav>
+      </MDBPageItem>
     </MDBPagination>
   </MDBRow>
 </div>
