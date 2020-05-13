@@ -463,4 +463,4 @@
   ]
 
 </script>
-<MDBDataTable hover columns={columns} data={data} entriesOptions={[5, 20, 50]} entries={5} pagesAmount={4} />
+<MDBDataTable responsive hover columns={columns} data={data} entriesOptions={[5, 20, 50]} entries={5} pagesAmount={4} />

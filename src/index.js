@@ -50,6 +50,10 @@ import MDBTable from './Table/MDBTable.svelte';
 import MDBTableHead from './Table/MDBTableHead.svelte';
 import MDBTableBody from './Table/MDBTableBody.svelte';
 import MDBDataTable from './Table/MDBDataTable.svelte'
+import MDBModal from './Modal/MDBModal.svelte'
+import MDBModalBody from './Modal/MDBModalBody.svelte'
+import MDBModalFooter from './Modal/MDBModalFooter.svelte'
+import MDBModalHeader from './Modal/MDBModalHeader.svelte'
 
 waves.init();
 
@@ -104,5 +108,9 @@ export {
   MDBTable,
   MDBTableHead,
   MDBTableBody,
-  MDBDataTable
+  MDBDataTable,
+  MDBModal,
+  MDBModalBody,
+  MDBModalFooter,
+  MDBModalHeader
 }

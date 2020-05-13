@@ -1,7 +1,6 @@
 <script>
   import {clean, clsx, forwardEventsBuilder} from '../utils/utils';
   import {current_component} from 'svelte/internal';
-
   const forwardEvents = forwardEventsBuilder(current_component);
   import MDBTableHead from "./MDBTableHead.svelte";
   import MDBTableBody from "./MDBTableBody.svelte";

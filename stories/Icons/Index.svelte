@@ -1457,11 +1457,11 @@
     </MDBAlert>
   </div>
   <h1 class="h1 text-center">List of Icons, Total {Object.keys(icons).length}</h1>
-  <MDBRow between class="mb-5">
+  <MDBRow between class="mt-5">
     <MDBCol>
       <MDBRow class="text-center">
-        <MDBCol md="12">
-          <code>{code}</code>
+        <MDBCol md="12" class="mb-3">
+          <code class="black p-3 text-white">{code}</code>
         </MDBCol>
         <MDBCol>
           <h5 class="h5 text-center m-3">Different Sizes</h5>
