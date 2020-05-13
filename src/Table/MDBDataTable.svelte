@@ -8,7 +8,6 @@
   import MDBTable from "./MDBTable.svelte";
   import MDBRow from "../Layout/MDBRow.svelte";
   import MDBCol from "../Layout/MDBCol.svelte";
-  import MDBInput from "../forms/MDBInput.svelte";
   import MDBPagination from "../Pagination/MDBPagination.svelte";
   import MDBPageItem from "../Pagination/MDBPageItem.svelte";
   import MDBPageNav from "../Pagination/MDBPageNav.svelte";
@@ -26,8 +25,9 @@
   export let entries = 25;
   export let entriesOptions = [25, 50, 100];
   export let columns = [];
+  export let tableHeadProps = {};
   let total_data = [...data];
-  const props = clean($$props, ["color", "data"]);
+  const props = clean($$props, ["color", "data", "entries", "columns", "entriesOptions", "tableHeadProps"]);
   elementClasses = clsx(className, color);
 
   let page = 1;
@@ -76,7 +76,7 @@
   </MDBRow>
   <MDBRow>
     <MDBTable {...props} class={elementClasses}>
-      <MDBTableHead columns={columns}/>
+      <MDBTableHead {...tableHeadProps} columns={columns}/>
       <MDBTableBody bind:data={table_data}/>
     </MDBTable>
   </MDBRow>
