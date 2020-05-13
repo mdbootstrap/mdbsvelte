@@ -2,7 +2,7 @@
   "name": "mdbsvelte",
   "main": "dist/mdbsvelte.js",
   "module": "dist/mdbsvelte.es.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://saurav.tech/mdbsvelte",
   "scripts": {
     "dist": "rollup -c",
