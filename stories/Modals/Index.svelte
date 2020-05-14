@@ -3,10 +3,12 @@
   import BasicSource from "!!raw-loader!./Basic.svelte";
   import PositionAndSizeSource from "!!raw-loader!./PositionAndSize.svelte";
   import SideModalSource from "!!raw-loader!./SideModal.svelte";
+  import FluidModalSource from "!!raw-loader!./FluidModal.svelte";
   import Example from "../Example.svelte";
   import Title from "../Title.svelte";
   import PositionAndSize from "./PositionAndSize.svelte";
   import SideModal from "./SideModal.svelte";
+  import FluidModal from "./FluidModal.svelte";
 </script>
 <Title title="Modal">
   <div class="description">
@@ -44,6 +46,63 @@
 ">
   <PositionAndSize/>
 </Example>
-<Example title="Side Modals" source={SideModalSource} textCenter>
+<Example title="Side Modals" source={SideModalSource}>
+  <p>
+    <strong>Note 1:</strong> To make it works properly, apart from adding a prop for a position, you also need to
+    add special prop
+    <code><strong>side</strong></code> to
+    <code>modal</code> component.</p>
+  <p>
+    <strong>Note 2:</strong> If you want to change modal position, add prop <code>position</code> equal
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code> or
+    <code>left</code> to the
+    <code>modal</code> component.</p>
+  <p>
+    <code>side</code> +
+    <code> position="top-right"</code> Top Right</p>
+  <p>
+    <code>side</code> +
+    <code> position="top-left"</code> Top Left</p>
+  <p>
+    <code>side</code> +
+    <code> position="bottom-right"</code> Bottom Right</p>
+  <p>
+    <code>side</code> +
+    <code> position="bottom-left"</code>
+    Bottom Left
+  </p>
   <SideModal />
+</Example>
+<Example title="Fluid modal" source={FluidModalSource}>
+  <p class="secondary-heading my-3">
+    Fluid modal
+  </p>
+  <p>
+    <strong>Note:</strong> As in the previous example - to make it works properly, apart from adding a prop for a
+    position,
+    you also need to add special prop
+    <code><strong>fullHeight</strong></code> to
+    <code>modal</code> component.</p>
+  <p>
+    <strong>Note 2:</strong> If you want to change modal position, add prop <code>position</code> equal
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code> or
+    <code>left</code> to the
+    <code>modal</code> component.</p>
+  <p>
+    <code>fullHeight</code> +
+    <code> position="right"</code> Right</p>
+  <p>
+    <code>fullHeight</code> +
+    <code> position="left"</code> Left</p>
+  <p>
+    <code>fullHeight</code> +
+    <code> position="bottom"</code> Bottom</p>
+  <p>
+    <code>fullHeight</code> +
+    <code> position="top"</code> Top</p>
+  <FluidModal />
 </Example>

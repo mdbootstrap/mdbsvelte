@@ -42,9 +42,11 @@
   export let zIndex = 1050;
   export let unmountOnClose = true;
   export let returnFocusAfterClose = true;
-  export let displacement = -300;
+  export let displacementX = 0;
+  export let displacementY = -300;
   export let side;
   export let position;
+  export let fullHeight;
 
   const props = clean($$props, ["isOpen", "autoFocus", "centered", "duration", "backdropDuration", "scrollable",
     "size", "toggle", "labelledBy", "toggle", "onEnter", "onExit", "onOpened", "onClosed", "wrapClassName",
@@ -216,6 +218,7 @@
       [`${dialogBaseClass}-centered`]: centered,
       [`${dialogBaseClass}-scrollable`]: scrollable,
       'modal-side': side,
+      'modal-full-height': fullHeight,
       [`modal-${position}`]: position
     });
 
@@ -232,7 +235,7 @@
     style="position: relative; z-index: {zIndex}">
     {#if isOpen}
       <div
-        transition:flyTransition={{ y:-300, duration: fade && duration }}
+        transition:flyTransition={{ x: displacementX,y:displacementY, duration: fade && duration }}
         ariaLabelledby={labelledBy}
         class={modalClasses}
         role="dialog"
