@@ -4,11 +4,15 @@
   import PositionAndSizeSource from "!!raw-loader!./PositionAndSize.svelte";
   import SideModalSource from "!!raw-loader!./SideModal.svelte";
   import FluidModalSource from "!!raw-loader!./FluidModal.svelte";
+  import FrameModalSource from "!!raw-loader!./FrameModal.svelte";
+  import RemoveBackDropSource from "!!raw-loader!./RemoveBackDrop.svelte";
   import Example from "../Example.svelte";
   import Title from "../Title.svelte";
   import PositionAndSize from "./PositionAndSize.svelte";
   import SideModal from "./SideModal.svelte";
   import FluidModal from "./FluidModal.svelte";
+  import FrameModal from "./FrameModal.svelte";
+  import RemoveBackDrop from "./RemoveBackDrop.svelte";
 </script>
 <Title title="Modal">
   <div class="description">
@@ -73,12 +77,10 @@
     <code> position="bottom-left"</code>
     Bottom Left
   </p>
-  <SideModal />
+  <SideModal/>
 </Example>
 <Example title="Fluid modal" source={FluidModalSource}>
-  <p class="secondary-heading my-3">
-    Fluid modal
-  </p>
+
   <p>
     <strong>Note:</strong> As in the previous example - to make it works properly, apart from adding a prop for a
     position,
@@ -104,5 +106,33 @@
   <p>
     <code>fullHeight</code> +
     <code> position="top"</code> Top</p>
-  <FluidModal />
+  <FluidModal/>
+</Example>
+<Example title="Frame Modal" source={FrameModalSource}>
+  <p>
+    <strong>Note:</strong> As in the previous examples - to make it works properly, apart from adding a prop for a
+    position,
+    you also need to add special prop
+    <code><strong>frame</strong></code> to
+    <code>modal</code> component.</p>
+  <p>
+    <strong>Note 2:</strong> If you want to change modal position, add prop <code>position</code> equal
+    <code>top</code>,
+    <code>right</code>,
+    <code>bottom</code> or
+    <code>left</code> to the
+    <code>modal</code> component.</p>
+  <p>
+    <code>frame</code> +
+    <code> position="bottom"</code> Bottom</p>
+  <p>
+    <code>frame</code> +
+    <code> position="top"</code> Top</p>
+  <FrameModal/>
+</Example>
+<Example title="Remove backdrop"
+         description="<p>To remove <strong>backdrop</strong> add <code>backdrop=&#123; {false} &#125;</code> prop to the modal markup</p>"
+         source={RemoveBackDropSource}
+textCenter>
+  <RemoveBackDrop/>
 </Example>

@@ -29,8 +29,8 @@
       <MDBBtn color="primary">Save changes</MDBBtn>
     </MDBModalFooter>
   </MDBModal>
-  <MDBBtn color="info" on:click={()=>toggle(9)}>Bottom</MDBBtn>
-  <MDBModal isOpen={state.modal9} toggle={()=>toggle(9)} fullHeight position="bottom">
+  <MDBBtn color="info" on:click={()=>toggle(9)}>Left</MDBBtn>
+  <MDBModal isOpen={state.modal9} toggle={()=>toggle(9)} fullHeight position="left">
     <MDBModalHeader toggle={()=>toggle(9)}>MDBModal title</MDBModalHeader>
     <MDBModalBody>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -42,4 +42,32 @@
       <MDBBtn color="primary">Save changes</MDBBtn>
     </MDBModalFooter>
   </MDBModal>
+
+  <MDBBtn color="info" on:click={()=>toggle(6)}>Top</MDBBtn>
+  <MDBModal isOpen={state.modal6} toggle={()=>toggle(6)} fullHeight position="top">
+    <MDBModalHeader toggle={()=>toggle(6)}>MDBModal title</MDBModalHeader>
+    <MDBModalBody>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </MDBModalBody>
+    <MDBModalFooter>
+      <MDBBtn color="secondary" on:click={()=>toggle(6)}>Close</MDBBtn>
+      <MDBBtn color="primary">Save changes</MDBBtn>
+    </MDBModalFooter>
+  </MDBModal>
+  <MDBBtn color="info" on:click={()=>toggle(7)}>Bottom</MDBBtn>
+  <MDBModal isOpen={state.modal7} toggle={()=>toggle(7)} fullHeight position="bottom">
+    <MDBModalHeader toggle={()=>toggle(7)}>MDBModal title</MDBModalHeader>
+    <MDBModalBody>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.
+    </MDBModalBody>
+    <MDBModalFooter>
+      <MDBBtn color="secondary" on:click={()=>toggle(7)}>Close</MDBBtn>
+      <MDBBtn color="primary">Save changes</MDBBtn>
+    </MDBModalFooter>
+  </MDBModal>
+
 </MDBContainer>

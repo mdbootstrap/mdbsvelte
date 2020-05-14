@@ -45,13 +45,13 @@
   export let displacementX = 0;
   export let displacementY = -300;
   export let side;
-  export let position;
+  export let position = '';
   export let fullHeight;
-
+  export let frame;
   const props = clean($$props, ["isOpen", "autoFocus", "centered", "duration", "backdropDuration", "scrollable",
     "size", "toggle", "labelledBy", "toggle", "onEnter", "onExit", "onOpened", "onClosed", "wrapClassName",
     "modalClassName", "backdropClassName", "contentClassName", "fade", "zIndex", "unmountOnClose",
-    "returnFocusAfterClose", "side", "position"]);
+    "returnFocusAfterClose", "side", "position", "frame", "backdrop"]);
 
   let hasOpened = false;
   let _isMounted = false;
@@ -219,41 +219,54 @@
       [`${dialogBaseClass}-scrollable`]: scrollable,
       'modal-side': side,
       'modal-full-height': fullHeight,
+      'modal-frame': frame,
       [`modal-${position}`]: position
     });
+
+  if (position.indexOf("right") !== -1) {
+    displacementX = 300;
+    if (fullHeight) displacementY = 0
+  }
+
+  if (position.indexOf("left") !== -1) {
+    displacementX = -300;
+    if (fullHeight) displacementY = 0
+  }
+
+
+  if (position.indexOf("top") !== -1) {
+    displacementY = -300;
+    if (fullHeight) displacementX = 0
+  }
+
+  if (position.indexOf("bottom") !== -1) {
+    displacementY = 300;
+    if (fullHeight) displacementX = 0
+  }
 
   modalClasses = clsx('modal', 'show', modalClassName);
 
 </script>
 
-{#if _isMounted}
+{#if _isMounted && isOpen}
   <div
-    use:forwardEvents
-    {...props}
-    class={wrapClassName}
-    tabindex="-1"
-    style="position: relative; z-index: {zIndex}">
-    {#if isOpen}
-      <div
-        transition:flyTransition={{ x: displacementX,y:displacementY, duration: fade && duration }}
-        ariaLabelledby={labelledBy}
-        class={modalClasses}
-        role="dialog"
-        style="display: block;"
-        on:introend={onModalOpened}
-        on:outroend={onModalClosed}
-        on:click={handleBackdropClick}
-        on:mousedown={handleBackdropMouseDown}>
-        <div class={classes} role="document" bind:this={_dialog}>
-          <div class={clsx('modal-content', contentClassName)}>
-            <slot name="external"/>
-            <slot/>
-          </div>
-        </div>
+    transition:flyTransition={{ x: displacementX,y:displacementY, duration: fade && duration }}
+    ariaLabelledby={labelledBy}
+    class={modalClasses}
+    role="dialog"
+    style="display: block;"
+    on:introend={onModalOpened}
+    on:outroend={onModalClosed}
+    on:click={handleBackdropClick}
+    on:mousedown={handleBackdropMouseDown}>
+    <div class={classes} role="document" bind:this={_dialog}>
+      <div class={clsx('modal-content', contentClassName)}>
+        <slot name="external"/>
+        <slot/>
       </div>
-      <div
-        transition:fadeTransition={{ duration: fade && backdropDuration }}
-        class={clsx('modal-backdrop', 'show', backdropClassName)}/>
-    {/if}
+    </div>
   </div>
+  <div
+    transition:fadeTransition={{ duration: fade && backdropDuration }}
+    class={clsx({'modal-backdrop': backdrop}, 'show', backdropClassName)}/>
 {/if}
