@@ -43,10 +43,13 @@
   export let unmountOnClose = true;
   export let returnFocusAfterClose = true;
   export let displacement = -300;
+  export let side;
+  export let position;
 
   const props = clean($$props, ["isOpen", "autoFocus", "centered", "duration", "backdropDuration", "scrollable",
     "size", "toggle", "labelledBy", "toggle", "onEnter", "onExit", "onOpened", "onClosed", "wrapClassName",
-    "modalClassName", "backdropClassName", "contentClassName", "fade", "zIndex", "unmountOnClose", "returnFocusAfterClose"]);
+    "modalClassName", "backdropClassName", "contentClassName", "fade", "zIndex", "unmountOnClose",
+    "returnFocusAfterClose", "side", "position"]);
 
   let hasOpened = false;
   let _isMounted = false;
@@ -57,6 +60,7 @@
   let _dialog;
   let _mouseDownElement;
   let _removeEscListener;
+  let modalClasses;
 
   onMount(() => {
     if (isOpen) {
@@ -206,11 +210,17 @@
 
   const dialogBaseClass = 'modal-dialog';
 
-  $: classes = clsx(dialogBaseClass, className, {
-    [`modal-${size}`]: size,
-    [`${dialogBaseClass}-centered`]: centered,
-    [`${dialogBaseClass}-scrollable`]: scrollable
-  });
+  $: classes = clsx(dialogBaseClass, className,
+    {
+      [`modal-${size}`]: size,
+      [`${dialogBaseClass}-centered`]: centered,
+      [`${dialogBaseClass}-scrollable`]: scrollable,
+      'modal-side': side,
+      [`modal-${position}`]: position
+    });
+
+  modalClasses = clsx('modal', 'show', modalClassName);
+
 </script>
 
 {#if _isMounted}
@@ -224,7 +234,7 @@
       <div
         transition:flyTransition={{ y:-300, duration: fade && duration }}
         ariaLabelledby={labelledBy}
-        class={clsx('modal', 'show', modalClassName)}
+        class={modalClasses}
         role="dialog"
         style="display: block;"
         on:introend={onModalOpened}
