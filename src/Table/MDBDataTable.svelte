@@ -63,7 +63,7 @@
 <div class="mdb-datatable dt-bootstrap4">
   <MDBRow between>
     <MDBCol md="3" class="pl-0">
-      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} class="m-0">
+      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} class="m-0" on:change={update_table}>
         {#each entriesOptions as option}
           <option value={option}>{option}</option>
         {/each}

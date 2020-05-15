@@ -61,15 +61,11 @@
 <Example source={FluidJumbotronSource} textCenter={false}>
   <FluidJumbotron/>
 </Example>
-<h2 class="section-heading">
-  Jumbotron with image
-</h2>
-<Example source={WithImageSource}>
+
+<Example source={WithImageSource} title="Jumbotron with image">
   <WithImage/>
 </Example>
-<h2 class="section-heading">
-  Jumbotron with buttons
-</h2>
-<Example source={ButtonJumbotronSource}>
+
+<Example source={ButtonJumbotronSource} title="Jumbotron with buttons">
   <ButtonJumbotron/>
 </Example>

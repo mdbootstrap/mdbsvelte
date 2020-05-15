@@ -11,12 +11,6 @@
     MDBCardText
   } from "mdbsvelte";
 </script>
-<MDBJumbotron fluid>
-  <MDBContainer>
-    <h2 class="display-4">Fluid jumbotron</h2>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-  </MDBContainer>
-</MDBJumbotron>
 <MDBContainer class="mt-5 text-center">
   <MDBRow>
     <MDBCol>
@@ -42,6 +36,7 @@
             <MDBCol md="3" class="d-flex justify-content-around">
               <a href="#">
                 <MDBIcon
+                        fab
                   icon="linkedin-in"
                   class="grey-text"
                   size="lg"
@@ -49,6 +44,7 @@
               </a>
               <a href="#">
                 <MDBIcon
+                        fab
                   icon="twitter"
                   class="grey-text"
                   size="lg"
@@ -56,6 +52,7 @@
               </a>
               <a href="#">
                 <MDBIcon
+                        fab
                   icon="facebook-f"
                   class="grey-text"
                   size="lg"
