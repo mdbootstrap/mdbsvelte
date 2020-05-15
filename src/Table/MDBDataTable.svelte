@@ -34,9 +34,10 @@
 
 
   function update_table() {
+    console.log(query);
     if (query && table_data) {
       let res = fuzzysort.go(query, data, {
-        keys: Object.keys(table_data[0])
+        keys: Object.keys(data[0])
       });
       total_data = [];
       res.map((d) => {
