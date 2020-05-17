@@ -1,20 +1,21 @@
 <script>
+
   import {clean, clsx ,forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
-
-
-
-  let className = '';
+let className = '';
   export {className as class};
-  let elementClasses;
-  export let color;
-  const props = clean($$props, ["color"]);
+  export let flush = false;
 
-  $: elementClasses = clsx(className, color)
+  const props = clean($$props);
 
+  $: classes = clsx(
+    className,
+    'list-group',
+    flush ? 'list-group-flush' : false
+  );
 </script>
 
-<div use:forwardEvents {...props} class={elementClasses}>
+<ul use:forwardEvents {...props} class={classes}>
   <slot/>
-</div>
+</ul>

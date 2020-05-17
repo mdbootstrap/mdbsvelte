@@ -5,15 +5,15 @@
 </script>
 <MDBNav class="justify-content-end">
   <MDBNavItem>
-    <MDBNavLink active to="#!">Active</MDBNavLink>
+    <MDBNavLink active href="#!">Active</MDBNavLink>
   </MDBNavItem>
   <MDBNavItem>
-    <MDBNavLink to="#!">Link</MDBNavLink>
+    <MDBNavLink href="#!">Link</MDBNavLink>
   </MDBNavItem>
   <MDBNavItem>
-    <MDBNavLink to="#!">Link</MDBNavLink>
+    <MDBNavLink href="#!">Link</MDBNavLink>
   </MDBNavItem>
   <MDBNavItem>
-    <MDBNavLink disabled to="#!">Disabled</MDBNavLink>
+    <MDBNavLink disabled href="#!">Disabled</MDBNavLink>
   </MDBNavItem>
 </MDBNav>

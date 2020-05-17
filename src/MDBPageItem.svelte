@@ -1,19 +1,21 @@
 <script>
+
   import {clean, clsx ,forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
-
-
-
 let className = '';
   export {className as class};
-  export let color;
-  const props = clean($$props, []);
-  let elementClasses;
-  $: elementClasses = clsx(className, 'page-footer', color)
+  export let active = false;
+  export let disabled = false;
 
+  const props = clean($$props);
+
+  $: classes = clsx(className, 'page-item', {
+    active,
+    disabled
+  });
 </script>
 
-<footer use:forwardEvents {...props} class={elementClasses}>
+<li use:forwardEvents {...props} class={classes}>
   <slot/>
-</footer>
+</li>

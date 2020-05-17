@@ -2,19 +2,17 @@
   import {clean, clsx ,forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
-
-
-
-  let className = '';
+let className = '';
   export {className as class};
+  export let right;
+  export let left;
+  const props = clean($$props, ["right", "left"]);
   let elementClasses;
-  export let color;
-  const props = clean($$props, ["color"]);
 
-  $: elementClasses = clsx(className, color)
+  $: elementClasses = clsx(className, 'navbar-nav', {'ml-auto': right, 'mr-auto': left})
 
 </script>
 
-<div use:forwardEvents {...props} class={elementClasses}>
+<ul use:forwardEvents {...props} class={elementClasses}>
   <slot/>
-</div>
+</ul>

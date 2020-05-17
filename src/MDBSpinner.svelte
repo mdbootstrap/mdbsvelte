@@ -1,6 +1,6 @@
 <script>
 
-  import {clean, clsx ,forwardEventsBuilder} from './utils/utils';
+  import {clean, clsx ,forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
 

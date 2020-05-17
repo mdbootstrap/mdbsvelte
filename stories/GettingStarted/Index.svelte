@@ -1,7 +1,7 @@
 <script>
-  import MDBContainer from "../../src/Layout/MDBContainer.svelte";
-  import MDBRow from "../../src/Layout/MDBRow.svelte";
-  import MDBCol from "../../src/Layout/MDBCol.svelte";
+  import MDBContainer from "../../src/MDBContainer.svelte";
+  import MDBRow from "../../src/MDBRow.svelte";
+  import MDBCol from "../../src/MDBCol.svelte";
   import Example from "../Example.svelte";
   import Simple from "./Simple.svelte";
   import SimpleSource from "!!raw-loader!./Simple.svelte";

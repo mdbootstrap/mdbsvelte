@@ -9,8 +9,8 @@
   import MultipleInputGroupSource from '!!raw-loader!./MultipleInputGroup.svelte';
   import MultipleAddonsSource from '!!raw-loader!./MultipleAddons.svelte';
   import Title from "../Title.svelte";
-  import MDBRow from "../../src/Layout/MDBRow.svelte";
-  import MDBCol from "../../src/Layout/MDBCol.svelte";
+  import MDBRow from "../../src/MDBRow.svelte";
+  import MDBCol from "../../src/MDBCol.svelte";
   import Material from "./Material.svelte";
   import SizeDefault from "./SizeDefault.svelte";
   import SizeMaterial from "./SizeMaterial.svelte";

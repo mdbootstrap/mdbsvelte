@@ -5,16 +5,16 @@
 </script>
 <MDBNav class="nav-tabs mt-5">
   <MDBNavItem>
-    <MDBNavLink active to="#!">Active</MDBNavLink>
+    <MDBNavLink active href="#!">Active</MDBNavLink>
   </MDBNavItem>
   <MDBNavItem>
-    <MDBNavLink to="#!">Link 1</MDBNavLink>
+    <MDBNavLink href="#!">Link 1</MDBNavLink>
   </MDBNavItem>
   <MDBNavItem>
-    <MDBNavLink to="#!">Link 2</MDBNavLink>
+    <MDBNavLink href="#!">Link 2</MDBNavLink>
   </MDBNavItem>
   <MDBNavItem>
-    <MDBNavLink to="#!">Link 3</MDBNavLink>
+    <MDBNavLink href="#!">Link 3</MDBNavLink>
   </MDBNavItem>
 </MDBNav>
 

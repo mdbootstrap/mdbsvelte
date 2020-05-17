@@ -2,19 +2,14 @@
   import {clean, clsx ,forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
-
-
-
-  let className = '';
+let className = '';
   export {className as class};
+  const props = clean($$props, []);
   let elementClasses;
-  export let color;
-  const props = clean($$props, ["color"]);
-
-  $: elementClasses = clsx(className, color)
+  $: elementClasses = clsx(className, 'form-inline')
 
 </script>
 
-<div use:forwardEvents {...props} class={elementClasses}>
+<form use:forwardEvents {...props} class={elementClasses}>
   <slot/>
-</div>
+</form>

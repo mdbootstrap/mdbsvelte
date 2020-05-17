@@ -1,8 +1,8 @@
 <script>
   import {MDBContainer, MDBIcon, MDBBtn, MDBAlert} from "mdbsvelte";
-  import MDBCol from "../../src/Layout/MDBCol.svelte";
-  import MDBInput from "../../src/forms/MDBInput.svelte";
-  import MDBRow from "../../src/Layout/MDBRow.svelte";
+  import MDBCol from "../../src/MDBCol.svelte";
+  import MDBInput from "../../src/MDBInput.svelte";
+  import MDBRow from "../../src/MDBRow.svelte";
   import IconCard from "./IconCard.svelte";
 
   const options = {

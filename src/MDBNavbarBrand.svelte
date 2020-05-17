@@ -1,20 +1,17 @@
 <script>
+
   import {clean, clsx ,forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
-
-
-
-  let className = '';
+let className = '';
   export {className as class};
-  let elementClasses;
-  export let color;
-  const props = clean($$props, ["color"]);
+  export let href = '/';
 
-  $: elementClasses = clsx(className, color)
+  const props = clean($$props);
 
+  $: classes = clsx(className, 'navbar-brand');
 </script>
 
-<div use:forwardEvents {...props} class={elementClasses}>
+<a use:forwardEvents {...props} class={classes} {href}>
   <slot/>
-</div>
+</a>
