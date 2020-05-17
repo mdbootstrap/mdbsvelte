@@ -54,18 +54,19 @@ or you can add it your svelte app:
 ### Step 3: Import in your svelte component
 ```svelte
 <script>
-  import {MDBBtn, MDBContainer} from "mdbsvelte";
+  import {MDBBtn} from "mdbsvelte";
 </script>
-<MDBContainer>
-  <MDBBtn color="primary">Primary</MDBBtn>
-  <MDBBtn>Default</MDBBtn>
-  <MDBBtn color="secondary">Secondary</MDBBtn>
-  <MDBBtn color="success">Success</MDBBtn>
-  <MDBBtn color="info">Info</MDBBtn>
-  <MDBBtn color="warning">Warning</MDBBtn>
-  <MDBBtn color="danger">Danger</MDBBtn>
-</MDBContainer>
+<MDBBtn>Default</MDBBtn>
 ```
+#### For server-side side rendering (Sapper)
+You need to import from the component source directly.
+```svelte
+<script>
+  import MDBBtn from "mdbsvelte/src/MDBBtn.svelte";
+</script>
+```
+
+
 
 # License
 
