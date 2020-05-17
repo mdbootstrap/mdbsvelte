@@ -5,6 +5,7 @@
   import Example from "../Example.svelte";
   import Simple from "./Simple.svelte";
   import SimpleSource from "!!raw-loader!./Simple.svelte";
+  import SimpleServerSource from "!!raw-loader!./SimpleServer.svelte";
 
   let unpkg = `<script href="https://unpkg.com/mdbsvelte@latest/dist/mdbsvelte.js"></` + "script>"
 
@@ -18,10 +19,7 @@
     <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
   `
-
-
-
-</script>
+  </script>
 <MDBContainer>
   <MDBRow>
     <MDBCol md="12" class="text-center">
@@ -53,6 +51,7 @@
       <Example source={SimpleSource}>
         <Simple/>
       </Example>
+      <Example source={SimpleServerSource} title="For server side rendering(Sapper)" />
     </MDBCol>
   </MDBRow>
 </MDBContainer>
