@@ -1,6 +1,7 @@
 <script>
   import {clean, clsx, forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
+
   const forwardEvents = forwardEventsBuilder(current_component);
   import MDBTableHead from "./MDBTableHead.svelte";
   import MDBTableBody from "./MDBTableBody.svelte";
@@ -30,10 +31,10 @@
   elementClasses = clsx(className, color);
 
   let page = 1;
-  let table_data, lastPage;
+  let table_data, lastPage, sort_column;
+  let icon = "arrow-up";
 
-
-  function update_table() {
+  function update_query() {
     if (query && table_data) {
       let res = fuzzysort.go(query, data, {
         keys: Object.keys(data[0])
@@ -46,7 +47,10 @@
     } else {
       total_data = [...data]
     }
+    update_table()
+  }
 
+  function update_table() {
     lastPage = Math.ceil(data.length / entries);
     table_data = total_data.slice((page - 1) * entries, page * entries);
   }
@@ -54,28 +58,57 @@
   update_table();
 
   function go_to_page(p) {
-    page=p;
+    page = p;
     update_table()
   }
 
+  function sort(col, ind) {
+    sort_column = col;
+    page = 1;
+    let sort_key = Object.keys(total_data[0])[ind]
+    if (icon === "arrow-up") {
+      icon = "arrow-down";
+      total_data = total_data.sort((a, b) => {
+        return -1 * ('' + a[sort_key]).localeCompare(b[sort_key])
+      });
+    } else {
+      icon = "arrow-up";
+      total_data = total_data.sort((a, b) => {
+        return ('' + a[sort_key]).localeCompare(b[sort_key])
+      });
+    }
+    update_table()
+  }
 </script>
 
 <div class="mdb-datatable dt-bootstrap4">
   <MDBRow between>
     <MDBCol md="3" class="pl-0">
-      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} class="m-0" on:change={update_table}>
+      <MDBInputGroup material prepend="Rows per page:" type="select" bind:value={entries} class="m-0"
+                     on:change={update_table}>
         {#each entriesOptions as option}
           <option value={option}>{option}</option>
         {/each}
       </MDBInputGroup>
     </MDBCol>
     <MDBCol md="4">
-      <MDBInputGroup material hint="Search" bind:value={query} on:keyup={update_table} class="m-0"/>
+      <MDBInputGroup material hint="Search" bind:value={query} on:keyup={update_query} class="m-0"/>
     </MDBCol>
   </MDBRow>
   <MDBRow>
     <MDBTable {...props} class={elementClasses}>
-      <MDBTableHead {...tableHeadProps} columns={columns}/>
+      <MDBTableHead {...tableHeadProps}>
+        <tr>
+          {#each columns as col, i}
+            <th on:click={()=> sort(col,i)}>
+              {#if col === sort_column}
+                <MDBIcon {icon}/>
+              {/if}
+              {@html col}
+            </th>
+          {/each}
+        </tr>
+      </MDBTableHead>
       <MDBTableBody bind:data={table_data}/>
     </MDBTable>
   </MDBRow>
@@ -83,7 +116,8 @@
     <MDBPagination>
       <MDBPageItem>
         <MDBPageNav noWaves>
-          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length, total_data.length)} of {total_data.length}
+          Showing {(page-1)*entries + 1}-{Math.min(page*entries, data.length, total_data.length)}
+          of {total_data.length}
           items
         </MDBPageNav>
       </MDBPageItem>
