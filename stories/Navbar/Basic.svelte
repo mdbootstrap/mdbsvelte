@@ -5,10 +5,14 @@
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
   } from "mdbsvelte";
 
-  let isOpen = true;
+  let isOpen = false;
 
   function toggleCollapse() {
     isOpen = !isOpen;
+  }
+
+  function handleUpdate(event) {
+    isOpen = event.detail.isOpen;
   }
 
 </script>
@@ -17,7 +21,7 @@
     <strong class="white-text">Navbar</strong>
   </MDBNavbarBrand>
   <MDBNavbarToggler on:click={toggleCollapse}/>
-  <MDBCollapse id="navbarCollapse3" {isOpen} navbar>
+  <MDBCollapse id="navbarCollapse3" {isOpen} navbar expand="md" on:update={handleUpdate}>
     <MDBNavbarNav left>
       <MDBNavItem active>
         <MDBNavLink to="#!">Home</MDBNavLink>
