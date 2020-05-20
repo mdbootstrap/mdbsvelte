@@ -66,8 +66,30 @@ You need to import from the component source directly.
 </script>
 ```
 
+## Components
++ Containers
++ Grid
++ Alert
++ Button
++ Button Group
++ Card
++ Dropdown
++ Jumbotron
++ List Groups
++ Badges
++ Spinner
++ Pagination
++ Progress
++ Navbar
++ Footer
++ Navs
++ Forms
++ Tables
++ Data Tables
++ Modals
++ Icons
 
 
-# License
+## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte?ref=badge_large)
