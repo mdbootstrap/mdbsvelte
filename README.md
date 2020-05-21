@@ -88,7 +88,7 @@ You need to import from the component source directly.
 + Data Tables
 + Modals
 + Icons
-
++ Breadcrumbs
 
 ## License
 
