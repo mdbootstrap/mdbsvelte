@@ -23,6 +23,7 @@ import Tables from './Tables/Index.svelte';
 import DataTable from './DataTable/Index.svelte';
 import Modal from './Modals/Index.svelte';
 import Breadcrumb from './Breadcrumb/Index.svelte';
+import Chart from './Charts/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -67,3 +68,6 @@ storiesOf('Modals', module)
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));
+
+storiesOf('Charts', module)
+  .add('Chart', story(Chart));
