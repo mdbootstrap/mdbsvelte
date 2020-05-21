@@ -19,7 +19,7 @@ let className = '';
   $: classes = clsx(className, {
     'fas': fas | !type & !fab & !far | type === "fas",
     'fab': fab | type === "fab",
-    'fa': far | type === "far"
+    'far': far | type === "far"
   }, icon ? `fa-${icon}` : null, size ? `fa-${size}` : null);
 
 </script>

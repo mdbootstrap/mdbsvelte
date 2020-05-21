@@ -1,5 +1,5 @@
 <script>
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx ,forwardEventsBuilder, getColorClass} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -11,7 +11,7 @@
   export let color;
   const props = clean($$props, ["color"]);
 
-  $: elementClasses = clsx(className, color)
+  $: elementClasses = clsx(className, getColorClass(color))
 
 </script>
 

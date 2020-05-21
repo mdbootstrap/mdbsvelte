@@ -1,6 +1,6 @@
 <script>
 
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx ,forwardEventsBuilder, getColorClass} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -24,7 +24,7 @@ let className = '';
   $: classes = clsx(
     className,
     'badge',
-    badge_colors.includes(color) ? `badge-${color}` : color,
+    badge_colors.includes(color) ? `badge-${color}` : getColorClass(color),
     pill ? 'badge-pill' : false
   );
 </script>

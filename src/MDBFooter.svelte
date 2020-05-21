@@ -1,5 +1,5 @@
 <script>
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx ,forwardEventsBuilder, getColorClass} from './utils';
   import {current_component} from 'svelte/internal';
   const forwardEvents = forwardEventsBuilder(current_component);
 
@@ -10,7 +10,7 @@ let className = '';
   export let color;
   const props = clean($$props, []);
   let elementClasses;
-  $: elementClasses = clsx(className, 'page-footer', color)
+  $: elementClasses = clsx(className, 'page-footer', getColorClass(color))
 
 </script>
 
