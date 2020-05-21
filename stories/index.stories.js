@@ -22,6 +22,7 @@ import Navs from './Navs/Index.svelte';
 import Tables from './Tables/Index.svelte';
 import DataTable from './DataTable/Index.svelte';
 import Modal from './Modals/Index.svelte';
+import Breadcrumb from './Breadcrumb/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -50,7 +51,8 @@ storiesOf('Components', module)
 storiesOf('Navigation', module)
   .add('Navbar', story(Navbar))
   .add('Footer', story(Footer))
-  .add('Navs', story(Navs));
+  .add('Navs', story(Navs))
+  .add('Breadcrumb', story(Breadcrumb));
 
 storiesOf("Forms", module)
   .add("Basic Examples", story(FormsBasic))
