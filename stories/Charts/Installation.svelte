@@ -14,7 +14,7 @@
   <h4 class="text-center h4 m-5">This package is separate from mdbsvelte. It's a wrapper of <a
     href="https://www.chartjs.org/"
     target="_blank">chart.js</a>
-  <MDBBtn color="dark" size="lg" href="https://github.com/SauravKanchan/svelte-chartjs" target="_blank">
+  <MDBBtn color="dark" href="https://github.com/SauravKanchan/svelte-chartjs" target="_blank">
     <MDBIcon fab icon="github" size="2x" class="ml-1"/>
   </MDBBtn>
   </h4>

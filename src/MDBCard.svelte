@@ -1,9 +1,10 @@
 <script>
 
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx, forwardEventsBuilder, getColorClass} from './utils';
   import {current_component} from 'svelte/internal';
+
   const forwardEvents = forwardEventsBuilder(current_component);
-let className = '';
+  let className = '';
   export {className as class};
   export let body = false;
   export let color = '';
@@ -19,7 +20,8 @@ let className = '';
     'card',
     inverse ? 'text-white' : false,
     body ? 'card-body' : false,
-    color ? `${outline ? 'border' : 'bg'}-${color}` : false
+    (color & outline) ? `border-${color}` : false,
+    (color && !outline) ? `${getColorClass(color)}` : false
   );
 </script>
 

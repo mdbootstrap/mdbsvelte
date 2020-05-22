@@ -27,11 +27,3 @@
 <Example source={CardGroupSource} textCenter={false}>
   <CardGroup/>
 </Example>
-<h2 class="section-heading mb-4">
-  Nesting
-</h2>
-<p>Place a <code>&lt;MDBBtnGroup&gt;</code> within another <code>&lt;MDBBtnGroup&gt;</code> when you want dropdown
-  menus mixed with
-  a
-  series of buttons.
-</p>
