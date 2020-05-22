@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Bar from "svelte-chartsjs/src/Bar.svelte"
+  import Bar from "svelte-chartjs/src/Bar.svelte"
 
 
   let data = {

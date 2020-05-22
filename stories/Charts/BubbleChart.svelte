@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Bubble from "svelte-chartsjs/src/Bubble.svelte"
+  import Bubble from "svelte-chartjs/src/Bubble.svelte"
 
   let data = {
     labels: 'Bubble',

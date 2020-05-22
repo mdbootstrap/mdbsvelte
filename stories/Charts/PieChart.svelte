@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Pie from "svelte-chartsjs/src/Pie.svelte"
+  import Pie from "svelte-chartjs/src/Pie.svelte"
 
   let data = {
     labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],

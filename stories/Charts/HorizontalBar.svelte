@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import HorizontalBar from "svelte-chartsjs/src/HorizontalBar.svelte"
+  import HorizontalBar from "svelte-chartjs/src/HorizontalBar.svelte"
 
   let data = {
     labels: ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple', 'Grey'],

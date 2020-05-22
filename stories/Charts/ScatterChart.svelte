@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Scatter from "svelte-chartsjs/src/Scatter.svelte"
+  import Scatter from "svelte-chartjs/src/Scatter.svelte"
 
   let data = {
     labels: ['Scatter'],

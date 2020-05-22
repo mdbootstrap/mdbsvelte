@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Radar from "svelte-chartsjs/src/Radar.svelte"
+  import Radar from "svelte-chartjs/src/Radar.svelte"
 
   let dataRadar= {
     labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],

@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Line from "svelte-chartsjs/src/Line.svelte"
+  import Line from "svelte-chartjs/src/Line.svelte"
 
   let dataLine = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],

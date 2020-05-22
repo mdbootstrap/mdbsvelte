@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Doughnut from "svelte-chartsjs/src/Doughnut.svelte"
+  import Doughnut from "svelte-chartjs/src/Doughnut.svelte"
 
   let data = {
     labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],

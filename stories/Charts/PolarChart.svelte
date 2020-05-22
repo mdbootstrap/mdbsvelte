@@ -1,7 +1,7 @@
 <script>
 
   import {MDBRow, MDBCol} from "mdbsvelte";
-  import Polar from "svelte-chartsjs/src/Polar.svelte"
+  import Polar from "svelte-chartjs/src/Polar.svelte"
 
   let data = {
     datasets: [
