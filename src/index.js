@@ -56,6 +56,8 @@ import MDBModalFooter from './MDBModalFooter.svelte'
 import MDBModalHeader from './MDBModalHeader.svelte'
 import MDBBreadcrumb from './MDBBreadcrumb.svelte'
 import MDBBreadcrumbItem from './MDBBreadcrumbItem.svelte'
+import MDBMask from './MDBMask.svelte'
+import MDBView from './MDBView.svelte'
 
 waves.init();
 
@@ -116,5 +118,7 @@ export {
   MDBModalFooter,
   MDBModalHeader,
   MDBBreadcrumb,
-  MDBBreadcrumbItem
+  MDBBreadcrumbItem,
+  MDBMask,
+  MDBView
 }

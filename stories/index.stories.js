@@ -25,6 +25,7 @@ import Modal from './Modals/Index.svelte';
 import Breadcrumb from './Breadcrumb/Index.svelte';
 import ChartInstallation from './Charts/Installation.svelte';
 import ChartUsage from './Charts/Index.svelte';
+import Mask from './Masks/Index.svelte';
 
 const story = Component => () => ({
   Component
@@ -67,9 +68,12 @@ storiesOf('Tables', module)
 storiesOf('Modals', module)
   .add('Basic Examples', story(Modal));
 
-storiesOf('Content', module)
-  .add('Icons List', story(Icon));
-
 storiesOf('Charts', module)
   .add('Installation', story(ChartInstallation))
   .add('Examples', story(ChartUsage));
+
+storiesOf('CSS', module)
+  .add('Masks', story(Mask));
+
+storiesOf('Content', module)
+  .add('Icons List', story(Icon));
