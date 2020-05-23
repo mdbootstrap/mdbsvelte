@@ -26,6 +26,7 @@ import Breadcrumb from './Breadcrumb/Index.svelte';
 import ChartInstallation from './Charts/Installation.svelte';
 import ChartUsage from './Charts/Index.svelte';
 import Mask from './Masks/Index.svelte';
+import Dashboard1 from './Admin Dashboard/Dashboard1.svelte';
 
 const story = Component => () => ({
   Component
@@ -77,3 +78,6 @@ storiesOf('CSS', module)
 
 storiesOf('Content', module)
   .add('Icons List', story(Icon));
+
+storiesOf('Dashboard', module)
+  .add('Admin Dashboard', story(Dashboard1));
