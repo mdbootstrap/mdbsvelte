@@ -1,10 +1,11 @@
 <script>
   import {getContext} from 'svelte';
 
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx, forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
+
   const forwardEvents = forwardEventsBuilder(current_component);
-import MDBBtn from './MDBBtn.svelte';
+  import MDBBtn from './MDBBtn.svelte';
 
   const context = getContext('dropdownContext');
 

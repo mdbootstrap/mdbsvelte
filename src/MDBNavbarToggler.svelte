@@ -4,18 +4,26 @@
   import {current_component} from 'svelte/internal';
 
   const forwardEvents = forwardEventsBuilder(current_component);
-  import MDBBtn from './MDBBtn.svelte';
 
   let className = '';
   export {className as class};
+  export let left;
+  export let right;
 
-  const props = clean($$props);
+  const props = clean($$props, "left", "right");
   let classes;
-  $: classes = clsx(className, 'navbar-toggler');
+  $: classes = clsx(
+    {
+      'navbar-toggler-right': right,
+      'navbar-toggler-left': left
+    },
+    'navbar-toggler',
+    className
+  );
 </script>
 
-<MDBBtn {...props} on:click class={classes}>
+<button {...props} on:click class={classes}>
   <slot>
     <span class="navbar-toggler-icon"/>
   </slot>
-</MDBBtn>
+</button>
