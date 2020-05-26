@@ -67,28 +67,32 @@ You need to import from the component source directly.
 ```
 
 ## Components
-+ Containers
-+ Grid
-+ Alert
-+ Button
-+ Button Group
-+ Card
-+ Dropdown
-+ Jumbotron
-+ List Groups
-+ Badges
-+ Spinner
-+ Pagination
-+ Progress
-+ Navbar
-+ Footer
-+ Navs
-+ Forms
-+ Tables
-+ Data Tables
-+ Modals
-+ Icons
-+ Breadcrumbs
++ [Containers](https://saurav.tech/mdbsvelte/?path=/story/layout--containers)
++ [Grid](https://saurav.tech/mdbsvelte/?path=/story/layout--grid)
++ [Alert](https://saurav.tech/mdbsvelte/?path=/story/components--alerts)
++ [Button](https://saurav.tech/mdbsvelte/?path=/story/components--buttons)
++ [Button Group](https://saurav.tech/mdbsvelte/?path=/story/components--buttons-groups)
++ [Card](https://saurav.tech/mdbsvelte/?path=/story/components--cards)
++ [Dropdown](https://saurav.tech/mdbsvelte/?path=/story/components--dropdowns)
++ [Jumbotron](https://saurav.tech/mdbsvelte/?path=/story/components--jumbotron)
++ [List Groups](https://saurav.tech/mdbsvelte/?path=/story/components--list-groups)
++ [Badges](https://saurav.tech/mdbsvelte/?path=/story/components--badges)
++ [Spinner](https://saurav.tech/mdbsvelte/?path=/story/components--spinner)
++ [Pagination](https://saurav.tech/mdbsvelte/?path=/story/components--pagination)
++ [Progress](https://saurav.tech/mdbsvelte/?path=/story/components--progress)
++ [Navbar](https://saurav.tech/mdbsvelte/?path=/story/navigation--navbar)
++ [Footer](https://saurav.tech/mdbsvelte/?path=/story/navigation--footer)
++ [Navs](https://saurav.tech/mdbsvelte/?path=/story/navigation--navs)
++ [Breadcrumbs](https://saurav.tech/mdbsvelte/?path=/story/navigation--breadcrumb)
++ [Forms](https://saurav.tech/mdbsvelte/?path=/story/forms--basic-examples)
++ [Input Groups](https://saurav.tech/mdbsvelte/?path=/story/forms--input-groups)
++ [Tables](https://saurav.tech/mdbsvelte/?path=/story/tables--basic-examples)
++ [Data Tables](https://saurav.tech/mdbsvelte/?path=/story/tables--data-tables)
++ [Modals](https://saurav.tech/mdbsvelte/?path=/story/modals--basic-examples)
++ [Charts](https://saurav.tech/mdbsvelte/?path=/story/charts--installation)
++ [Masks](https://saurav.tech/mdbsvelte/?path=/story/css--masks)
++ [Icons](https://saurav.tech/mdbsvelte/?path=/story/content--icons-list)
++ [Admin Dashboard](https://saurav.tech/mdbsvelte/?path=/story/dashboard--admin-dashboard)
 
 ## License
 

@@ -1,12 +1,12 @@
 <script>
 
-  import {clean, clsx ,forwardEventsBuilder, getColorClass} from './utils';
+  import {clean, clsx, forwardEventsBuilder, getColorClass} from './utils';
   import {current_component} from 'svelte/internal';
+
   const forwardEvents = forwardEventsBuilder(current_component);
 
 
-
-let className = '';
+  let className = '';
   export {className as class};
   export let children = undefined;
   export let color = 'secondary';
@@ -19,7 +19,13 @@ let className = '';
 
   let badge_colors = ["primary", "secondary", "default", "success", "info", "warning", "danger", "light", "dark"]
 
-  const props = clean($$props);
+  const props = clean($$props, [
+    "children",
+    "color",
+    "href",
+    "pill",
+    "tag"
+  ]);
 
   $: classes = clsx(
     className,

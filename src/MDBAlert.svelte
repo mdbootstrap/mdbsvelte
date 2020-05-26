@@ -1,10 +1,10 @@
 <script>
   import {fade as fadeTransition} from 'svelte/transition';
 
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx, forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
-  const forwardEvents = forwardEventsBuilder(current_component);
 
+  const forwardEvents = forwardEventsBuilder(current_component);
 
 
   let className = '';
@@ -21,7 +21,8 @@
     isOpen = !(isOpen)
   };
 
-  const props = clean($$props, ["color"]);
+  const props = clean($$props, ["color", "children", "dismiss", "toggle", "transition", "isOpen", "fade",
+    "fade", "closeClassName", "closeAriaLabel"]);
 
   $: classes = clsx(className, 'alert', `alert-${color}`, {
     'alert-dismissible': toggle

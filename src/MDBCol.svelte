@@ -1,18 +1,19 @@
 <script>
-  import {clean, clsx ,forwardEventsBuilder} from './utils';
+  import {clean, clsx, forwardEventsBuilder} from './utils';
   import {current_component} from 'svelte/internal';
+
   const forwardEvents = forwardEventsBuilder(current_component);
-import {getColumnSizeClass, isObject} from './utils';
+  import {getColumnSizeClass, isObject} from './utils';
 
   let className = '';
   export {className as class};
   export let size;
 
-  const props = clean($$props, []);
-
   const colClasses = [];
 
   const widths = ['xs', 'sm', 'md', 'lg', 'xl'];
+
+  const props = clean($$props, [...widths].concat(["size"]));
   widths.forEach(colWidth => {
     const columnProp = $$props[colWidth];
     if (!columnProp && columnProp !== '') {
