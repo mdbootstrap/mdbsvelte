@@ -32,11 +32,24 @@
   export let icon;
   export let label;
   export let hint;
+  export let validate;
+  export let filled;
+  export let gap;
+  export let iconSize;
+
+  export let group;
+  export let outline;
+  export let background;
+  export let containerClass;
+
   placeholder = placeholder ? placeholder : label ? label : hint;
 
   // eslint-disable-next-line no-unused-vars
-  const props = clean($$props, ["fas", "fab", "far", "formGroup", "name", "multiple",
-    "fab", "fas", "label", "icon", "hint", "placeholder", "disabled", "file", "multiple"]);
+  const props = clean($$props, [
+    "fas", "fab", "far", "formGroup", "name", "multiple",
+    "fab", "fas", "label", "icon", "hint", "placeholder",
+    "disabled", "file", "multiple", "validate", "filled",
+    "gap", "iconSize", "group", "outline", "backgorund", "containerClass"]);
 
   let classes;
   let tag;
@@ -74,9 +87,6 @@
     }
 
     if (size && isNotaNumber.test(size)) {
-      console.warn(
-        'Please use the prop "bsSize" instead of the "size" to bootstrap\'s input sizing.'
-      );
       bsSize = size;
       size = undefined;
     }
@@ -86,18 +96,38 @@
       invalid && 'is-invalid',
       valid && 'is-valid',
       bsSize ? `form-control-${bsSize}` : false,
+      validate ? 'validate' : false,
+      filled ? 'filled-in' : false,
+      gap ? 'with-gap' : false,
+      type === 'checkbox' ? (gap ? false : 'form-check-input') : false,
+      type === 'radio' ? 'form-check-input' : false,
       formControlClass
     );
   }
+
+  let containerClassFix = clsx(
+    type === 'checkbox' || type === 'radio'
+      ? typeof label === 'boolean' && label
+      ? 'd-flex'
+      : 'form-check'
+      : 'md-form',
+
+    group ? 'form-group' : false,
+    size ? `form-${size}` : false,
+    outline && 'md-outline',
+    background && 'md-bg',
+    containerClass
+  );
+
 
   const handleInput = (event) => {
     value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
   };
 </script>
 {#if !formGroup}
-  <div class="md-form">
+  <div class={containerClassFix}>
     {#if icon}
-      <MDBIcon {fab} {far} {fas} icon={icon} class="prefix"/>
+      <MDBIcon {fab} {far} {fas} {icon} size={iconSize} class="prefix"/>
     {/if}
     {#if tag === 'input'}
       <input
