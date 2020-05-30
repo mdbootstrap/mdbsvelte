@@ -42,6 +42,10 @@
   export let background;
   export let containerClass;
 
+  export let isNotEmpty;
+  export let isControlled;
+  export let labelClass;
+
   placeholder = placeholder ? placeholder : label ? label : hint;
 
   // eslint-disable-next-line no-unused-vars
@@ -49,10 +53,13 @@
     "fas", "fab", "far", "formGroup", "name", "multiple",
     "fab", "fas", "label", "icon", "hint", "placeholder",
     "disabled", "file", "multiple", "validate", "filled",
-    "gap", "iconSize", "group", "outline", "backgorund", "containerClass"]);
+    "gap", "iconSize", "group", "outline", "backgorund",
+    "containerClass", "isNotEmpty", "isControlled", "labelClass"]);
 
   let classes;
   let tag;
+  let labelVisible = false;
+
   $: {
     const checkInput = ['radio', 'checkbox'].indexOf(type) > -1;
     const isNotaNumber = new RegExp('\\D', 'g');
@@ -119,10 +126,22 @@
     containerClass
   );
 
+  const labelClassFix = clsx(
+    (isNotEmpty && !isControlled) || hint ? 'active' : false,
+    disabled ? 'disabled' : false,
+    type === 'checkbox' ? 'form-check-label' : false,
+    type === 'radio' ? 'form-check-label' : false,
+    labelClass
+  );
 
   const handleInput = (event) => {
     value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
   };
+
+  function inputFocus() {
+    labelVisible = !labelVisible;
+  }
+
 </script>
 {#if !formGroup}
   <div class={containerClassFix}>
@@ -138,7 +157,9 @@
         class={classes}
         {name}
         {disabled}
-        {placeholder}
+        placeholder={labelVisible?"":placeholder}
+        on:focus={inputFocus}
+        on:focusout={inputFocus}
         on:input={handleInput}
       />
     {:else if tag === 'textarea'}
@@ -148,7 +169,10 @@
         class={classes}
         bind:value
         {name}
-        {disabled}/>
+        {disabled}
+        on:focus={inputFocus}
+        on:focusout={inputFocus}
+      />
 
     {:else if tag === 'select' && !multiple}
       <select
@@ -157,7 +181,10 @@
         class={classes}
         bind:value
         {name}
-        {disabled}>
+        {disabled}
+        on:focus={inputFocus}
+        on:focusout={inputFocus}
+      >
         <slot/>
       </select>
 
@@ -169,11 +196,16 @@
         class={classes}
         bind:value
         {name}
-        {disabled}>
+        {disabled}
+        on:focus={inputFocus}
+        on:focusout={inputFocus}
+      >
         <slot/>
       </select>
     {/if}
-
+    {#if labelVisible === true}
+      <label class="active" for={id}>{label}</label>
+    {/if}
   </div>
 {:else}
   {#if icon}
@@ -188,7 +220,9 @@
       class={classes}
       {name}
       {disabled}
-      {placeholder}
+      placeholder={labelVisible?"":placeholder}
+      on:focus={inputFocus}
+      on:focusout={inputFocus}
       on:input={handleInput}
     />
   {:else if tag === 'textarea'}
@@ -198,7 +232,10 @@
       class={classes}
       bind:value
       {name}
-      {disabled}/>
+      {disabled}
+      on:focus={inputFocus}
+      on:focusout={inputFocus}
+    />
 
   {:else if tag === 'select' && !multiple}
     <select
@@ -207,7 +244,10 @@
       class={classes}
       bind:value
       {name}
-      {disabled}>
+      {disabled}
+      on:focus={inputFocus}
+      on:focusout={inputFocus}
+    >
       <slot/>
     </select>
 
@@ -219,9 +259,14 @@
       class={classes}
       bind:value
       {name}
-      {disabled}>
+      {disabled}
+      on:focus={inputFocus}
+      on:focusout={inputFocus}
+    >
       <slot/>
     </select>
   {/if}
-
+  {#if labelVisible === true && label}
+    <label class="active" for={id}>{label}</label>
+  {/if}
 {/if}
