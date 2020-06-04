@@ -34,7 +34,7 @@
 </script>
 
 {#if label}
-  <label for="{id}">Your vanity URL</label>
+  <label for="{id}">{label}</label>
 {/if}
 <div use:forwardEvents {...props} class={classes}>
   {#if prepend}
