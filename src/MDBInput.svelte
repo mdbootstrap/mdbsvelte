@@ -72,7 +72,10 @@
     const unsupportedInput = type === 'hidden' || type === 'image';
     tag = selectInput || textareaInput ? type : 'input';
 
-    let formControlClass = 'form-control';
+    let formControlClass = clsx(
+      'form-control',
+      type === 'select' ? 'custom-select': false
+    );
 
     if (plaintext) {
       formControlClass = `${formControlClass}-plaintext`;

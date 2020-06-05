@@ -15,7 +15,7 @@
   import MDBIcon from "./MDBIcon.svelte";
 
   let query;
-  const fuzzysort = require('fuzzysort');
+  import fuzzysort from 'fuzzysort';
 
   let className = '';
   let elementClasses;
