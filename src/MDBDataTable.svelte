@@ -26,7 +26,9 @@
   export let entriesOptions = [25, 50, 100];
   export let columns = [];
   export let tableHeadProps = {};
-  let total_data = [...data];
+  export let fuzzy_search = true;
+  let total_data = [];
+
   const props = clean($$props, ["color", "data", "entries", "columns", "entriesOptions", "tableHeadProps"]);
   elementClasses = clsx(className, color);
 
@@ -34,15 +36,32 @@
   let table_data, lastPage, sort_column;
   let icon = "arrow-up";
 
+  $: if (data) {
+    total_data = [...data];
+    update_table();
+  }
+
+
   function update_query() {
     if (query && table_data) {
-      let res = fuzzysort.go(query, data, {
-        keys: Object.keys(data[0])
-      });
       total_data = [];
-      res.map((d) => {
-        total_data.push(d.obj)
-      });
+      if (fuzzy_search) {
+        let res = fuzzysort.go(query, data, {
+          keys: Object.keys(data[0])
+        });
+        res.map((d) => {
+          total_data.push(d.obj)
+        });
+      } else {
+        for (let i = 0; i < data.length; i++) {
+          let cols = Object.keys(data[0]);
+          for (let name in cols) {
+            if (data[i][cols[name]].toLowerCase().includes(query.toLowerCase())) {
+              total_data.push(data[i])
+            }
+          }
+        }
+      }
       page = 1
     } else {
       total_data = [...data]
@@ -55,7 +74,6 @@
     table_data = total_data.slice((page - 1) * entries, page * entries);
   }
 
-  update_table();
 
   function go_to_page(p) {
     page = p;
