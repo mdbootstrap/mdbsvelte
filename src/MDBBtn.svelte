@@ -11,6 +11,7 @@ let className = '';
   export let close = false;
   export let color;
   export let disabled = false;
+  export let type = "button";
   export let href = '';
   export let outline = false;
   export let size = '';
@@ -63,7 +64,7 @@ let className = '';
 {:else}
   <button
     use:forwardEvents {...props}
-    type="button"
+    type={type}
     class={classes}
     {disabled}
     {value}
