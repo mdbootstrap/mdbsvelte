@@ -45,7 +45,7 @@
     "chromatic": "^4.0.3",
     "clipboard-polyfill": "^2.8.6",
     "gh-pages": "^2.2.0",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.21.0",
     "raw-loader": "^4.0.1",
     "rollup": "^2.21.0",
     "rollup-plugin-analyzer": "^3.3.0",
