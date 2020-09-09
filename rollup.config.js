@@ -7,6 +7,9 @@ import autoPreprocess from 'svelte-preprocess'
 import pkg from './package.json';
 import bundleSize from 'rollup-plugin-bundle-size';
 
+const path = require('path');
+import alias from '@rollup/plugin-alias';
+
 const production = !process.env.ROLLUP_WATCH;
 
 const {name} = pkg;
@@ -38,7 +41,15 @@ export default {
         },
       })
     }),
-    resolve(),
+    alias({
+      entries: [
+        {find: 'svelte', replacement: path.resolve('node_modules','svelte')}
+      ]
+    }),
+    resolve({
+      mainFields: ['svelte','browser', 'module', 'main'],
+      extensions: ['.mjs', '.js', '.svelte']
+    }),
     commonjs(),
     production && terser(),
     production && analyze(),
