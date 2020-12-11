@@ -164,6 +164,7 @@
         on:focus={inputFocus}
         on:focusout={inputFocus}
         on:input={handleInput}
+        value={value}
       />
     {:else if tag === 'textarea'}
       <textarea
@@ -227,6 +228,7 @@
       on:focus={inputFocus}
       on:focusout={inputFocus}
       on:input={handleInput}
+      value={value}
     />
   {:else if tag === 'textarea'}
     <textarea
