@@ -40,9 +40,9 @@
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
-    "@storybook/svelte": "^5.3.19",
+    "@storybook/svelte": "^6.5.15",
     "autoprefixer": "^9.8.5",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.3.0",
     "chromatic": "^4.0.3",
     "clipboard-polyfill": "^2.8.6",
     "gh-pages": "^2.2.0",
@@ -56,7 +56,7 @@
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.24.0",
     "svelte-chartjs": "^1.0.1",
-    "svelte-loader": "^2.13.6",
+    "svelte-loader": "^3.1.4",
     "svelte-preprocess": "^4.0.8"
   },
   "dependencies": {
